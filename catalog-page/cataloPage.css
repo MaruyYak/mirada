@@ -1,3 +1,14 @@
+.logo {
+  position: relative;
+  right: 45%;
+  cursor: pointer;
+}
+.logo svg {
+  z-index: 5;
+  width: 90px;
+  height: 30px;
+}
+
 .catalog_section {
   margin-top: 100px;
   margin-bottom: 100px;
@@ -16,7 +27,7 @@
   grid-template-columns: repeat(auto-fill, 450px);
   row-gap: 10px;
   justify-content: space-between;
-  margin: 0 1px;
+  margin: 0 40px;
 }
 
 .catalog_card {
