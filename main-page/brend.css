@@ -1,5 +1,5 @@
 .brend_section {
-  height: 100vh;
+
 }
 
 .brend_info_container{
@@ -11,13 +11,24 @@
 }
 
 .brend_photos_wrapper {
-  margin-left: 100px;
+  margin-left: 50px;
   display: flex;
   flex-direction: row;
   width: 50%;
 }
 
 .brend_photo_1 {
+  animation-duration: 5s;
+  animation-name: shift1;
+}
+.brend_photo_1 img{
+  filter: grayscale(1);
+  object-fit: cover;
+  max-width: 80%;
+  height: 800px;
+}
+
+/* .brend_photo_1 {
   background-image: url(./assets/Intro1.JPG);
   filter: grayscale(1);
   background-size: cover;
@@ -27,7 +38,7 @@
   height: 90%;
   animation-duration: 5s;
   animation-name: shift1;
-}
+} */
 
 @keyframes shift1 {
   from {
@@ -41,6 +52,19 @@
 
 .brend_photo_2 {
   margin-top: 60px;
+  margin-left: 30px;
+  animation-name: shift2;
+}
+.brend_photo_2 img {
+  filter: grayscale(1);
+  object-fit: cover;
+  max-width: 100%;
+  height: 600px;
+}
+
+
+/* .brend_photo_2 {
+  margin-top: 60px;
   background-image: url(./assets/Intro2.JPG);
   filter: grayscale(1);
   background-size: cover;
@@ -50,9 +74,9 @@
   width: 40%;
   height: 70%;
   animation-name: shift2;
-}
+} */
 
-@keyframes shift2 {
+/* @keyframes shift2 {
   from {
     margin-right: 100%;
   }
@@ -60,14 +84,14 @@
     margin-right: 0%
 
   }
-}
+} */
 
 .brend_info_wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-right: 100px;
+  margin: 0 50px;
   width: 50%;
   height: 70%;
 }

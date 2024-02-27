@@ -10,6 +10,9 @@
   src: url('./fonts/Bitter/Bitter-VariableFont_wght.ttf')
 }
 
+body, html {
+  overflow-x: hidden;
+  }
 
 html {
   width: 100%;
@@ -31,7 +34,7 @@ html {
   color: #958977;
   font-family: Bitter;
   font-style: normal;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 .menu {
@@ -99,7 +102,7 @@ html {
   filter: brightness(0.4);
 }
 
-/* .main_img {
+.main_img {
   background: url(./assets/IMG_back11.png) center no-repeat;
   background-size: cover;
   background-repeat: no-repeat;
@@ -107,7 +110,7 @@ html {
   width: 100%;
   filter: brightness(0.3) blur(2px) grayscale(1);
   height: 120vh;
-} */
+}
 
 .main_brend_wrapper {
   z-index: 5;
@@ -132,6 +135,14 @@ html {
   font-weight: 100;
 }
 
+.poshiv_section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+
 .poshiv_title_wrapper {
   display: flex;
   justify-content: center;
@@ -153,12 +164,11 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 100px;
   max-width: 700px;
   align-items: center;
   border: 1px solid #b17d00;
   padding: 10px;
-  margin-left: 26%;
 }
 
 .poshiv_text_area {
@@ -206,12 +216,13 @@ html {
 
 .fabric_1 {
   position: absolute;
-  right: -180px;
-  width: 770px;
+  right: -200px;
+  width: 750px;
   z-index: -1;
-  top: 195%;
+  top: 230%;
   /* filter: blur(2px); */
   filter: brightness(0.6);
+  transform: rotate(80deg);
 }
 
 .fabric_2 {
@@ -219,9 +230,10 @@ html {
   left: -200px;
   width: 700px;
   z-index: -1;
-  top: 260%;
+  top: 270%;
   /* filter: blur(2px); */
   filter: brightness(0.6);
+  transform: rotate(216deg);
 }
 
 .dostavka_title_wrapper {
@@ -236,6 +248,7 @@ html {
   font-size: 70px;
   font-weight: 400;
   color: #b17d00;
+  z-index: 5;
 }
 
 .dostavka_info_container {
@@ -283,6 +296,11 @@ html {
   border-radius: 100%;
 }
 
+.sertificat_section {
+  margin-top: 150px;
+}
+
+
 .sertificat_title_wrapper {
   display: flex;
   justify-content: center;
@@ -291,10 +309,11 @@ html {
 }
 
 .sertificat_title {
-  margin: 0;
+  margin: 0 0 100px 0;
   font-size: 70px;
   font-weight: 400;
   color: #b17d00;
+  text-align: center;
 }
 
 .sertificat_info_container {
@@ -302,14 +321,21 @@ html {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 0;
+  margin: 0 50px;
+}
+
+.print {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  filter: brightness(0.4) blur(3px);
 }
 
 .envelope {
   width: 50%;
   margin: 0;
-
 }
+
 .envelope img {
   width: 70%;
   transform: rotateZ(339deg);
@@ -330,14 +356,16 @@ html {
 .serf_info {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   margin-top: -100px;
+  justify-content: flex-start;
+  max-height: 700px;
 }
 
 .serf_info p {
   font-size: 25px;
   font-weight: 300;
   /* color: #323232; */
-  max-width: 600px;
   text-align: center;
   margin: 0 0 30px 0;
 }
@@ -383,20 +411,21 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  height: 450px;
+  height: 340px;
   z-index: 0;
 }
 
 .contacty_img {
   position: relative;
-  bottom: 210px;
-  left: 40px;
+  bottom: 288px;
+  left: 170px;
   z-index: 5;
+  max-width: 500px;
 }
 
 .contacty_img img {
- filter: drop-shadow(rgba(0, 0, 0, 0.827) 21px -10px 13px) brightness(0.7);
- width: 110%;
+  filter: drop-shadow(rgba(0, 0, 0, 0.827) -17px 2px 13px) brightness(0.6);
+  width: 140%;
 }
 
 .footer_links {
@@ -445,4 +474,14 @@ html {
 .footer_inst p:hover,
 .footer_telega p:hover {
   color: #E2A74D;;
+}
+
+@media (max-width: 640px) {
+  .header_logo h1 {  
+      font-size: 1.5em;
+  }
+  .logo {
+      width: 70px;
+      height: 45px;
+  }
 }
