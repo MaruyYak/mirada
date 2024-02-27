@@ -10,14 +10,11 @@
   src: url('./fonts/Bitter/Bitter-VariableFont_wght.ttf')
 }
 
-body, html {
-  overflow-x: hidden;
-  }
-
 html {
   width: 100%;
   height: 100vh;
   margin: 0;
+  overflow-x: hidden;
 }
 
 .site_header{
@@ -34,7 +31,7 @@ html {
   color: #958977;
   font-family: Bitter;
   font-style: normal;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 .menu {
@@ -215,25 +212,38 @@ html {
 }
 
 .fabric_1 {
-  position: absolute;
+  position: relative;
+  width: 633px;
+  z-index: -1;
+  filter: brightness(0.6);
+  transform: rotate(80deg);
+  left: 70%;
+  bottom: 1300px
+  /* position: absolute;
   right: -200px;
   width: 750px;
   z-index: -1;
   top: 230%;
-  /* filter: blur(2px); */
   filter: brightness(0.6);
-  transform: rotate(80deg);
+  transform: rotate(80deg); */
 }
 
 .fabric_2 {
-  position: absolute;
+  position: relative;
+  width: 700px;
+  z-index: -1;
+  filter: brightness(0.6);
+  transform: rotate(216deg);
+  right: 13%;
+  top: 870px;
+  /* position: absolute;
   left: -200px;
   width: 700px;
   z-index: -1;
   top: 270%;
-  /* filter: blur(2px); */
+  filter: blur(2px);
   filter: brightness(0.6);
-  transform: rotate(216deg);
+  transform: rotate(216deg); */
 }
 
 .dostavka_title_wrapper {
