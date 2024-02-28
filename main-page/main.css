@@ -1,9 +1,4 @@
-/* @font-face {
-  font-family: 'ViaodaLibre';
-  font-style: normal;
-  font-weight: 400;
-  src: url('./fonts/Viaoda_Libre/ViaodaLibre-Regular.ttf')
-} */
+
 @font-face {
   font-family: 'Bitter';
   font-style: normal;
@@ -67,6 +62,11 @@ html {
   color: #E2A74D;;
 }
 
+.open {
+  display: flex !important;
+  left: 0 !important;
+}
+
 .nav_media_icons {
   z-index: 2;
   display: flex;
@@ -110,7 +110,7 @@ html {
 }
 
 .main_brend_wrapper {
-  z-index: 5;
+  z-index: 1;
   width: 100%;
   display: flex;
   align-items: center;
@@ -161,7 +161,7 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 50px;
   max-width: 700px;
   align-items: center;
   border: 1px solid #b17d00;
@@ -512,6 +512,69 @@ html {
 }
 
 @media (max-width: 800px) {
+
+  .nav_options {
+    flex-direction: column;
+    position: fixed;
+    justify-content: flex-start;
+    height: 100vh;
+    width: 40%;
+    top: 0px;
+    bottom: 0;
+    left: -60vw;
+    right: 0;
+    padding: 90px 40px 60px 40px;
+    z-index: 5;
+    overflow-y: auto;
+    background-color: #403F3D;
+    transition: all 0.4s ease;
+    font-size: 1.8em;
+    list-style: none;
+    color: #958977;
+    row-gap: 60px;
+    margin: 0;
+  }
+
+  .menu {
+    justify-content: center;
+  }
+
+  .burger_menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 70px;
+    height: 50px;
+    z-index: 100;
+    background-color: transparent;
+    transition: 0.4s;
+    margin: 15px;
+    position: absolute;
+  }
+
+  .burger_menu::before, .burger_menu::after{
+    content: '';
+    position: absolute;
+    height: 2.5px;
+    width: 50px;
+    background-color:  #929191;
+    transition: all 0.3s ease-in-out;
+    border-radius: 1px;
+  }
+
+  .burger_menu::before { top: 16.5px; }
+  .burger_menu::after { bottom: 17px; }
+
+  .burger_menu.active::before {
+    top: 50%;
+    transform: rotate(-45deg) translate(0, -50%);
+  } 
+
+  .burger_menu.active::after {
+    bottom: 50%;
+    transform: rotate(45deg) translate(0, 50%);
+  }
 
   .brend_photo_1 img {
     filter: grayscale(0) !important;
