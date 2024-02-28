@@ -9,6 +9,11 @@
   height: 30px;
 }
 
+.open {
+  display: flex !important;
+  left: 0 !important;
+}
+
 .catalog_section {
   margin-top: 100px;
   margin-bottom: 100px;
@@ -118,3 +123,119 @@
   fill: #fff3e2;
 }
 
+@media (max-width: 999px) { 
+
+  .catalog_card img {
+    max-width: 300px;
+    max-height: 600px;
+}
+  .catalog_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    margin: 0 20px;
+  }
+}
+
+@media (max-width: 800px) { 
+
+  .logo {
+      right: 0;
+   }
+
+   .logo svg {
+    z-index: 5;
+    width: 120px;
+    height: 40px;
+  }
+
+  .nav_options {
+    flex-direction: column;
+    position: fixed;
+    justify-content: flex-start;
+    height: 100vh;
+    width: 40%;
+    top: 0px;
+    bottom: 0;
+    left: -60vw;
+    right: 0;
+    padding: 90px 40px 60px 40px;
+    z-index: 5;
+    overflow-y: auto;
+    background-color: #403F3D;
+    transition: all 0.4s ease;
+    font-size: 1.8em;
+    list-style: none;
+    color: #958977;
+    row-gap: 60px;
+    margin: 0;
+  }
+
+  .menu {
+    justify-content: center;
+  }
+
+  .burger_menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 70px;
+    height: 50px;
+    z-index: 100;
+    background-color: transparent;
+    transition: 0.4s;
+    margin: 15px;
+  }
+  .burger_menu::before, .burger_menu::after{
+    content: '';
+    position: absolute;
+    height: 2.5px;
+    width: 50px;
+    background-color:  #929191;
+    transition: all 0.3s ease-in-out;
+    border-radius: 1px;
+  }
+  .burger_menu::before { top: 16.5px; }
+  .burger_menu::after { bottom: 17px; }
+
+  .burger_menu.active::before {
+    top: 50%;
+    transform: rotate(-45deg) translate(0, -50%);
+    left: 170px;
+  } 
+  .burger_menu.active::after {
+    bottom: 50%;
+    transform: rotate(45deg) translate(0, 50%);
+    left: 170px;
+  }
+}
+
+@media (max-width: 650px) { 
+
+  .catalog_card img {
+    max-width: 200px;
+    max-height: 600px;
+  } 
+  .catalog_container {
+    grid-template-columns: repeat(auto-fill, 200px);
+    margin: 0 20px;
+  }
+}
+
+@media (max-width: 440px) { 
+
+  .catalog_section {
+    display: flex;
+    justify-content: center;
+}
+
+  .catalog_card img {
+    max-width: 350px;
+    max-height: 600px;
+  } 
+  .catalog_container {
+    grid-template-columns: repeat(auto-fill, 350px);
+    margin: 0 10px;
+    row-gap: 20px;
+  }
+}
