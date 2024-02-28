@@ -15,6 +15,7 @@ html {
   height: 100vh;
   margin: 0;
   overflow-x: hidden;
+  font-size: 20px;
 }
 
 .site_header{
@@ -50,7 +51,7 @@ html {
   justify-content: center;
   flex-wrap: wrap;
   column-gap: 20px;
-  font-size: 15px;
+  font-size: 0.8em;
   list-style: none;
   margin-left: 20px;
   color: #958977;
@@ -127,7 +128,6 @@ html {
 .main_slogan {
   display: flex;
   align-items: center;
-  font-size: 30px;
   color: #CA9C4D;
   font-weight: 100;
 }
@@ -149,8 +149,9 @@ html {
 
 .poshiv_title {
   margin: 0;
-  font-size: 70px;
+  font-size: 3.5em;
   font-weight: 400;
+  text-align: center;
   /* color: #b17d00; */
   background: -webkit-linear-gradient(217deg, #ffb708 0%, #b17d00 100%);
   -webkit-background-clip: text;
@@ -165,20 +166,19 @@ html {
   max-width: 700px;
   align-items: center;
   border: 1px solid #b17d00;
-  padding: 10px;
+  padding: 30px;
 }
 
 .poshiv_text_area {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* width: 50%; */
   z-index: 5;
 }
 
 .poshiv_text_area p{
   /* mix-blend-mode: color-burn; */
-  font-size: 25px;
+  font-size: 1.25em;
   font-weight: 300;
   /* color: #323232; */
   max-width: 600px;
@@ -218,14 +218,9 @@ html {
   filter: brightness(0.6);
   transform: rotate(80deg);
   left: 70%;
-  bottom: 1300px
-  /* position: absolute;
-  right: -200px;
-  width: 750px;
-  z-index: -1;
-  top: 230%;
-  filter: brightness(0.6);
-  transform: rotate(80deg); */
+  bottom: 800px;
+  margin-bottom: -615px;
+  transition-duration: 0.4s;
 }
 
 .fabric_2 {
@@ -236,14 +231,8 @@ html {
   transform: rotate(216deg);
   right: 13%;
   top: 870px;
-  /* position: absolute;
-  left: -200px;
-  width: 700px;
-  z-index: -1;
-  top: 270%;
-  filter: blur(2px);
-  filter: brightness(0.6);
-  transform: rotate(216deg); */
+  margin-top: -500px;
+  transition-duration: 0.4s;
 }
 
 .dostavka_title_wrapper {
@@ -255,7 +244,7 @@ html {
 
 .dostavka_title {
   margin: 0;
-  font-size: 70px;
+  font-size: 3.5em;
   font-weight: 400;
   color: #b17d00;
   z-index: 5;
@@ -272,14 +261,14 @@ html {
 .dostavka_info_container p{
   text-align: center;
   color: #958977;
-  font-size: 20px;
+  font-size: 1em;
   margin: 10px 0 3px;
 }
 
 .dostavka_info_container h3 {
   color: #958977;
   font-weight: 500;
-  font-size: 30px;
+  font-size: 1.5em;
   margin: 15px 0 10px;
 }
 .bold {
@@ -307,7 +296,7 @@ html {
 }
 
 .sertificat_section {
-  margin-top: 150px;
+  margin: 150px 0 100px 0;
 }
 
 
@@ -315,15 +304,15 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 150px 0 35px;
 }
 
 .sertificat_title {
   margin: 0 0 100px 0;
-  font-size: 70px;
+  font-size: 3.5em;
   font-weight: 400;
   color: #b17d00;
   text-align: center;
+  width: 101%;
 }
 
 .sertificat_info_container {
@@ -332,6 +321,7 @@ html {
   justify-content: center;
   align-items: center;
   margin: 0 50px;
+  max-width: 97%;
 }
 
 .print {
@@ -347,10 +337,10 @@ html {
 }
 
 .envelope img {
-  width: 70%;
   transform: rotateZ(339deg);
   margin: 100px 50px;
   box-shadow: 20px 20px 12px #00000047;
+  transition: ease 0.6s;
 }
 
 .envelope svg {
@@ -366,18 +356,19 @@ html {
 .serf_info {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  margin-top: -100px;
-  justify-content: flex-start;
   max-height: 700px;
+  z-index: 5;
+  margin: 0;
+  width: -webkit-fill-available;
 }
 
 .serf_info p {
-  font-size: 25px;
+  font-size: 1.25em;
   font-weight: 300;
   /* color: #323232; */
   text-align: center;
   margin: 0 0 30px 0;
+  z-index: 5;
 }
 .serf_zakazat_button {
   /* background: #191412; */
@@ -390,7 +381,7 @@ html {
   font-weight: 400;
   transition-duration: 0.3s;
   z-index: 5;
-  font-size: 20px;
+  font-size: 1em;
 }
 
 .serf_zakazat_button:hover {
@@ -412,7 +403,7 @@ html {
 
 .contacty_title {
   margin: 0;
-  font-size: 70px;
+  font-size: 3.5em;
   font-weight: 400;
   color: #b17d00;
 }
@@ -431,6 +422,7 @@ html {
   left: 170px;
   z-index: 5;
   max-width: 500px;
+  transition-duration: 0.3s;
 }
 
 .contacty_img img {
@@ -441,7 +433,7 @@ html {
 .footer_links {
   display: flex;
   flex-direction: column;
-  font-size: 20px;
+  font-size: 1em;
   list-style: none;
   color: #958977;
   transition: all 0.4s ease;
@@ -472,7 +464,6 @@ html {
 .footer_inst p,
 .footer_telega p {
   margin-left: 10px;
-  font-size: 20px;
   color: #958977;
   text-decoration: none;
 }
@@ -486,12 +477,140 @@ html {
   color: #E2A74D;;
 }
 
-@media (max-width: 640px) {
-  .header_logo h1 {  
-      font-size: 1.5em;
+@media (max-width: 900px) {
+    .envelope {
+      position: absolute;
+      justify-content: center;
+      display: flex;
+    }
+    .envelope img {
+      transform: rotateZ(12deg);
+      filter: blur(5px);
+    }
+
+    html {
+      font-size: 15px;
+    }
+
+    .fabric_2 {
+      right: 24%;
+      top: 940px;
+    }
+    .fabric_1 {
+      left: 70%;
+      bottom: 800px;
+    }
+
+    .contacty_img {
+      bottom: 260px;
+      left: 100px;
+    }
+
+    .contacty_img img {
+      width: 160%;
+   }
+  
+}
+
+@media (max-width: 800px) {
+
+  .brend_photo_1 img {
+    filter: grayscale(0) !important;
+    max-width: 100% !important;
   }
-  .logo {
-      width: 70px;
-      height: 45px;
+
+  .brend_photo_2 img {
+    display: none;
+  }
+
+  .brend_photo_2  {
+    margin-left: 0;
+  }
+
+  .fabric_2 {
+    right: 30%;
+    top: 960px;
+  }
+  .fabric_1 {
+    left: 60%;
+    bottom: 800px;
+  }
+
+  .footer_links_container {
+    justify-content: flex-end;
+    column-gap: 30px;
+  }
+
+}
+
+@media (max-width: 700px) {
+
+  .sertificat_title,
+  .contacty_title,
+  .dostavka_title,
+  .poshiv_title,
+  .brend_title {
+    font-size: 3em;
+  }
+
+  .brend_photos_wrapper {
+    display: none;
+    width: 0%;
+  }
+
+  .brend_photo_1 img {
+    display: none;
+  }
+
+  .fabric_2 {
+    filter: brightness(0.6) blur(2px);
+    right: 45%;
+    top: 994px;
+  }
+
+  .fabric_1 {
+    filter: brightness(0.6) blur(2px);
+    left: 50%;
+    bottom: 800px;
+  }
+
+  .contacty_img {
+    bottom: 235px;
+    left: 40px;
+  }
+
+  .contacty_img img {
+    width: 200%;
+  }
+}
+
+@media (max-width: 650px) { 
+  .contacty_img {
+    bottom: 230px;
+    left: 10px;
+  }
+
+  .contacty_img img {
+    width: 200%;
+ }
+}
+
+
+@media (max-width: 600px) { 
+  .contacty_img {
+    max-width: 40%;
+  }
+
+  .contacty_img img {
+    width: 500px;
+    position: relative;
+    right: 100px;
+    bottom: -150px;
+ }
+}
+
+@media (max-width: 420px) {
+  .contacty_img {
+      max-width: 30%;
   }
 }
