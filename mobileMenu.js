@@ -18,13 +18,12 @@ function burgermenuOnload() {
       }
   })
 
-  burgerMenu.addEventListener('touchstart', function(event) {
-    event.preventDefault();
+  burgerMenu.addEventListener('touchend', function(event) {
     navOptions.classList.toggle('open');
     burgerMenu.classList.toggle('active');
+    console.log("работает")
   })
-
-  document.addEventListener('touchstart', function(event) {
+  document.addEventListener('o', function(event) {
       if (!event.target.contains('.nav_options') && !event.target.contains('.burger_menu')) {
           navOptions.classList.toggle('open');
           burgerMenu.classList.toggle('active');
