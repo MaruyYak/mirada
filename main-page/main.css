@@ -603,7 +603,7 @@ html {
   }
 
   .footer_links_container {
-    justify-content: flex-end;
+    justify-content: space-evenly;
     column-gap: 30px;
   }
 
