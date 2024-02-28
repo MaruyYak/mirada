@@ -530,7 +530,7 @@ html {
     padding: 90px 40px 60px 40px;
     z-index: 5;
     overflow-y: auto;
-    background-color: #403F3D;
+    background-color: #403f3de3;
     transition: all 0.4s ease;
     font-size: 1.8em;
     list-style: none;
@@ -554,13 +554,14 @@ html {
     background-color: transparent;
     transition: 0.4s;
     margin: 15px;
-    position: absolute;
   }
 
-  .burger_menu::before, .burger_menu::after{
+  .burger_menu::before, 
+  .burger_menu::after, 
+  .burger_menu span {
     content: '';
     position: absolute;
-    height: 2.5px;
+    height: 1.5px;
     width: 50px;
     background-color:  #929191;
     transition: all 0.3s ease-in-out;
@@ -568,7 +569,12 @@ html {
   }
 
   .burger_menu::before { top: 16.5px; }
+  .burger_menu span { top: 23.5px; }
   .burger_menu::after { bottom: 17px; }
+
+  .burger_menu.active span { 
+    display: none;
+  }
 
   .burger_menu.active::before {
     top: 50%;

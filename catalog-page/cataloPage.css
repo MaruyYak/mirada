@@ -123,6 +123,93 @@
   fill: #fff3e2;
 }
 
+.contacty_section {
+  overflow: hidden;
+}
+
+.contacty_title_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 150px 0 35px;
+}
+
+.contacty_title {
+  margin: 0;
+  font-size: 3.5em;
+  font-weight: 400;
+  color: #b17d00;
+}
+
+.footer_links_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 340px;
+  z-index: 0;
+}
+
+.contacty_img {
+  position: relative;
+  bottom: 288px;
+  left: 170px;
+  z-index: 5;
+  max-width: 500px;
+  transition-duration: 0.3s;
+}
+
+.contacty_img img {
+  filter: drop-shadow(rgba(0, 0, 0, 0.827) -17px 2px 13px) brightness(0.6);
+  width: 140%;
+}
+
+.footer_links {
+  display: flex;
+  flex-direction: column;
+  font-size: 1em;
+  list-style: none;
+  color: #958977;
+  transition: all 0.4s ease;
+  row-gap: 20px;
+  cursor: pointer;
+}
+
+.link a {
+  text-decoration: none;
+  color: #958977;
+}
+
+.link a:hover {
+  color: #E2A74D;;
+}
+
+.footer_inst a{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.footer_telega a{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+.footer_inst p,
+.footer_telega p {
+  margin-left: 10px;
+  color: #958977;
+  text-decoration: none;
+}
+.footer_inst a,
+.footer_telega a {
+  text-decoration: none;
+}
+
+.footer_inst p:hover,
+.footer_telega p:hover {
+  color: #E2A74D;;
+}
+
 @media (max-width: 999px) { 
 
   .catalog_card img {
@@ -134,6 +221,27 @@
     grid-template-columns: repeat(auto-fill, 300px);
     margin: 0 20px;
   }
+}
+
+@media (max-width: 900px) { 
+
+  .catalog_card img {
+    max-width: 300px;
+    max-height: 600px;
+}
+  .catalog_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    margin: 0 20px;
+  }
+  .contacty_img {
+    bottom: 260px;
+    left: 100px;
+  }
+
+  .contacty_img img {
+    width: 160%;
+ }
 }
 
 @media (max-width: 800px) { 
@@ -161,7 +269,7 @@
     padding: 90px 40px 60px 40px;
     z-index: 5;
     overflow-y: auto;
-    background-color: #403F3D;
+    background-color: #403f3de3;
     transition: all 0.4s ease;
     font-size: 1.8em;
     list-style: none;
@@ -178,7 +286,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
+    position: fixed;
     width: 70px;
     height: 50px;
     z-index: 100;
@@ -187,25 +295,50 @@
     margin: 15px;
   }
 
-  .burger_menu::before, .burger_menu::after{
+  .burger_menu::before, 
+  .burger_menu::after, 
+  .burger_menu span {
     content: '';
     position: absolute;
-    height: 2.5px;
+    height: 1.5px;
     width: 50px;
     background-color:  #929191;
     transition: all 0.3s ease-in-out;
     border-radius: 1px;
   }
+
   .burger_menu::before { top: 16.5px; }
+  .burger_menu span { top: 23.5px; }
   .burger_menu::after { bottom: 17px; }
+
+  .burger_menu.active span { 
+    display: none;
+  }
 
   .burger_menu.active::before {
     top: 50%;
     transform: rotate(-45deg) translate(0, -50%);
   } 
+
   .burger_menu.active::after {
     bottom: 50%;
     transform: rotate(45deg) translate(0, 50%);
+  }
+
+  .footer_links_container {
+    justify-content: space-evenly;
+    column-gap: 30px;
+  }
+}
+
+@media (max-width: 700px) { 
+  .contacty_img {
+    bottom: 235px;
+    left: 40px;
+  }
+
+  .contacty_img img {
+    width: 200%;
   }
 }
 
@@ -219,15 +352,35 @@
     grid-template-columns: repeat(auto-fill, 200px);
     margin: 0 20px;
   }
+
+  .contacty_img {
+    bottom: 230px;
+    left: 10px;
+  }
+
+  .contacty_img img {
+    width: 200%;
+ }
+}
+
+@media (max-width: 600px) { 
+  .contacty_img {
+    max-width: 40%;
+  }
+
+  .contacty_img img {
+    width: 500px;
+    position: relative;
+    right: 100px;
+    bottom: -150px;
+ }
 }
 
 @media (max-width: 440px) { 
-
   .catalog_section {
     display: flex;
     justify-content: center;
-}
-
+  }
   .catalog_card img {
     max-width: 350px;
     max-height: 600px;
@@ -237,4 +390,8 @@
     margin: 0 10px;
     row-gap: 20px;
   }
+
+  .contacty_img {
+    max-width: 30%;
+}
 }
