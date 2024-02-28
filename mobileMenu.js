@@ -2,7 +2,6 @@ window.onload = function () {
   burgermenuOnload()
 }  
 
-
 function burgermenuOnload() {
   const burgerMenu = document.querySelector('.burger_menu');
   const navOptions = document.querySelector('.nav_options');
@@ -10,7 +9,6 @@ function burgermenuOnload() {
   burgerMenu.addEventListener('click', function() {
       this.classList.toggle('active');
       navOptions.classList.toggle('open');
-      console.log("работает2", navOptions)
   })
 
   navOptions.addEventListener('click', function(event) {
@@ -21,12 +19,13 @@ function burgermenuOnload() {
   })
 
   burgerMenu.addEventListener('touchstart', function(event) {
+    event.preventDefault();
     navOptions.classList.toggle('open');
     burgerMenu.classList.toggle('active');
-    console.log("работает", event)
   })
   navOptions.addEventListener('touchstart', function(event) {
-      if (!event.target.contains('.nav_options') && !event.target.contains('.burger_menu')) {
+      event.preventDefault();
+      if (!event.target.classList.contains('nav_options') && !event.target.classList.contains('burger_menu')) {
           navOptions.classList.toggle('open');
           burgerMenu.classList.toggle('active');
       }
