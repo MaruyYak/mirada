@@ -11,6 +11,7 @@ html {
   margin: 0;
   overflow-x: hidden;
   font-size: 20px;
+  scroll-behavior: smooth;
 }
 
 .touch-auto {

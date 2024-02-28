@@ -18,16 +18,4 @@ function burgermenuOnload() {
       }
   })
 
-  // burgerMenu.addEventListener('touchstart', function(event) {
-  //   event.preventDefault();
-  //   navOptions.classList.toggle('open');
-  //   burgerMenu.classList.toggle('active');
-  // })
-  // navOptions.addEventListener('touchstart', function(event) {
-  //     event.preventDefault();
-  //     if (!event.target.classList.contains('nav_options') && !event.target.classList.contains('burger_menu')) {
-  //         navOptions.classList.toggle('open');
-  //         burgerMenu.classList.toggle('active');
-  //     }
-  // })
 }
