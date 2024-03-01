@@ -640,7 +640,7 @@ footer {
   }
   
   .burger_menu.active {
-    left: 280px;
+    left: 38%;
     transition: all 0.5s ease-in-out;
   }
 
