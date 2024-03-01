@@ -211,6 +211,39 @@
   color: #E2A74D;;
 }
 
+/* Footer styles*/
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.copyright, 
+.secure {
+  font-size: 0.5em;
+  color: #bfbfbfc0;
+  text-align: center;
+  margin-left: 15px;
+}
+.copyright span, 
+.secure {
+  color: #bfbfbfc0;
+}
+
+.secure {
+  cursor: pointer;
+}
+
+.copyright span:hover,
+.secure:hover {
+  color: #d3d3d3b6;
+}
+.copyright:before {
+  content: '©';
+}
+
+
+
 @media (max-width: 999px) { 
 
   .catalog_card img {
