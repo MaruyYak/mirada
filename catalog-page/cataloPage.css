@@ -172,6 +172,7 @@
   transition: all 0.4s ease;
   row-gap: 20px;
   cursor: pointer;
+  padding: 0;
 }
 
 .link a {
