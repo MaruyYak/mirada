@@ -120,7 +120,7 @@
   fill: #fff3e2;
 }
 
-.footer_links_container {
+/* .footer_links_container {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -188,7 +188,7 @@
 .footer_inst p:hover,
 .footer_telega p:hover {
   color: #E2A74D;;
-}
+} */
 
 @media (max-width: 999px) { 
 
