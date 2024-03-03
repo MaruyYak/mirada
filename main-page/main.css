@@ -55,13 +55,16 @@ html {
   color: #958977;
   transition: all 0.4s ease;
 }
+
 .option {
   cursor: pointer;
 }
+
 .option a {
   text-decoration: none;
   color: #958977;
 }
+
 .option a:hover {
   color: #E2A74D;;
 }
@@ -420,7 +423,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 150px 0 35px;
+  margin: 100px 0 35px;
 }
 
 .contacty_title {
@@ -434,7 +437,7 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  height: 340px;
+  height: 220px;
   z-index: 0;
 }
 
