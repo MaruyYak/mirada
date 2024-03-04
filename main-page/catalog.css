@@ -33,7 +33,7 @@
   width: 80%;
 }
 
-.catalog_photo_description_container {
+.card_photo_description_container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -51,7 +51,7 @@
   flex-wrap: wrap;
 }
 
-.catalog_opened_photo_button {
+.card_zakaz_button {
   background-color: transparent;
   border: solid 2px #958977;
   padding: 8px 17px;
