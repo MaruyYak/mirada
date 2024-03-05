@@ -27,8 +27,10 @@ html {
 .site_body {
   margin: 0;
   padding: 0;
-  background-color: #2C2C2C;
-  color: #958977;
+  background-color: #ffecd454; 
+  /* background-color: #2C2C2C; */
+  /* color: #958977; */
+  color: #2C2C2C;
   font-family: Bitter;
   font-style: normal;
   overflow-x: hidden;
@@ -111,9 +113,10 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 1;
-  width: 100%;
-  filter: brightness(0.3) blur(2px);
+  width: 50%;
+  filter: brightness(0.3);
   height: 120vh;
+  margin-left: 50%;
 }
 
 .main_brend_wrapper {
@@ -436,9 +439,11 @@ html {
 .footer_links_container {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  height: 220px;
-  z-index: 0;
+  justify-content: center;
+  max-height: 50px;
+  align-items: center;
+  background: #040303eb;
+  padding: 30px 50px;
 }
 
 .contacty_img {
@@ -458,15 +463,24 @@ html {
 }
 
 .footer_links {
+  width: 150px;
   display: flex;
   flex-direction: column;
-  font-size: 1em;
+  font-size: 0.5em;
   list-style: none;
   color: #958977;
   transition: all 0.4s ease;
   row-gap: 20px;
   cursor: pointer;
   padding: 0;
+  flex-wrap: wrap;
+  height: 55px;
+  column-gap: 20px;
+  justify-content: center;
+}
+
+.footer_media_icons {
+  margin-right: 40px;
 }
 
 .link a {
@@ -494,6 +508,7 @@ html {
   margin-left: 10px;
   color: #958977;
   text-decoration: none;
+  font-size: 0.5em;
 }
 .footer_inst a,
 .footer_telega a {
@@ -510,6 +525,9 @@ footer {
   display: flex;
   flex-direction: row;
   align-items: center;
+  background: rgb(23 22 22);
+  justify-content: center;
+
 }
 
 .copyright, 
