@@ -2,7 +2,6 @@ import { cardItems } from './catalog-base/items-base.js';
 
 window.onload = function () {
   generateCardHtml();
-  createSlider();
 };
 
 function generateCardHtml() {
@@ -13,19 +12,20 @@ function generateCardHtml() {
     catalogCard.className = 'catalog_card';
     catalogContainer.appendChild(catalogCard);
 
-    const cardImage = document.createElement('img');
-    cardImage.className = 'card_photo';
-    cardImage.src = item.photos;
-    catalogCard.appendChild(cardImage);
+    const sliderContainer = document.createElement('div');
+    sliderContainer.className = 'slider_container';
+    catalogCard.appendChild(sliderContainer);
+
+    generatePhotos(item.photos, sliderContainer);
 
     const sliderBar = document.createElement('div');
     sliderBar.className = 'slider_bar';
     catalogCard.appendChild(sliderBar);
 
-    const slidersCount = 5;
-    Array.from({ length: slidersCount }).forEach(() => {
+    item.photos.forEach(() => {
       const slider = document.createElement('span');
       slider.className = 'slider';
+      slider.style.width = `${Math.floor(100 / item.photos.length - 5)}%`
       sliderBar.appendChild(slider);
     });
 
@@ -74,19 +74,63 @@ function generateCardHtml() {
     swipeNext.className = 'swiper_button_next';
     swipeNext.src = "./assets/arrow.svg";
     swipperButtons.appendChild(swipeNext);
+    
+    setSlider(swipeNext, swipeBack, sliderContainer, item);
   });
-
   return catalogContainer;
 }
 
+function generatePhotos(photos, parentElement) {
+  for (let i = 0; i < 3; i++) {
+    const cardImage = document.createElement('img');
+    cardImage.className = 'card_photo';
+    
+    const photoIndex = (i - 1 + photos.length) % photos.length
+    cardImage.src = photos[photoIndex].path;
+    
+    parentElement.appendChild(cardImage);
+  }
+}
 
-function getCardSlider() {
-  const sliderContainer = document.querySelector('.slider_container');
+function setSlider(swipeNext, swipeBack, sliderContainer, item) {
+  let currentSlide = 0;
 
-  cardItems.forEach(item => {
+  function updateSlider(turnDirection, getNextPhotoId) {
+    const currentPhotoDom = sliderContainer.querySelector('.card_photo:nth-child(2)');
+    const nextPhotoDom = sliderContainer.querySelector(`.card_photo:nth-child(${turnDirection === 'left' ? 3 : 1})`);
 
+    nextPhotoDom.src = item.photos[currentSlide].path;
+    sliderContainer.classList.add(`turn-${turnDirection}`);
+    
+    setTimeout(() => {
+      currentPhotoDom.src = nextPhotoDom.src;
+      sliderContainer.classList.remove(`turn-${turnDirection}`);
 
+      const nextPhotoId = getNextPhotoId(currentSlide, item.photos.length);
+      nextPhotoDom.src = item.photos[nextPhotoId].path;
+    }, 500);
+  }
+
+  swipeNext.addEventListener('click', () => {
+    currentSlide = getNextSlideId(currentSlide, item.photos.length);
+    updateSlider('left', getNextSlideId);
+  });
+  
+  swipeBack.addEventListener('click', () => {
+    currentSlide = getPrewSlideId(currentSlide, item.photos.length);
+    updateSlider('right', getPrewSlideId);
   });
 }
+
+function getNextSlideId(currentSlideId, photosCount) {
+  return (currentSlideId + 1) % photosCount;
+}
+
+function getPrewSlideId(currentSlideId, photosCount) {
+  return (currentSlideId - 1 + photosCount) % photosCount;
+}
+
+
+
 
 

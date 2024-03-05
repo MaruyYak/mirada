@@ -25,7 +25,7 @@
 }
 
 .catalog_section {
-  margin-top: 100px;
+  margin: 100px 0;
 }
 
 .catalog_container {
@@ -39,15 +39,25 @@
 .catalog_card {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   overflow: hidden;
-  padding: 0.1px;
+  padding: 1px;
 }
 
 .slider_container {
   display: flex;
   position: relative;
+  left: -101%;
+}
+
+.turn-left {
+  left: -201%;
+  transition-duration: 0.5s;
+}
+
+.turn-right {
   left: 0%;
+  transition-duration: 0.5s;
 }
 
 .card_photo {
@@ -58,7 +68,7 @@
 .slider_bar {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   position: relative;
   z-index: 10;
   top: -6px;

@@ -15,11 +15,11 @@ export const cardItems = [
         path: './catalog-base/catalog-photo-base/templ3.jpg' 
       },
       { 
-        name: 'photo4', 
+        name: 'photo3', 
         path: './catalog-base/catalog-photo-base/templ4.jpg' 
       },
       { 
-        name: 'photo5', 
+        name: 'photo3', 
         path: './catalog-base/catalog-photo-base/templ5.jpg' 
       }
     ],
@@ -31,7 +31,7 @@ export const cardItems = [
     price: '60$',
     photos: [
       { name: 'photo1', 
-        path: './catalog-base/catalog-photo-base/templ1.jpg' 
+        path: './catalog-base/catalog-photo-base/templ6.jpg' 
       },
       { name: 'photo2', 
         path: './catalog-base/catalog-photo-base/templ2.jpg' 
@@ -39,14 +39,6 @@ export const cardItems = [
       { 
         name: 'photo3', 
         path: './catalog-base/catalog-photo-base/templ3.jpg' 
-      },
-      { 
-        name: 'photo4', 
-        path: './catalog-base/catalog-photo-base/templ4.jpg' 
-      },
-      { 
-        name: 'photo5', 
-        path: './catalog-base/catalog-photo-base/templ5.jpg' 
       }
     ],  
     size: 'XS, M, S'
@@ -57,7 +49,7 @@ export const cardItems = [
     price: '50$',
     photos: [
       { name: 'photo1', 
-        path: './catalog-base/catalog-photo-base/templ1.jpg' 
+        path: './catalog-base/catalog-photo-base/templ5.jpg' 
       },
       { name: 'photo2', 
         path: './catalog-base/catalog-photo-base/templ2.jpg' 
@@ -65,14 +57,6 @@ export const cardItems = [
       { 
         name: 'photo3', 
         path: './catalog-base/catalog-photo-base/templ3.jpg' 
-      },
-      { 
-        name: 'photo4', 
-        path: './catalog-base/catalog-photo-base/templ4.jpg' 
-      },
-      { 
-        name: 'photo5', 
-        path: './catalog-base/catalog-photo-base/templ5.jpg' 
       }
     ],   
     size: 'M, XS, S'
