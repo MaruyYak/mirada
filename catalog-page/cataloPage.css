@@ -39,9 +39,8 @@
 .catalog_card {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   overflow: hidden;
-  padding: 1px;
+  padding: 1.6px;
 }
 
 .slider_container {
@@ -75,10 +74,11 @@
   width: 100%;
 }
 
-.slider {
+.bar_item {
   width: 80px;
   height: 1px;
   background: #323232;
+  transition-duration: 0.3s;
 }
 
 .card_description_wrapper {
@@ -216,7 +216,7 @@
     padding: 90px 40px 60px 40px;
     z-index: 5;
     overflow-y: auto;
-    background-color: #403f3de3;
+    background-color: #040303eb;
     transition: all 0.4s ease;
     font-size: 1.8em;
     list-style: none;
@@ -277,6 +277,10 @@
     transition: all 0.5s ease-in-out;
   }
 
+  .card_zakaz_button {
+    padding: 5px 25px;
+  }
+
   .footer_links_container {
     justify-content: space-evenly;
     column-gap: 30px;
@@ -330,6 +334,7 @@
 }
 
 @media (max-width: 440px) { 
+
   .catalog_section {
     display: flex;
     justify-content: center;
@@ -342,6 +347,10 @@
     grid-template-columns: repeat(auto-fill, 350px);
     margin: 0 10px;
     row-gap: 20px;
+  }
+
+  .card_zakaz_button {
+    padding: 5px 50px;
   }
 
   .contacty_img {

@@ -1,12 +1,6 @@
-window.onload = function () { 
-  burgermenuOnload();
-  addTooltip();
-}  
-
-function burgermenuOnload() {
+export function burgermenuOnload() {
   const burgerMenu = document.querySelector('.burger_menu');
   const navOptions = document.querySelector('.nav_options');
-  const body = document.querySelector('.site_body')
 
   burgerMenu.addEventListener('click', function() {
       this.classList.toggle('active');
@@ -22,7 +16,7 @@ function burgermenuOnload() {
 
 }
 
-function addTooltip() {
+export function addTooltip() {
   const tooltips = document.querySelectorAll('.tooltipHave');
   
   tooltips.forEach(tooltip => {

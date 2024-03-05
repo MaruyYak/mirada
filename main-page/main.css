@@ -30,7 +30,7 @@ html {
   background-color: #ffecd454; 
   /* background-color: #2C2C2C; */
   /* color: #958977; */
-  color: #2C2C2C;
+  color: #050505;
   font-family: Bitter;
   font-style: normal;
   overflow-x: hidden;
@@ -563,7 +563,7 @@ footer {
     }
     .envelope img {
       transform: rotateZ(12deg);
-      filter: blur(5px);
+      filter: blur(3px);
     }
 
     html {
@@ -605,7 +605,7 @@ footer {
     padding: 90px 40px 60px 40px;
     z-index: 5;
     overflow-y: auto;
-    background-color: #403f3de3;
+    background-color: #040303eb;
     transition: all 0.4s ease;
     font-size: 1.8em;
     list-style: none;
@@ -691,7 +691,6 @@ footer {
 
   .footer_links_container {
     justify-content: space-evenly;
-    column-gap: 30px;
   }
 
 }
@@ -719,13 +718,14 @@ footer {
   }
 
   .fabric_2 {
-    filter: brightness(0.6) blur(2px);
+    filter: invert(2) blur(1px);
     right: 45%;
     top: 994px;
+    filter: invert(2);
   }
 
   .fabric_1 {
-    filter: brightness(0.6) blur(2px);
+    filter: brightness(1) blur(1px);
     left: 50%;
     bottom: 800px;
   }
@@ -734,7 +734,6 @@ footer {
     bottom: 76%;
     right: 36%;
     opacity: 0.6;
-  
   }
 
   .contacty_img img {
@@ -742,8 +741,8 @@ footer {
 
   .envelope img {
     width: 300px;
-    margin-bottom: 340px;
-}
+    margin-bottom: 440px;
+  }
 }
 
 @media (max-width: 650px) { 
@@ -767,6 +766,7 @@ footer {
     filter: brightness(0.6) blur(2px);
     right: 50%;
     top: 994px;
+    filter: invert(2);
   }
 
   .fabric_1 {
@@ -785,12 +785,17 @@ footer {
     filter: brightness(0.6) blur(2px);
     right: 70%;
     top: 994px;
+    filter: invert(2);
   }
 
   .fabric_1 {
     filter: brightness(0.6) blur(2px);
     left: 30%;
     bottom: 800px;
+  }
+
+  .envelope img {
+    width: 270px;
   }
 
   .sertificat_title,
