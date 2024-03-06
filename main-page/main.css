@@ -5,6 +5,11 @@
   src: url('./fonts/Bitter/Bitter-VariableFont_wght.ttf')
 }
 
+@font-face {
+  font-family: 'Dancing_Script';
+  src: url('./fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf')
+}
+
 html {
   width: 100%;
   height: 100vh;
@@ -123,11 +128,13 @@ html {
   z-index: 1;
   width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: left;
   flex-direction: column;
   position: absolute;
   top: 25%;
+  margin-left: 5%;
+  transition-duration: 0.3s;
 }
 
 .brend_wrapper path {
@@ -152,30 +159,44 @@ html {
 .poshiv_title_wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
+  flex-direction: column;
   margin: 0 50px;
 }
 
 .poshiv_title {
   margin: 0;
-  font-size: 3.5em;
+  font-size: 2.5em;
   font-weight: 400;
   text-align: center;
   /* color: #b17d00; */
   background: -webkit-linear-gradient(217deg, #ffb708 0%, #b17d00 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  padding-right: 330px;
+}
+
+.poshiv_title_cursive {
+  font-family: 'Dancing_Script';
+  font-size: 6em;
+  font-weight: 400;
+  color: #b17d0030;
+  position: relative;
+  letter-spacing: 0px;
+  margin: 0;
+  top: -150px;
+  left: -170px;
 }
 
 .poshiv_area {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 50px;
-  max-width: 700px;
+  margin-top: -90px;
+  width: 100%;
   align-items: center;
-  border: 1px solid #b17d00;
   padding: 30px;
+  background: #00000066;
+  color: #ffecd4;
 }
 
 .poshiv_text_area {
@@ -203,17 +224,16 @@ html {
 }
 
 .poshiv_zakazat_button {
-  /* background-color: #191412; */
-  border: solid 2px #958977;
-  padding: 15px 17px;
-  cursor: pointer;
-  text-align: center;
-  margin: 0;
-  color: #958977;
-  font-weight: 400;
-  transition-duration: 0.3s;
-  z-index: 5;
-  width: 100%;
+    background-color: #19141282;
+    padding: 15px 17px;
+    cursor: pointer;
+    text-align: center;
+    margin: 0;
+    color: #ffecd4;
+    font-weight: 400;
+    transition-duration: 0.3s;
+    z-index: 5;
+    max-width: 400px;
 }
 
 .poshiv_zakazat_button:hover {
@@ -245,20 +265,38 @@ html {
   margin-top: -500px;
   transition-duration: 0.4s;
 }
+.dostavka_section {
+  margin-top: -100px;
+}
 
 .dostavka_title_wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 150px 0 35px;
+  flex-direction: column;
+  margin: 200px 0 -80px;
 }
 
 .dostavka_title {
   margin: 0;
-  font-size: 3.5em;
+  font-size: 2.5em;
   font-weight: 400;
-  color: #b17d00;
+  /* color: #b17d00; */
+  background: -webkit-linear-gradient(217deg, #ffb708 0%, #b17d00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   z-index: 5;
+}
+
+.dostavka_title_cursive {
+  font-family: 'Dancing_Script';
+  font-size: 6em;
+  font-weight: 400;
+  color: #b17d0030;
+  position: relative;
+  letter-spacing: 5px;
+  margin: 0 120px 0 0;
+  top: -90px;
 }
 
 .dostavka_info_container {
@@ -300,22 +338,6 @@ html {
   font-size: 0.4em;
 }
 
-/* .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: black transparent transparent transparent;
-} */
-
-
-/* .dostavka_info_container h3:nth-of-type(2)::after {
-  content: '©';
-} */
-
 .dostavka_info_container h3 svg {
   margin: 0 0 13px;
 }
@@ -336,11 +358,22 @@ html {
 
 .sertificat_title {
   margin: 0 0 100px 0;
-  font-size: 3.5em;
+  font-size: 2em;
   font-weight: 400;
   color: #b17d00;
   text-align: center;
   width: 101%;
+}
+
+.sertificat_title_cursive {
+  font-family: 'Dancing_Script';
+  font-size: 6em;
+  font-weight: 400;
+  color: #b17d0030;
+  position: relative;
+  letter-spacing: 5px;
+  margin: 0 120px 0 0;
+  top: -180px;
 }
 
 .sertificat_info_container {
@@ -384,6 +417,7 @@ html {
 .serf_info {
   display: flex;
   flex-direction: column;
+  align-items: center;
   max-height: 700px;
   z-index: 5;
   margin: 0;
@@ -395,21 +429,22 @@ html {
   font-weight: 300;
   /* color: #323232; */
   text-align: center;
-  margin: 0 0 30px 0;
+  margin: -150px 0 30px 0;
   z-index: 5;
+  padding: 0 60px;
 }
 .serf_zakazat_button {
-  /* background: #191412; */
-  border: solid 2px #958977;
+  background-color: #191412bf;
   padding: 15px 17px;
   cursor: pointer;
   text-align: center;
   margin-top: 20px;
-  color: #958977;
+  color: #ffecd4;
   font-weight: 400;
   transition-duration: 0.3s;
   z-index: 5;
   font-size: 1em;
+  max-width: 400px;
 }
 
 .serf_zakazat_button:hover {
@@ -555,16 +590,35 @@ footer {
 }
 
 
+@media (max-width: 1200px) {
+  .sertificat_title_cursive {
+    font-size: 5.5em;
+    margin: 0px;
+  }
+}
+
+
 @media (max-width: 900px) {
+    .sertificat_info_container {
+      flex-direction: column-reverse;
+    }
+
     .envelope {
-      position: absolute;
-      justify-content: center;
-      display: flex;
+      position: relative;
+      bottom: 400px;
+      left: 190px;
     }
+
     .envelope img {
-      transform: rotateZ(12deg);
-      filter: blur(3px);
+      transform: rotateZ(20deg);
+      filter: blur(2px);
+      margin: 0;
+      width: 120%;
     }
+
+    .sertificat_section {
+      margin: 350px 0 -100px 0;
+   }
 
     html {
       font-size: 15px;
@@ -584,10 +638,6 @@ footer {
       right: 25%;
       opacity: 0.8;
     }
-
-    .contacty_img img {
-   }
-  
 }
 
 @media (max-width: 800px) {
@@ -689,13 +739,46 @@ footer {
     bottom: 800px;
   }
 
+  .poshiv_area {
+    margin-top: -40px;
+    padding: 30px;
+  }
+
+  .poshiv_title_cursive {
+    font-size: 5.5em;
+    top: -110px;
+    left: -30px;
+  }
+
+  .poshiv_title {
+    padding-right: 0;
+  } 
+
+  .serf_info p {
+    color: #7f7f7f;
+    padding: 0 70px;
+  }
+
+  .sertificat_title_cursive {
+    margin-right: 120px;
+  }
+
   .footer_links_container {
     justify-content: space-evenly;
+  }
+
+  .footer_media_icons {
+    margin-right: 0;
   }
 
 }
 
 @media (max-width: 700px) {
+
+  .serf_info p {
+    padding: 0;
+    color: #323232;
+  }
 
   .main_brend_wrapper svg {
     width: 300px;
@@ -705,7 +788,7 @@ footer {
   .contacty_title,
   .dostavka_title,
   .poshiv_title {
-    font-size: 3em;
+    font-size: 2em;
   }
 
   .brend_photos_wrapper {
@@ -736,13 +819,21 @@ footer {
     opacity: 0.6;
   }
 
-  .contacty_img img {
+  .envelope {
+    position: relative;
+    bottom: 430px;
+    left: 190px;
+    width: 70%;
   }
 
   .envelope img {
-    width: 300px;
-    margin-bottom: 440px;
+    filter: invert(0.9);
   }
+
+  .sertificat_section {
+    margin: 250px 0 -50px 0;
+  }
+
 }
 
 @media (max-width: 650px) { 
@@ -751,11 +842,20 @@ footer {
   .contacty_title,
   .dostavka_title,
   .poshiv_title {
-    font-size: 2.5em;
+    font-size: 2em;
   }
 
   .contacty_img {
     right: 44%;
+  }
+
+  .sertificat_title_cursive {
+    margin-right: 60px;
+    top: -170px
+  }
+  .dostavka_title_cursive {
+    margin: 0;
+    top: -90px;
   }
 
 }
@@ -775,12 +875,15 @@ footer {
     bottom: 800px;
   }
 
-  .contacty_img {
+  .envelope {
+    left: 180px;
+    bottom: 350px;
   }
 
 }
 
 @media (max-width: 450px) {
+
   .fabric_2 {
     filter: brightness(0.6) blur(2px);
     right: 70%;
@@ -794,16 +897,52 @@ footer {
     bottom: 800px;
   }
 
-  .envelope img {
-    width: 270px;
-  }
-
   .sertificat_title,
   .contacty_title,
   .dostavka_title,
   .poshiv_title {
     font-size: 2em;
   }
+
+  .poshiv_text_area p {
+    text-align: right;
+    font-size: 1em;
+  }
+
+  .poshiv_area {
+    border: none;
+    padding: 20px 0;
+    margin-top: -80px;
+  }
+
+  .serf_info {
+    margin: -30px;
+  }
+
+  .serf_info p {
+    font-size: 1em;
+  }
+
+  .envelope {
+    left: 125px;
+    bottom: 120px;
+  }
+
+  .envelope img {
+    width: 270px;
+  }
+
+  .dostavka_section {
+    margin: -20px 0 -30px 0;
+  }
+
+  .sertificat_title_cursive {
+    font-size: 5.5em;
+    margin: 0;
+    top: -220px;
+    left: -40px;
+  }
+
   .contacty_img {
     right: 65%;
     opacity: 0.2;

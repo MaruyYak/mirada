@@ -25,7 +25,7 @@
 }
 
 .catalog_section {
-  margin: 100px 0;
+  margin-top: 100px;
 }
 
 .catalog_container {
@@ -154,6 +154,10 @@
 
 .swiper_button_next:hover{
   filter: hue-rotate(180deg) brightness(1.7);
+}
+
+.contacty_section {
+  margin-top: 20px;
 }
 
 
