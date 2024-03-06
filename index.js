@@ -1,5 +1,4 @@
-import { burgermenuOnload, addTooltip } from './mobile-menu';
-import { addTooltip } from './mobile-menu';
+import { burgermenuOnload, addTooltip } from './mobile-menu.js';
 
 window.onload = function () { 
   burgermenuOnload();
