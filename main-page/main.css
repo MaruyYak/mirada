@@ -360,7 +360,9 @@ html {
   margin: 0 0 100px 0;
   font-size: 2em;
   font-weight: 400;
-  color: #b17d00;
+  background: -webkit-linear-gradient(217deg, #ffb708 0%, #b17d00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-align: center;
   width: 101%;
 }
