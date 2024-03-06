@@ -180,6 +180,11 @@
 }
 
 @media (max-width: 450px) {
+  .brend_title_cursive {
+    font-size: 4.5em;
+    top: -90px;
+  }
+
   .brend_title {
     font-size: 2em;
   }

@@ -208,7 +208,7 @@ html {
 
 .poshiv_text_area p{
   /* mix-blend-mode: color-burn; */
-  font-size: 1.25em;
+  font-size: 1em;
   font-weight: 300;
   /* color: #323232; */
   max-width: 600px;
@@ -747,8 +747,8 @@ footer {
   }
 
   .poshiv_title_cursive {
-    font-size: 5.5em;
-    top: -110px;
+    font-size: 4.5em;
+    top: -150px;
     left: -30px;
   }
 
@@ -857,7 +857,8 @@ footer {
   }
   .dostavka_title_cursive {
     margin: 0;
-    top: -90px;
+    top: -110px;
+    left: -30px;
   }
 
 }
