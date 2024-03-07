@@ -246,7 +246,7 @@ html {
   position: relative;
   width: 700px;
   z-index: -1;
-  filter: brightness(0.6);
+  filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.819));
   transform: rotate(95deg);
   left: 70%;
   bottom: 800px;
@@ -266,7 +266,7 @@ html {
   transition-duration: 0.4s;
 }
 .dostavka_section {
-  margin-top: -100px;
+  margin-top: 150px;
 }
 
 .dostavka_title_wrapper {
@@ -274,7 +274,6 @@ html {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 200px 0 -80px;
 }
 
 .dostavka_title {
@@ -305,6 +304,7 @@ html {
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin-top: -80px;
 }
 
 .dostavka_info_container p{
@@ -514,6 +514,7 @@ html {
   height: 55px;
   column-gap: 20px;
   justify-content: center;
+  align-items: center;
 }
 
 .footer_media_icons {
@@ -767,6 +768,7 @@ footer {
 
   .footer_links_container {
     justify-content: space-evenly;
+    column-gap: 30px;
   }
 
   .footer_media_icons {
@@ -810,7 +812,7 @@ footer {
   }
 
   .fabric_1 {
-    filter: brightness(1) blur(1px);
+    filter: blur(1px);
     left: 50%;
     bottom: 800px;
   }
@@ -873,7 +875,7 @@ footer {
   }
 
   .fabric_1 {
-    filter: brightness(0.6) blur(2px);
+    filter: blur(1px);
     left: 50%;
     bottom: 800px;
   }
@@ -889,13 +891,14 @@ footer {
 
   .fabric_2 {
     filter: brightness(0.6) blur(2px);
-    right: 70%;
-    top: 994px;
+    right: 60%;
+    top: 810px;
     filter: invert(2);
+    width: 500px;
   }
 
   .fabric_1 {
-    filter: brightness(0.6) blur(2px);
+    filter: blur(1px);
     left: 30%;
     bottom: 800px;
   }
@@ -918,6 +921,24 @@ footer {
     margin-top: -80px;
   }
 
+  .dostavka_section {
+    margin-top: 100px;
+  }
+
+  .dostavka_title_cursive {
+    font-size: 5em;
+    margin: 0;
+    top: -95px;
+    left: 0px;
+  }
+
+  .sertificat_title_cursive {
+    font-size: 5em;
+    margin: 0;
+    top: -195px;
+    left: -20px;
+}
+
   .serf_info {
     margin: -30px;
   }
@@ -933,17 +954,6 @@ footer {
 
   .envelope img {
     width: 270px;
-  }
-
-  .dostavka_section {
-    margin: -20px 0 -30px 0;
-  }
-
-  .sertificat_title_cursive {
-    font-size: 5.5em;
-    margin: 0;
-    top: -220px;
-    left: -40px;
   }
 
   .contacty_img {
