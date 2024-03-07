@@ -1,7 +1,6 @@
 export function openModalPoshiv() {
   const modalLayer = document.querySelector('.modal_overlay');
   const posivButton = document.querySelector('.poshiv_zakazat_button');
-  const closeButton = document.querySelector('.modal_close_button');
 
   posivButton.addEventListener('click', function(event) {
     modalLayer.classList.add('openModal');
