@@ -215,7 +215,7 @@ html {
   text-align: center;
 }
 
-.poshiv_button_area {
+.poshiv_button_wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -224,16 +224,16 @@ html {
 }
 
 .poshiv_zakazat_button {
-    background-color: #19141282;
-    padding: 15px 17px;
-    cursor: pointer;
-    text-align: center;
-    margin: 0;
-    color: #ffecd4;
-    font-weight: 400;
-    transition-duration: 0.3s;
-    z-index: 5;
-    max-width: 400px;
+  background-color: #19141282;
+  padding: 15px 17px;
+  cursor: pointer;
+  text-align: center;
+  margin: 0;
+  color: #ffecd4;
+  font-weight: 400;
+  transition-duration: 0.3s;
+  z-index: 5;
+  max-width: 400px;
 }
 
 .poshiv_zakazat_button:hover {
@@ -455,23 +455,6 @@ html {
   border: solid 2px #b17d00;
 }
 
-.contacty_section {
-  overflow: hidden;
-}
-
-.contacty_title_wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 100px 0 35px;
-}
-
-.contacty_title {
-  margin: 0;
-  font-size: 3.5em;
-  font-weight: 400;
-  color: #b17d00;
-}
 
 .footer_links_container {
   display: flex;
@@ -563,9 +546,8 @@ footer {
   display: flex;
   flex-direction: row;
   align-items: center;
-  background: rgb(23 22 22);
+  background: #040303eb;
   justify-content: center;
-
 }
 
 .copyright, 
