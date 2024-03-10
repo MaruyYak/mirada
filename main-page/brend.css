@@ -107,11 +107,11 @@
   font-family: 'Dancing_Script';
   font-size: 7em;
   font-weight: 400;
-  color: #b17d0030;
+  color: #704f003b;
   position: relative;
   letter-spacing: 5px;
   margin: 0;
-  top: -75px;
+  top: -100px;
 }
 
 .brend_info {
@@ -119,6 +119,7 @@
   font-size: 1.25em;
   font-weight: 300;
   margin-top: -30px;
+  margin-left: 30px;
 }
 
 @media (max-width: 1120px) {
@@ -154,6 +155,7 @@
 
   .brend_title {
     font-size: 3em;
+    margin-left: 20px;
   }
 
   .brend_photos_wrapper {

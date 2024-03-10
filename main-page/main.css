@@ -32,10 +32,10 @@ html {
 .site_body {
   margin: 0;
   padding: 0;
-  background-color: #ffecd454; 
-  /* background-color: #2C2C2C; */
-  /* color: #958977; */
-  color: #050505;
+  /* background-color: #ffecd454;  */
+  background-color: #2C2C2C;
+  color: #958977;
+  /* color: #050505; */
   font-family: Bitter;
   font-style: normal;
   overflow-x: hidden;
@@ -179,13 +179,12 @@ html {
   font-family: 'Dancing_Script';
   font-size: 7em;
   font-weight: 400;
-  color: #b17d0030;
+  color: #704f003b;
   position: relative;
   letter-spacing: 0px;
   margin: 0;
-  top: -180px;
-  left: -200px;
-  rotate: 355deg;
+  top: -170px;
+  left: -120px;
 }
 
 .poshiv_area {
@@ -197,7 +196,6 @@ html {
   align-items: center;
   padding: 30px;
   background: #00000066;
-  color: #ffecd4;
 }
 
 .poshiv_text_area {
@@ -230,7 +228,6 @@ html {
   cursor: pointer;
   text-align: center;
   margin: 0;
-  color: #ffecd4;
   font-weight: 400;
   transition-duration: 0.3s;
   z-index: 5;
@@ -247,10 +244,10 @@ html {
   position: relative;
   width: 700px;
   z-index: -1;
-  filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.819));
+  filter: brightness(0.6) blur(3px);
   transform: rotate(95deg);
   left: 70%;
-  bottom: 800px;
+  bottom: 700px;
   margin-bottom: -615px;
   transition-duration: 0.4s;
 }
@@ -259,7 +256,7 @@ html {
   position: relative;
   width: 700px;
   z-index: -1;
-  filter: brightness(0.6);
+  filter: brightness(0.6) blur(3px);
   transform: rotate(216deg);
   right: 13%;
   top: 870px;
@@ -292,7 +289,7 @@ html {
   font-family: 'Dancing_Script';
   font-size: 8em;
   font-weight: 400;
-  color: #b17d0030;
+  color: #704f003b;
   position: relative;
   letter-spacing: 5px;
   margin: 0;
@@ -373,11 +370,11 @@ html {
   font-family: 'Dancing_Script';
   font-size: 7em;
   font-weight: 400;
-  color: #b17d0030;
+  color: #704f003b;
   position: relative;
   letter-spacing: 5px;
-  margin: 0 120px 0 0;
-  top: -180px;
+  margin: -40px 50px 0 0;
+  top: -170px;
 }
 
 .sertificat_info_container {
@@ -431,7 +428,6 @@ html {
 .serf_info p {
   font-size: 1.25em;
   font-weight: 300;
-  /* color: #323232; */
   text-align: center;
   margin: -150px 0 30px 0;
   z-index: 5;
@@ -443,7 +439,6 @@ html {
   cursor: pointer;
   text-align: center;
   margin-top: 20px;
-  color: #ffecd4;
   font-weight: 400;
   transition-duration: 0.3s;
   z-index: 5;
@@ -579,7 +574,7 @@ footer {
 
 @media (max-width: 1200px) {
   .sertificat_title_cursive {
-    font-size: 5.5em;
+    font-size: 6em;
     margin: 0px;
   }
 }
@@ -742,12 +737,12 @@ footer {
   } 
 
   .serf_info p {
-    color: #7f7f7f;
     padding: 0 70px;
   }
 
   .sertificat_title_cursive {
-    margin-right: 120px;
+    /* margin-right: 120px; */
+    font-size: 7em;
   }
 
   .footer_links_container {
@@ -765,7 +760,6 @@ footer {
 
   .serf_info p {
     padding: 0;
-    color: #323232;
   }
 
   .main_brend_wrapper svg {
@@ -789,16 +783,15 @@ footer {
   }
 
   .fabric_2 {
-    filter: invert(2) blur(1px);
+    filter: brightness(0.6) blur(2px);
     right: 45%;
-    top: 994px;
-    filter: invert(2);
+    top: 820px;
   }
 
   .fabric_1 {
-    filter: blur(1px);
+    filter: brightness(0.7) blur(2px);
     left: 50%;
-    bottom: 800px;
+    bottom: 620px;
   }
 
   .contacty_img {
@@ -815,7 +808,7 @@ footer {
   }
 
   .envelope img {
-    filter: invert(0.9);
+    filter: brightness(1.2);
   }
 
   .sertificat_section {
@@ -838,13 +831,12 @@ footer {
   }
 
   .sertificat_title_cursive {
-    margin-right: 60px;
-    top: -170px
+    top: -200px
   }
   .dostavka_title_cursive {
     margin: 0;
     top: -110px;
-    left: -30px;
+    left: 5px;
   }
 
   .brend_section {
@@ -858,11 +850,10 @@ footer {
     filter: brightness(0.6) blur(2px);
     right: 50%;
     top: 994px;
-    filter: invert(2);
   }
 
   .fabric_1 {
-    filter: blur(1px);
+    filter: brightness(0.7) blur(2px);
     left: 50%;
     bottom: 800px;
   }
@@ -872,6 +863,9 @@ footer {
     bottom: 350px;
   }
 
+  .poshiv_text_area p {
+    padding: 20px;
+  }
 }
 
 @media (max-width: 450px) {
@@ -880,12 +874,11 @@ footer {
     filter: brightness(0.6) blur(2px);
     right: 60%;
     top: 810px;
-    filter: invert(2);
     width: 500px;
   }
 
   .fabric_1 {
-    filter: blur(1px);
+    filter: brightness(0.7) blur(2px);
     left: 30%;
     bottom: 800px;
   }
@@ -898,8 +891,8 @@ footer {
   }
 
   .poshiv_text_area p {
-    text-align: right;
     font-size: 1em;
+    padding: 20px;
   }
 
   .poshiv_area {
@@ -916,7 +909,7 @@ footer {
   }
 
   .sertificat_title_cursive {
-    font-size: 5em;
+    font-size: 6.5em;
     margin: 0;
     top: -195px;
     left: -20px;
