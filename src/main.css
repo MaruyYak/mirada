@@ -2,12 +2,12 @@
 @font-face {
   font-family: 'Bitter';
   font-style: normal;
-  src: url('./fonts/Bitter/Bitter-VariableFont_wght.ttf')
+  src: url('./components/main-page/assets/fonts/Bitter/Bitter-VariableFont_wght.ttf')
 }
 
 @font-face {
   font-family: 'Dancing_Script';
-  src: url('./fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf')
+  src: url('./components/main-page/assets/fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf')
 }
 
 html {
@@ -114,7 +114,7 @@ html {
 }
 
 .main_img {
-  background: url(./assets/IMG_back11.png) center no-repeat;
+  background: url('./components/main-page/assets/IMG_back11.png') center no-repeat;
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 1;
