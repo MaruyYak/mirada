@@ -84,13 +84,6 @@
   margin: 0;
 }
 
-@media (max-width: 1200px) {
-  .sertificat_title_cursive {
-    font-size: 6em;
-    margin: 0px;
-  }
-}
-
 @media (max-width: 900px) {
     .sertificat_info_container {
       flex-direction: column-reverse;
@@ -251,11 +244,6 @@
     padding: 0 70px;
   }
 
-  .sertificat_title_cursive {
-    /* margin-right: 120px; */
-    font-size: 7em;
-  }
-
   .footer_links_container {
     justify-content: space-evenly;
     column-gap: 30px;
@@ -341,9 +329,6 @@
     right: 44%;
   }
 
-  .sertificat_title_cursive {
-    top: -200px
-  }
   .dostavka_title_cursive {
     margin: 0;
     top: -110px;
@@ -418,13 +403,6 @@
     top: -95px;
     left: 0px;
   }
-
-  .sertificat_title_cursive {
-    font-size: 6.5em;
-    margin: 0;
-    top: -195px;
-    left: -20px;
-}
 
   .serf_info {
     margin: -30px;
