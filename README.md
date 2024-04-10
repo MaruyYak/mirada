@@ -1,5 +1,5 @@
 # **Цель проекта MIRADA**
-https://maruyyak.github.io/mirada/src/index.html#brend
+https://maruyyak.github.io/mirada/src/index.html
 
 - Обеспечить узнаваемость, привлечь новых клиентов;
 - Презентация бренда, её деятельности;
