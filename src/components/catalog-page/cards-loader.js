@@ -64,12 +64,12 @@ export function generateCardHtml() {
 
     const swipeBack = document.createElement('img');
     swipeBack.className = 'swiper_button_back';
-    swipeBack.src = "./components/catalog-page/assets/arrow.svg";
+    swipeBack.src = "./catalog-page/assets/arrow.svg";
     swipperButtons.appendChild(swipeBack);
     
     const swipeNext = document.createElement('img');
     swipeNext.className = 'swiper_button_next';
-    swipeNext.src = "./components/catalog-page/assets/arrow.svg";
+    swipeNext.src = "./catalog-page/assets/arrow.svg";
     swipperButtons.appendChild(swipeNext);
     
     setSlider(swipeNext, swipeBack, sliderContainer, item);
