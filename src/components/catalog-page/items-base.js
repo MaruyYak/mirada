@@ -50,18 +50,18 @@ export const cardItems = [
     price: '50$',
     photos: [
       { name: 'photo1', 
-        path: '/components/catalog-page/assets/catalog-base/pink-suit/IMG_3572.jpg'
+        path: 'src/components/catalog-page/assets/catalog-base/pink-suit/IMG_3572.jpg'
       },
       { name: 'photo2', 
-        path: '/components/catalog-page/assets/catalog-base/pink-suit/IMG_3573.jpg'
+        path: 'src/components/catalog-page/assets/catalog-base/pink-suit/IMG_3573.jpg'
       },
       { 
         name: 'photo3', 
-        path: '/components/catalog-page/assets/catalog-base/pink-suit/IMG_3574.jpg'
+        path: 'src/components/catalog-page/assets/catalog-base/pink-suit/IMG_3574.jpg'
       },
       { 
         name: 'photo3', 
-        path: '/components/catalog-page/assets/catalog-base/pink-suit/IMG_3575.jpg'
+        path: 'src/components/catalog-page/assets/catalog-base/pink-suit/IMG_3575.jpg'
       }
     ],   
     size: 'M, XS, S'
