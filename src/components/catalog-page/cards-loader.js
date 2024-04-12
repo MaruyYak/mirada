@@ -90,7 +90,6 @@ function generatePhotos(photos, parentElement) {
 }
 
 function setSlider(swipeNext, swipeBack, sliderContainer, item) {
-
   let currentSlide = 0;
   const barItem = document.querySelectorAll('.bar_item');
   let currentBar;

@@ -119,7 +119,7 @@ html {
   background-repeat: no-repeat;
   z-index: 1;
   width: 50%;
-  filter: brightness(0.3);
+  filter: brightness(0.5);
   height: 120vh;
   margin-left: 50%;
 }
@@ -290,21 +290,6 @@ html {
     bottom: 800px;
   }
 
-  .poshiv_area {
-    margin-top: -40px;
-    padding: 30px;
-  }
-
-  .poshiv_title_cursive {
-    font-size: 4.5em;
-    top: -150px;
-    left: -30px;
-  }
-
-  .poshiv_title {
-    padding-right: 0;
-  } 
-
   .serf_info p {
     padding: 0 70px;
   }
@@ -332,13 +317,6 @@ html {
 
   .main_brend_wrapper svg {
     width: 300px;
-  }
-
-  .sertificat_title,
-  .contacty_title,
-  .dostavka_title,
-  .poshiv_title {
-    font-size: 2em;
   }
 
   .brend_photos_wrapper {
@@ -387,13 +365,6 @@ html {
 
 @media (max-width: 650px) { 
 
-  .sertificat_title,
-  .contacty_title,
-  .dostavka_title,
-  .poshiv_title {
-    font-size: 2em;
-  }
-
   .contacty_img {
     right: 44%;
   }
@@ -404,9 +375,6 @@ html {
     left: 5px;
   }
 
-  .brend_section {
-    margin-bottom: 100px
-  }
 }
 
 
@@ -447,23 +415,10 @@ html {
     left: 30%;
     bottom: 800px;
   }
-
-  .sertificat_title,
-  .contacty_title,
-  .dostavka_title,
-  .poshiv_title {
-    font-size: 2em;
-  }
-
+  
   .poshiv_text_area p {
     font-size: 1em;
     padding: 20px;
-  }
-
-  .poshiv_area {
-    border: none;
-    padding: 20px 0;
-    margin-top: -80px;
   }
 
   .dostavka_title_cursive {

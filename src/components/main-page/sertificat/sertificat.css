@@ -255,21 +255,6 @@
     bottom: 800px;
   }
 
-  .poshiv_area {
-    margin-top: -40px;
-    padding: 30px;
-  }
-
-  .poshiv_title_cursive {
-    font-size: 4.5em;
-    top: -150px;
-    left: -30px;
-  }
-
-  .poshiv_title {
-    padding-right: 0;
-  } 
-
   .serf_info p {
     padding: 0 70px;
   }
@@ -301,8 +286,7 @@
 
   .sertificat_title,
   .contacty_title,
-  .dostavka_title,
-  .poshiv_title {
+  .dostavka_title {
     font-size: 2em;
   }
 
@@ -354,26 +338,12 @@
 
   .sertificat_title,
   .contacty_title,
-  .dostavka_title,
-  .poshiv_title {
+  .dostavka_title {
     font-size: 2em;
-  }
-
-  .contacty_img {
-    right: 44%;
   }
 
   .sertificat_title_cursive {
     top: -200px
-  }
-  .dostavka_title_cursive {
-    margin: 0;
-    top: -110px;
-    left: 5px;
-  }
-
-  .brend_section {
-    margin-bottom: 100px
   }
 }
 
@@ -418,20 +388,13 @@
 
   .sertificat_title,
   .contacty_title,
-  .dostavka_title,
-  .poshiv_title {
+  .dostavka_title {
     font-size: 2em;
   }
 
   .poshiv_text_area p {
     font-size: 1em;
     padding: 20px;
-  }
-
-  .poshiv_area {
-    border: none;
-    padding: 20px 0;
-    margin-top: -80px;
   }
 
   .dostavka_title_cursive {
@@ -442,11 +405,11 @@
   }
 
   .sertificat_title_cursive {
-    font-size: 6.5em;
+    font-size: 5.5em;
     margin: 0;
-    top: -195px;
-    left: -20px;
-}
+    top: -200px;
+    left: 12px;
+  }
 
   .serf_info {
     margin: -30px;
