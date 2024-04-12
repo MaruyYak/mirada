@@ -1,5 +1,5 @@
 # **Цель проекта MIRADA**
-[mirada-site](https://maruyyak.github.io/mirada/src/index.html)
+[mirada-site](https://mirada.vercel.app/)
 
 - Обеспечить узнаваемость, привлечь новых клиентов;
 - Презентация бренда, её деятельности;
