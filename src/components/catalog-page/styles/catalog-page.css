@@ -110,6 +110,7 @@
 }
 
 .card_zakaz_button {
+  text-decoration: none;
   background-color: transparent;
   border: solid 2px #958977;
   padding: 5px 50px;
@@ -120,7 +121,8 @@
 }
 
 .card_zakaz_button:hover {
-  background-color: #191412;
+  color: #b17d00;
+  border: solid 2px #b17d00;
 }
 
 .swiper_buttons{
