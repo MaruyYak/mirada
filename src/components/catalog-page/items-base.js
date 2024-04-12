@@ -27,7 +27,7 @@ export const cardItems = [
     price: '60$',
     photos: [
       { name: 'photo1', 
-        path: './catalog-page/assets/catalog-base/leopard-skirt/IMG_5152.jpg' 
+        path: './catalog-page/assets/catalog-base/IMG_5152.jpg' 
       },
       { name: 'photo2', 
         path: './catalog-page/assets/catalog-base/leopard-skirt/IMG_5155.jpg' 
@@ -88,18 +88,18 @@ export const cardItems = [
     price: '50$',
     photos: [
       { name: 'photo1', 
-      path: './catalog-page/assets/catalog-base/pink-suit/IMG_3572.jpg'
+      path: './catalog-page/assets/catalog-base/pink-suit/IMG_3572.JPG'
     },
     { name: 'photo2', 
-      path: './catalog-page/assets/catalog-base/pink-suit/IMG_3573.jpg'
+      path: './catalog-page/assets/catalog-base/pink-suit/IMG_3573.JPG'
     },
     { 
       name: 'photo3', 
-      path: './catalog-page/assets/catalog-base/pink-suit/IMG_3574.jpg'
+      path: './catalog-page/assets/catalog-base/pink-suit/IMG_3574.JPG'
     },
     { 
       name: 'photo3', 
-      path: './catalog-page/assets/catalog-base/pink-suit/IMG_3575.jpg'
+      path: './catalog-page/assets/catalog-base/pink-suit/IMG_3575.JPG'
     }
     ],   
     size: 'M, XS, S'
