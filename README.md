@@ -1,5 +1,5 @@
 # **Цель проекта MIRADA**
-https://maruyyak.github.io/mirada/src/index.html
+[mirada.site]([https://link-url-here.org](https://maruyyak.github.io/mirada/src/index.html))
 
 - Обеспечить узнаваемость, привлечь новых клиентов;
 - Презентация бренда, её деятельности;
