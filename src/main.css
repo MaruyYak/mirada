@@ -368,13 +368,6 @@ html {
   .contacty_img {
     right: 44%;
   }
-
-  .dostavka_title_cursive {
-    margin: 0;
-    top: -110px;
-    left: 5px;
-  }
-
 }
 
 
@@ -419,13 +412,6 @@ html {
   .poshiv_text_area p {
     font-size: 1em;
     padding: 20px;
-  }
-
-  .dostavka_title_cursive {
-    font-size: 5em;
-    margin: 0;
-    top: -95px;
-    left: 0px;
   }
   
   .serf_info {

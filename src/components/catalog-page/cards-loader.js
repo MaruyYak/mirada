@@ -56,6 +56,7 @@ export function generateCardHtml() {
     cardButton.className = 'card_zakaz_button';
     cardButton.innerText = 'ЗАКАЗАТЬ';
     cardButton.href = 'https://www.instagram.com/direct/t/17845085046113727';
+    cardButton.target = '_blank';
     cardButtonContainer.appendChild(cardButton);
     
     const swipperButtons = document.createElement('div');
