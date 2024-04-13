@@ -106,12 +106,11 @@ html {
   flex-direction: column;
 }
 
-.dance_video {
+/* .dance_video {
   z-index: 1;
   width: 100%;
-  height: 100%;
   filter: brightness(0.4);
-}
+} */
 
 .main_img {
   background: url('./components/main-page/assets/IMG_back11.png') center no-repeat;
