@@ -21,7 +21,6 @@
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  margin-bottom: 50px;
 }
 
 .poshiv_title {
@@ -36,13 +35,15 @@
 }
 
 .poshiv_title_cursive {
+  top: -91px;
   position: absolute;
   font-family: 'Dancing_Script';
-  font-size: 7em;
+  font-size: 6em;
   font-weight: 400;
   color: #704f0021;
-  letter-spacing: 0px;
+  letter-spacing: -4px; 
   margin: 0;
+  left: 398px;
 }
 
 .poshiv_area {
@@ -123,6 +124,12 @@
 }
 
 @media (max-width: 900px) {
+  .poshiv_title_cursive {
+    top: -72px;
+    letter-spacing: -4px;
+    left: 95px;
+  }
+
     .sertificat_info_container {
       flex-direction: column-reverse;
     }
@@ -165,7 +172,6 @@
 }
 
 @media (max-width: 800px) {
-
   .nav_options {
     flex-direction: column;
     position: fixed;
@@ -269,9 +275,9 @@
   }
 
   .poshiv_title_cursive {
-    font-size: 4.5em;
-    top: -150px;
-    left: -30px;
+    font-size: 5.5em;
+    top: -57px;
+    left: 97px;
   }
 
   .poshiv_title {
@@ -389,6 +395,12 @@
 
 @media (max-width: 450px) {
 
+  .poshiv_title_cursive {
+    font-size: 3.5em;
+    top: -50px;
+    left: 20px;
+  }
+
   .fabric_2 {
     filter: brightness(0.6) blur(2px);
     right: 60%;
@@ -410,35 +422,6 @@
   .poshiv_area {
     border: none;
     padding: 20px 0;
-    margin-top: -80px;
-  }
-
-  .dostavka_title_cursive {
-    font-size: 5em;
-    margin: 0;
-    top: -95px;
-    left: 0px;
-  }
-
-  .serf_info {
-    margin: -30px;
-  }
-
-  .serf_info p {
-    font-size: 1em;
-  }
-
-  .envelope {
-    left: 125px;
-    bottom: 120px;
-  }
-
-  .envelope img {
-    width: 270px;
-  }
-
-  .contacty_img {
-    right: 65%;
-    opacity: 0.2;
+    margin-top: -20px;
   }
 }

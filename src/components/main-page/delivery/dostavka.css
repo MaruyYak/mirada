@@ -11,7 +11,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 50px;
 }
 
 .dostavka_title {
@@ -342,30 +341,14 @@
 
 @media (max-width: 450px) {
 
-  .fabric_2 {
-    filter: brightness(0.6) blur(2px);
-    right: 60%;
-    top: 810px;
-    width: 500px;
+  .dostavka_info_container {
+    margin-top: -45px;
   }
 
-  .fabric_1 {
-    filter: brightness(0.7) blur(2px);
-    left: 30%;
-    bottom: 800px;
-  }
-
-  .sertificat_title,
-  .contacty_title,
   .dostavka_title {
     font-size: 2em;
   }
 
-  .poshiv_text_area p {
-    font-size: 1em;
-    padding: 20px;
-  }
-  
   .dostavka_title_cursive {
     font-size: 5em;
     margin: 0;
@@ -373,25 +356,4 @@
     left: 0px;
   }
 
-  .serf_info {
-    margin: -30px;
-  }
-
-  .serf_info p {
-    font-size: 1em;
-  }
-
-  .envelope {
-    left: 125px;
-    bottom: 120px;
-  }
-
-  .envelope img {
-    width: 270px;
-  }
-
-  .contacty_img {
-    right: 65%;
-    opacity: 0.2;
-  }
 }
