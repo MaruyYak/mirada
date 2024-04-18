@@ -3,46 +3,30 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background: #040303eb;
+  background: #121212;
   margin-top: 50px;
-}
-
-.contacty_img {
   position: relative;
-  bottom: 283px;
-  right: 211px;
   z-index: 5;
-  max-width: 500px;
-  transition-duration: 0.3s;
-}
-
-.contacty_img img {
-  filter: drop-shadow(rgba(0, 0, 0, 0.827) -17px 2px 13px) brightness(0.6);
-  width: 700px;
-  position: absolute;
-  z-index: 6;
+  padding-top: 20px;
+  overflow: hidden;
 }
 
 .footer_links {
-  width: 150px;
-  display: flex;
-  flex-direction: column;
-  font-size: 0.5em;
+  display: grid;
+  grid-template-columns: 100px 100px;
+  font-size: 0.8em;
   list-style: none;
   color: #958977;
-  transition: all 0.4s ease;
-  row-gap: 20px;
+  row-gap: 30px;
   cursor: pointer;
   padding: 0;
-  flex-wrap: wrap;
-  height: 55px;
-  column-gap: 20px;
   justify-content: center;
-  align-items: center;
 }
 
 .footer_media_icons {
   margin-right: 40px;
+  display: flex;
+  column-gap: 40px;
 }
 
 .link a {
@@ -70,7 +54,7 @@
   margin-left: 10px;
   color: #958977;
   text-decoration: none;
-  font-size: 0.5em;
+  font-size: 0.8em;
 }
 .footer_inst a,
 .footer_telega a {
@@ -87,13 +71,15 @@ footer {
   display: flex;
   flex-direction: row;
   align-items: center;
-  background: #040303eb;
+  background: #121212;
   justify-content: center;
+  position: relative;
+  z-index: 5;
 }
 
 .copyright, 
 .secure {
-  font-size: 0.5em;
+  font-size: 0.8em;
   color: #bfbfbfc0;
   text-align: center;
   margin-left: 15px;
@@ -115,38 +101,6 @@ footer {
   content: '©';
 }
 
-@media (max-width: 900px) {
-    .sertificat_info_container {
-      flex-direction: column-reverse;
-    }
-
-    .envelope {
-      position: relative;
-      bottom: 400px;
-      left: 190px;
-    }
-
-    .envelope img {
-      transform: rotateZ(20deg);
-      filter: blur(2px);
-      margin: 0;
-      width: 120%;
-    }
-
-    .sertificat_section {
-      margin: 350px 0 -100px 0;
-   }
-
-    html {
-      font-size: 15px;
-    }
-
-    .contacty_img {
-      bottom: 80%;
-      right: 25%;
-      opacity: 0.8;
-    }
-}
 
 @media (max-width: 800px) {
 

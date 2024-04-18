@@ -158,11 +158,6 @@
   filter: hue-rotate(180deg) brightness(1.7);
 }
 
-.contacty_section {
-  margin-top: 20px;
-}
-
-
 @media (max-width: 999px) { 
 
   .card_photo{

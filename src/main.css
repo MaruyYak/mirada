@@ -106,6 +106,7 @@ html {
   max-width: 100%;
   display: flex;
   flex-direction: column;
+  padding-bottom: 10px;
 }
 
 .dance_video {
@@ -119,10 +120,12 @@ html {
 
 .main_img {
   z-index: 1;
-  filter: brightness(0.4);
+  filter: brightness(0.3);
   height: 100vh;
-  /* padding: 100px; */
-  /* margin-top: 65px; */
+
+  /* стили для фото */
+  /* padding: 100px;
+  margin-top: 65px; */
 }
 
 .main_img img {
