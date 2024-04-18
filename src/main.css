@@ -45,14 +45,16 @@ html {
   z-index: 100;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   margin: 20px 0px;
   position: absolute;
   color: #958977;
+  margin-top: 100px;
 }
 
 .nav_options {
+  padding: 0;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -106,47 +108,42 @@ html {
   flex-direction: column;
 }
 
-/* .dance_video {
+.dance_video {
+  width: 90%;
   z-index: 1;
-  width: 100%;
-  filter: brightness(0.4);
-} */
+  padding: 100px;
+  margin-top: 60px;
+  height: 100vh;
+  filter: brightness(2);
+}
 
 .main_img {
-  background: url('./components/main-page/assets/IMG_back11.png') center no-repeat;
-  background-size: cover;
-  background-repeat: no-repeat;
   z-index: 1;
-  width: 50%;
   filter: brightness(0.4);
-  height: 120vh;
-  margin-left: 50%;
+  height: 100vh;
+  /* padding: 100px; */
+  /* margin-top: 65px; */
+}
+
+.main_img img {
+  width: 100%;
 }
 
 .main_brend_wrapper {
-  z-index: 1;
+  z-index: 10;
   width: 100%;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: left;
   flex-direction: column;
   position: absolute;
-  top: 25%;
-  margin-left: 5%;
+  top: -5%;
   transition-duration: 0.3s;
 }
 
 .brend_wrapper path {
   z-index: 5;
 }
-
-.main_slogan {
-  display: flex;
-  align-items: center;
-  color: #CA9C4D;
-  font-weight: 100;
-}
-
 
 @media (max-width: 900px) {
     .sertificat_info_container {
@@ -174,15 +171,6 @@ html {
       font-size: 15px;
     }
 
-    .fabric_2 {
-      right: 24%;
-      top: 940px;
-    }
-    .fabric_1 {
-      left: 60%;
-      bottom: 800px;
-    }
-
     .contacty_img {
       bottom: 80%;
       right: 25%;
@@ -195,14 +183,12 @@ html {
   .nav_options {
     flex-direction: column;
     position: fixed;
-    justify-content: flex-start;
-    height: 100vh;
-    width: 40%;
+    justify-content: center;
+    width: 100%;
     top: 0px;
     bottom: 0;
     left: -100vw;
     right: 0;
-    padding: 90px 40px 60px 40px;
     z-index: 5;
     overflow-y: auto;
     background-color: #040303eb;
@@ -212,23 +198,26 @@ html {
     color: #958977;
     row-gap: 60px;
     margin: 0;
+    align-items: center;
   }
 
   .menu {
     justify-content: center;
+    right: 80%;  
   }
 
   .burger_menu {
+    right: 5%;
+    margin-top: 30px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
     position: fixed;
-    width: 70px;
+    width: 90%;
     height: 50px;
     z-index: 100;
     background-color: transparent;
     transition: all 0.5s ease-in-out;
-    margin: 15px;
   }
 
   .burger_menu::before, 
@@ -262,56 +251,14 @@ html {
   }
   
   .burger_menu.active {
-    left: 38%;
     transition: all 0.5s ease-in-out;
   }
-
-
-  .brend_photo_1 img {
-    filter: grayscale(0) !important;
-    max-width: 100% !important;
-  }
-
-  .brend_photo_2 img {
-    display: none;
-  }
-
-  .brend_photo_2  {
-    margin-left: 0;
-  }
-
-  .fabric_2 {
-    right: 30%;
-    top: 960px;
-  }
-  .fabric_1 {
-    left: 57%;
-    bottom: 800px;
-  }
-
-  .serf_info p {
-    padding: 0 70px;
-  }
-
-  .footer_links_container {
-    justify-content: space-evenly;
-    column-gap: 30px;
-  }
-
-  .footer_media_icons {
-    margin-right: 0;
-  }
-
 }
 
 @media (max-width: 700px) {
 
   .main_img {
     height: 100vh;
-  }
-
-  .serf_info p {
-    padding: 0;
   }
 
   .main_brend_wrapper svg {
@@ -325,18 +272,6 @@ html {
 
   .brend_photo_1 img {
     display: none;
-  }
-
-  .fabric_2 {
-    filter: brightness(0.6) blur(2px);
-    right: 45%;
-    top: 820px;
-  }
-
-  .fabric_1 {
-    filter: brightness(0.7) blur(2px);
-    left: 50%;
-    bottom: 620px;
   }
 
   .contacty_img {
@@ -371,17 +306,6 @@ html {
 
 
 @media (max-width: 600px) { 
-  .fabric_2 {
-    filter: brightness(0.6) blur(2px);
-    right: 50%;
-    top: 994px;
-  }
-
-  .fabric_1 {
-    filter: brightness(0.7) blur(2px);
-    left: 50%;
-    bottom: 800px;
-  }
 
   .envelope {
     left: 180px;
@@ -390,48 +314,5 @@ html {
 
   .poshiv_text_area p {
     padding: 20px;
-  }
-}
-
-@media (max-width: 450px) {
-
-  .fabric_2 {
-    filter: brightness(0.6) blur(2px);
-    right: 60%;
-    top: 810px;
-    width: 500px;
-  }
-
-  .fabric_1 {
-    filter: brightness(0.7) blur(2px);
-    left: 30%;
-    bottom: 800px;
-  }
-  
-  .poshiv_text_area p {
-    font-size: 1em;
-    padding: 20px;
-  }
-  
-  .serf_info {
-    margin: -30px;
-  }
-
-  .serf_info p {
-    font-size: 1em;
-  }
-
-  .envelope {
-    left: 125px;
-    bottom: 120px;
-  }
-
-  .envelope img {
-    width: 270px;
-  }
-
-  .contacty_img {
-    right: 65%;
-    opacity: 0.2;
   }
 }

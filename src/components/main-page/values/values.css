@@ -29,35 +29,37 @@
   -webkit-text-fill-color: transparent;
 }
 
-.values_title_cursive {
-  font-family: 'Dancing_Script';
-  position: absolute;
-  font-size: 7em;
-  font-weight: 400;
-  color: #b17c0034;
-  letter-spacing: 30px;
-  margin: 0;
-}
-
 .values_wrapper {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
   flex-wrap: wrap;
+  column-gap: 20px;
   row-gap: 20px;
+  justify-content: center;
+  position: relative;
 }
 
-.value_item {
-  width: 200px;
-  height: 144px;
-  border: 2px solid #a9772061;
-  border-radius: 100px 0px 100px 0;
-  padding: 30px;
-  text-align: center;
-  display: flex;
-  align-items: center; 
-  background: #4e280d24;
+.values_wrapper img {
+  width: 700px;
+  filter: brightness(0.5);
+  z-index: 0;
+  transition: ease-in-out 3s;
 }
+
+.values_wrapper img:hover {
+  filter: grayscale(1) brightness(0.3);
+}
+
+.values_wrapper p {
+  font-size: 2.5em;
+  width: 450px;
+  position: absolute;
+  z-index: 5;
+  text-align: left;
+  margin-top: 220px;
+  margin-left: 140px;
+}
+
 
 @media (max-width: 800px) {
   .value_item {
