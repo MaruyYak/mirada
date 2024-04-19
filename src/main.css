@@ -180,7 +180,7 @@ html {
     right: 0;
     z-index: 5;
     overflow-y: auto;
-    background-color: #040303eb;
+    background-color: #040303f5;
     transition: all 0.4s ease;
     font-size: 1.8em;
     list-style: none;
@@ -204,7 +204,7 @@ html {
     position: fixed;
     width: 90%;
     height: 50px;
-    z-index: 100;
+    z-index: 1000;
     background-color: transparent;
     transition: all 0.5s ease-in-out;
   }
