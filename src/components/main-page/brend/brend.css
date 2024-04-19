@@ -1,11 +1,11 @@
 .brend_otstup {
-  margin-bottom: 100px;
+  margin-bottom: 70px;
 }
 
 .brend_section {
   margin-bottom: 100px;
   /* margin-top: 150px; */
-  background: #dcd6d0;
+  background: #b7b1aa;
   padding-top: 50px;
   padding-bottom: 150px;
 }
@@ -31,9 +31,9 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 50%;
   z-index: 5;
   transition-duration: 0.4s;
+  padding: 0 400px;
 }
 
 .brend_title {
@@ -71,27 +71,30 @@
   align-content: center;
 }
 
-@media (max-width: 1120px) {
-  .brend_info_container {
-    margin-top: -100px;
-  }
-
-  .brend_info_wrapper {
-    margin: 0 25px 0 50px;
-  }
-
+.highlight_brend {
+  font-style: italic;
+  color: #ab5600;
 }
 
-@media (max-width: 970px) {
-  .brend_info_container {
-    margin-top: -90px;
+@media (max-width: 1000px) {
+  .brend_info_wrapper {
+    padding: 0 150px;
+  }
+}
+
+@media (max-width: 800px) {
+  .brend_info_wrapper {
+    padding: 0;
+    margin: 0 50px;
+    width: 100%;
   }
 }
 
 
 @media (max-width: 700px) {
-  .brend_info_container {
-    margin-top: 60px;
+
+  .brend_section {
+    padding-top: 20px;
   }
 
   .brend_title {
@@ -99,36 +102,47 @@
     margin-left: 20px;
   }
 
-  .brend_photos_wrapper {
-    display: none;
-    width: 0%;
+  .brend_info {
+    font-size: 1.7em;
   }
 
-  .brend_info_wrapper {
-    width: 100%;
-     margin: 0;
-  }
-
-  .brend_photo_1 img {
-    display: none;
+  .brend_info_dop p {
+    text-align: left;
   }
 
 }
 
 @media (max-width: 650px) { 
 
-  .brend_title {
-    font-size: 2.5em;
+  .brend_info_dop {
+    column-gap: 25px;
+    align-items: center;
+  }
+
+  .brend_info_dop img {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 590px) { 
+  .brend_info_wrapper {
+    margin: 0 25px;
+  }
+
+  .brend_info_dop img {
+    width: 200px;
+  }
+
+  .brend_info_dop p {
+    text-align: left;
+    font-size: 1em;
   }
 }
 
 @media (max-width: 450px) {
-
-  .brend_title {
-    font-size: 2em;
-  }
-
-  .brend_info {
-    font-size: 1em;
+  .brend_info_dop img {
+    width: 180px;
+    height: 220px;
   }
 }

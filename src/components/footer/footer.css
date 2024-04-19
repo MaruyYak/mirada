@@ -4,23 +4,21 @@
   justify-content: center;
   align-items: center;
   background: #121212;
-  margin-top: 50px;
   position: relative;
   z-index: 5;
-  padding-top: 20px;
   overflow: hidden;
 }
 
 .footer_links {
   display: grid;
-  grid-template-columns: 100px 100px;
   font-size: 0.8em;
   list-style: none;
   color: #958977;
-  row-gap: 30px;
   cursor: pointer;
   padding: 0;
   justify-content: center;
+  display: flex;
+  column-gap: 30px;
 }
 
 .footer_media_icons {
@@ -82,7 +80,6 @@ footer {
   font-size: 0.8em;
   color: #bfbfbfc0;
   text-align: center;
-  margin-left: 15px;
 }
 .copyright span, 
 .secure {
@@ -102,13 +99,17 @@ footer {
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 460px) {
 
   .footer_links_container {
-    justify-content: space-evenly;
-    column-gap: 30px;
+    justify-content: center;
+    column-gap: 8px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10px;
   }
-
+  
   .footer_media_icons {
     margin-right: 0;
   }

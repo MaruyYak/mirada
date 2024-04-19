@@ -5,7 +5,7 @@
   justify-content: space-evenly;
   position: relative;
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
 }
 
 .information_block img {
@@ -13,7 +13,7 @@
   filter: brightness(0.1);
   position: absolute;
   z-index: -1;
-  height: 700px;
+  height: 600px;
   top: -40px;
 }
 
@@ -32,6 +32,7 @@
   justify-content: center;
   align-items: center;
   width: 50%;
+  row-gap: 20px;
 }
 
 .dostavka_title {
@@ -115,7 +116,7 @@
   font-size: 1.2em;
   font-weight: 400;
   text-align: center;
-  margin: 50px 0;
+  padding: 50px;
   z-index: 5;
 }
 
@@ -131,6 +132,7 @@
   z-index: 5;
   font-size: 1em;
   max-width: 400px;
+  z-index: 0;
 }
 
 .serf_zakazat_button:hover {
@@ -141,4 +143,96 @@
 .highlight_info {
   color: #9e5f1f;
   font-weight: 800;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .sertificat_title {
+    margin: 0;
+  }
+  .serf_info p {
+    font-size: 1em;
+    padding: 0;
+    margin: 30px 5px;
+  }
+  
+  .dostavka_area {
+    row-gap: 0px;
+  }
+
+  .information_block {
+    padding: 80px 10px;
+  }
+
+  .tooltiptext {
+    padding: 15px;
+    z-index: 100;
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 500px) {
+  .dostavka_title {
+    font-size: 2em;
+  }
+  .sertificat_title {
+    font-size: 2em;
+  }
+
+  .serf_info p {
+    font-size: 0.8em;
+    padding: 0;
+    margin: 30px 10px;
+  }
+
+  .dostavka_info_container h3 {
+    font-size: 1em;
+  }
+  
+  .dostavka_info_container p{
+    font-size: 0.8em;
+  }
+
+  .serf_zakazat_button {
+    padding: 10px 10px;
+    font-size: 0.6em;
+   }
+
+  .information_block {
+    padding: 40px 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .dostavka_title {
+    font-size: 1.7em;
+  }
+  .sertificat_title {
+    font-size: 1.7em;
+  }
+
+  .dostavka_info_container h3 {
+    font-size: 0.9em;
+  }
+  
+  .dostavka_info_container p{
+    font-size: 0.7em;
+  }
+
+  .sertificat_area {
+    margin-top: 45px;
+  }
+
+  .serf_zakazat_button {
+    padding: 10px 10px;
+    font-size: 0.6em;
+  }
+
+  .highlight_info {
+    font-size: 0.7em;
+  }
+
+  .information_block {
+    padding: 30px 10px;
+  }
 }

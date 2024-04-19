@@ -15,7 +15,7 @@ html {
   height: 100vh;
   margin: 0;
   overflow-x: hidden;
-  font-size: 20px;
+  font-size: 15px;
   scroll-behavior: smooth;
 }
 
@@ -32,10 +32,8 @@ html {
 .site_body {
   margin: 0;
   padding: 0;
-  /* background-color: #ffecd454;  */
   background-color: #121212;
   color: #958977;
-  /* color: #050505; */
   font-family: Bitter;
   font-style: normal;
   overflow-x: hidden;
@@ -50,7 +48,6 @@ html {
   margin: 20px 0px;
   position: absolute;
   color: #958977;
-  margin-top: 100px;
 }
 
 .nav_options {
@@ -58,7 +55,7 @@ html {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  column-gap: 20px;
+  column-gap: 70px;
   font-size: 0.8em;
   list-style: none;
   color: #958977;
@@ -106,7 +103,7 @@ html {
   max-width: 100%;
   display: flex;
   flex-direction: column;
-  padding-bottom: 100px;
+  /* padding-bottom: 100px; */
 }
 
 /* .dance_video {
@@ -118,14 +115,22 @@ html {
   filter: brightness(2);
 } */
 
-.main_img {
-  z-index: 1;
-  filter: brightness(0.4);
-  height: 100vh;
+.main_img_container {
+  padding: 80px 100px;
+}
 
+.main_img {
+  background-image: url("./components/main-page/assets/o_brende2.JPG");
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.5);
+  height: 100vh;
+  z-index: 1;
+  background-position-y: 30%;
+  
   /* стили для фото */
-  padding: 100px;
-  margin-top: 65px;
+  /* padding: 100px;
+  margin-top: 65px; */
   /* margin-bottom: -150px; */
 }
 
@@ -141,48 +146,28 @@ html {
   justify-content: left;
   flex-direction: column;
   position: absolute;
-  top: -5%;
-  transition-duration: 0.3s;
+  top: 60%;
 }
 
 .brend_wrapper path {
+  transition-duration: 0.5s;
   z-index: 5;
 }
 
 @media (max-width: 900px) {
-    .sertificat_info_container {
-      flex-direction: column-reverse;
-    }
-
-    .envelope {
-      position: relative;
-      bottom: 400px;
-      left: 190px;
-    }
-
-    .envelope img {
-      transform: rotateZ(20deg);
-      filter: blur(2px);
-      margin: 0;
-      width: 120%;
-    }
-
-    .sertificat_section {
-      margin: 350px 0 -100px 0;
-   }
-
-    html {
-      font-size: 15px;
-    }
-
-    .contacty_img {
-      bottom: 80%;
-      right: 25%;
-      opacity: 0.8;
-    }
+  html {
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 800px) {
+  .main_img_container {
+    padding: 80px 70px;
+  }
+
+  .main_img {
+    background-position-y: 0;
+  }
 
   .nav_options {
     flex-direction: column;
@@ -211,8 +196,8 @@ html {
   }
 
   .burger_menu {
-    right: 5%;
-    margin-top: 30px;
+    right: 80%;
+    margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: end;
@@ -256,6 +241,7 @@ html {
   
   .burger_menu.active {
     transition: all 0.5s ease-in-out;
+    right: 10%;
   }
 }
 
@@ -266,57 +252,36 @@ html {
   }
 
   .main_brend_wrapper svg {
-    width: 300px;
+    width: 500px;
   }
-
-  .brend_photos_wrapper {
-    display: none;
-    width: 0%;
-  }
-
-  .brend_photo_1 img {
-    display: none;
-  }
-
-  .contacty_img {
-    bottom: 76%;
-    right: 36%;
-    opacity: 0.6;
-  }
-
-  .envelope {
-    position: relative;
-    bottom: 430px;
-    left: 190px;
-    width: 70%;
-  }
-
-  .envelope img {
-    filter: brightness(1.2);
-  }
-
-  .sertificat_section {
-    margin: 250px 0 -50px 0;
-  }
-
 }
 
 @media (max-width: 650px) { 
 
-  .contacty_img {
-    right: 44%;
+  .main_img_container {
+    padding: 80px 50px;
   }
 }
 
 
 @media (max-width: 600px) { 
-
-  .envelope {
-    left: 180px;
-    bottom: 350px;
+  .main_img {
+    background-position-x: 15%;
   }
+  
+  .main_brend_wrapper svg {
+    width: 400px;
+  }
+}
 
-  .poshiv_text_area p {
-    padding: 20px;
+@media (max-width: 500px) { 
+  .main_brend_wrapper svg {
+    width: 300px;
+  }
+}
+
+@media (max-width: 390px) { 
+  .main_brend_wrapper svg {
+    width: 250px;
   }
 }
