@@ -1,8 +1,11 @@
 import { burgermenuOnload, addTooltip } from './components/mobile/mobile-menu.js';
-import { openModalPoshiv } from './components/main-page/poshiv/poshiv-zakaz-modal.js';
+import { generateFormHtml } from './components/main-page/sertificat/sertificat-modal-creator.js';
+import { setFromValidation, openModalSerf } from './components/main-page/sertificat/sertificat-modal-controller.js';
 
 window.onload = function () { 
   burgermenuOnload();
   addTooltip();
-  openModalPoshiv();
+  generateFormHtml();
+  openModalSerf();
+  setFromValidation();
 }  
