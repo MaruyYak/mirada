@@ -71,7 +71,7 @@ export function generateFormHtml() {
   nominalOptionDefault.textContent = 'Выберите номинал';
   nominalSelect.appendChild(nominalOptionDefault);
 
-  const nominalOptions = ['50', '100', '200'];
+  const nominalOptions = ['50 BYN', '100 BYN', '200 BYN'];
   nominalOptions.forEach(option => {
     const nominalOption = document.createElement('option');
     nominalOption.value = option;
@@ -176,13 +176,13 @@ export function generateFormHtml() {
   submitButton.textContent = 'Отправить';
   submitButtonAnchor.appendChild(submitButton);
 
-  const errorDiv = document.createElement('div');
-  errorDiv.id = 'error';
-  rightArea.appendChild(errorDiv);
+  // const errorDiv = document.createElement('div');
+  // errorDiv.id = 'error';
+  // rightArea.appendChild(errorDiv);
 
-  const successMsgDiv = document.createElement('div');
-  successMsgDiv.id = 'success-msg';
-  rightArea.appendChild(successMsgDiv);
+  // const successMsgDiv = document.createElement('div');
+  // successMsgDiv.id = 'success-msg';
+  // rightArea.appendChild(successMsgDiv);
 
   return contactContainer;
 }

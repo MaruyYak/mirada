@@ -14,7 +14,6 @@
   position: absolute;
   z-index: -1;
   height: 600px;
-  top: -40px;
 }
 
 .info_dash {
@@ -37,7 +36,7 @@
 
 .dostavka_title {
   font-size: 2.5em;
-  font-weight: 400;
+  font-weight: 300;
   color: #a99c89;
   position: relative;
   z-index: 5;
@@ -50,11 +49,12 @@
   align-items: center;
   width: 100%;
   z-index: 5;
+  row-gap: 15px;
 }
 
 .dostavka_info_container h3 {
   color: #a99c89;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 1.5em;
   z-index: 5;
 }
@@ -98,7 +98,7 @@
 
 .sertificat_title {
   font-size: 2.5em;
-  font-weight: 400;
+  font-weight: 300;
   color: #a99c89;
   position: relative;
   z-index: 5;
@@ -122,11 +122,10 @@
 
 .serf_zakazat_button {
   background: transparent;
-  border: solid 2px #a99c89;
+  border: solid 1px #a99c89;
   padding: 15px 17px;
   cursor: pointer;
   text-align: center;
-  margin-top: 20px;
   font-weight: 400;
   transition-duration: 0.3s;
   z-index: 5;
@@ -142,7 +141,7 @@
 
 .highlight_info {
   color: #9e5f1f;
-  font-weight: 800;
+  font-weight: 500;
   text-align: center;
 }
 
@@ -161,7 +160,6 @@
   }
 
   .information_block {
-    padding: 80px 10px;
   }
 
   .tooltiptext {
@@ -199,7 +197,18 @@
    }
 
   .information_block {
-    padding: 40px 10px;
+    flex-direction: column;
+    row-gap: 30px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .info_dash {
+    display: flex;
+    height: 0;
+    width: 250px;
+    border: 1px solid #a99c89;
+    z-index: 0;
   }
 }
 
@@ -219,10 +228,6 @@
     font-size: 0.7em;
   }
 
-  .sertificat_area {
-    margin-top: 45px;
-  }
-
   .serf_zakazat_button {
     padding: 10px 10px;
     font-size: 0.6em;
@@ -233,6 +238,6 @@
   }
 
   .information_block {
-    padding: 30px 10px;
+
   }
 }

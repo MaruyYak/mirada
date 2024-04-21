@@ -67,11 +67,13 @@
 /* Footer styles*/
 footer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   background: #121212;
   justify-content: center;
   position: relative;
+  padding: 20px 0;
+  row-gap: 10px;
   z-index: 5;
 }
 
@@ -80,6 +82,7 @@ footer {
   font-size: 0.8em;
   color: #bfbfbfc0;
   text-align: center;
+  margin: 0;
 }
 .copyright span, 
 .secure {
@@ -107,6 +110,7 @@ footer {
     flex-direction: row;
     padding-top: 10px;
     column-gap: 10px;
+    row-gap: 10px;
   }
 
   .footer_links {

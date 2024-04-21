@@ -1,6 +1,6 @@
-.poshiv_otstup {
+/* .poshiv_otstup {
   margin-bottom: 100px;
-}
+} */
 
 .poshiv_section{
   padding-top: 150px;
@@ -71,6 +71,7 @@
   text-align: justify;
   padding: 30px 80px;
   line-height: 1.6em;
+  font-family: Bitter;
 }
 
 .highlight {

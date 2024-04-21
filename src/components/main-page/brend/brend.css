@@ -7,7 +7,7 @@
   /* margin-top: 150px; */
   background: #b7b1aa;
   padding-top: 50px;
-  padding-bottom: 150px;
+  padding-bottom: 100px;
 }
 
 .brend_info_container{
@@ -34,6 +34,7 @@
   z-index: 5;
   transition-duration: 0.4s;
   padding: 0 400px;
+  row-gap: 20px;
 }
 
 .brend_title {
@@ -46,6 +47,7 @@
 }
 
 .brend_info {
+  font-family: Bitter;
   color: #231201;
   text-indent: 30px;
   font-size: 2em;
@@ -57,12 +59,26 @@
   column-gap: 50px;
 }
 
-.brend_info_dop img {
+.brend_info_img_container {
   width: 300px;
-  filter: brightness(0.5);
+  height: 300px;
+}
+.brend_info_img {
+  background-image: url("../assets/o_brende.jpg");
+  filter: brightness(0.7);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
 }
 
+/* .brend_info_dop img {
+  width: 300px;
+  filter: brightness(0.5);
+} */
+
 .brend_info_dop p {
+  font-family: Bitter;
   color: #231201;
   text-indent: 30px;
   font-size: 1.2em;
@@ -141,8 +157,18 @@
 }
 
 @media (max-width: 450px) {
-  .brend_info_dop img {
-    width: 180px;
-    height: 220px;
+
+  .brend_info_dop {
+    column-gap: 65px;
   }
+
+  .brend_info_img_container {
+    width: 30vw;
+    height: 40vh;
+  }
+
+  .brend_info_img {
+    width: 41vw;
+    height: 40vh;
+}
 }

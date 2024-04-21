@@ -154,7 +154,7 @@ textarea {
 
 .separtor {
   display: block;
-  border-bottom: 1px solid #d57600;
+  /* border-bottom: 1px solid #d57600; */
   width: 200px;
   margin-bottom: 30px;
   color: #c76e00;
@@ -369,13 +369,19 @@ input:checked + .slider:before {
   }
 
   form {
-    margin-left: 1.5rem;
+    padding-left: 2rem;
+  }
+
+  .right-col {
+    padding: 2rem 0;
+    margin-left: 10px;
   }
 }
 
 @media (max-width: 450px) {
   .modal_title {
-    font-size: 0.7rem;
+    font-size: 1rem;
+    font-weight: 400;
     line-height: 1.2rem;
   }
 
@@ -384,11 +390,14 @@ input:checked + .slider:before {
   }
 
   .modal_info {
+    margin-bottom: 100px;
     padding: 0;
-  }
+    -webkit-writing-mode: vertical-rl;
+    transform: rotate(180deg);
+   }
 
   form {
-    margin-left: 2rem;
+    padding-left: 2rem;
   }
 
   .close_modal {
