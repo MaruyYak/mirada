@@ -110,7 +110,7 @@ form {
 }
 
 input, textarea, label {
-  width: 40vw;
+  width: 35vw;
   display: block;
   margin-bottom: 0.23rem;
 }
@@ -360,7 +360,7 @@ input:checked + .slider:before {
 
   .left-img {
     width: 40vw;
-    height: 112vh;
+    height: 100vh;
   }
 
   .logo {

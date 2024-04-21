@@ -33,8 +33,7 @@ export function generateFormHtml() {
   const modalDetails = document.createElement('p');
   modalDetails.className = 'details_info';
   modalDetails.innerHTML = "— Отправляется получателю по электронной почте.<br>" +
-                            "— После оформления возврату не подлежит.<br>" +
-                            "— Действует на сайте и в бутиках.";
+                            "— После оформления возврату не подлежит.<br>"
   modalInfo.appendChild(modalDetails);
 
   contactContainer.appendChild(rightArea);
@@ -46,7 +45,7 @@ export function generateFormHtml() {
  
   const form = document.createElement('form');
   form.id = 'contact-form';
-  form.action = "https://formspree.io/f/mwkgabqy"
+  form.action = 'send-mail.php'
   form.method = 'POST';
   rightArea.appendChild(form);
 
