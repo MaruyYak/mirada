@@ -179,9 +179,9 @@ export function generateFormHtml() {
   // errorDiv.id = 'error';
   // rightArea.appendChild(errorDiv);
 
-  // const successMsgDiv = document.createElement('div');
-  // successMsgDiv.id = 'success-msg';
-  // rightArea.appendChild(successMsgDiv);
+  const successMsgDiv = document.createElement('div');
+  successMsgDiv.id = 'success-msg';
+  rightArea.appendChild(successMsgDiv);
 
   return contactContainer;
 }

@@ -15,12 +15,6 @@
   --h1-color: #FCFDFD;
 } */
 
-* {
-  margin: 0;
-  box-sizing: border-box;
-  transition: all 0.3s ease-in-out;
-}
-
 .contact-container {
   /* background: var(--bg-color); */
   background: #121212;
@@ -284,10 +278,10 @@ input:checked + .slider:before {
   .logo {
     width: 8rem;
   }
-  h1 {
+  .modal_title {
     font-size: 1.75rem;
   }
-  p {
+  .details_info {
     font-size: 0.7rem;
   }
   input, textarea, .submit_button {

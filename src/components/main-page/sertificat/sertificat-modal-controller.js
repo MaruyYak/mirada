@@ -22,10 +22,10 @@ export function setFromValidation() {
     }
   
     errorElement.innerHTML = '';
-    // successMsg.innerHTML = 'Thank you! I will get back to you as soon as possible.'; 
+    successMsg.innerHTML = 'Thank you! I will get back to you as soon as possible.'; 
   
     setTimeout(function () {
-      // successMsg.innerHTML = '';
+      successMsg.innerHTML = '';
       // errorElement.innerHTML = ''; // Clear error messages on successful submission
       contactForm.reset(); // Reset form fields
       successNotification.innerHTML = ''; // Clear success notification
