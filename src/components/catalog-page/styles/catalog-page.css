@@ -1,0 +1,282 @@
+.site_header {
+  display: flex;
+  justify-content: space-between;
+  animation: page-appearance 0.3s ease;
+  position: relative;
+  height: 50px;
+  margin: 12px 0;
+}
+
+.main_brend_logo {
+  position: absolute;
+  left: 3%;
+  z-index: 50;
+  transition-duration: 0.3s;
+}
+
+.main_link {
+  cursor: pointer;
+}
+
+/* .logo {
+  position: relative;
+  right: 45%;
+}
+
+.logo svg {
+  z-index: 5;
+  width: 90px;
+  height: 30px;
+} */
+
+.current {
+  background-color: #E2A74D !important;
+}
+
+.selected a{
+  color: #E2A74D;
+  cursor: default;
+}
+
+.open {
+  display: flex !important;
+  left: 0 !important;
+}
+
+.catalog_section {
+  margin-top: 50px;
+}
+
+.catalog_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 390px);
+  column-gap: 15px;
+  row-gap: 15px;
+  justify-content: space-between;
+  padding: 0 80px;
+}
+
+.catalog_card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 1.6px;
+}
+
+.slider_container {
+  display: flex;
+  position: relative;
+  left: -101%;
+  transition: transform 0.5s ease;
+}
+
+.turn-left {
+  left: -201%;
+  transition-duration: 0.5s;
+}
+
+.turn-right {
+  left: 0%;
+  transition-duration: 0.5s;
+}
+
+.card_photo {
+  max-width: 400px;
+  width: 400px;
+  max-height: 550px;
+  height: 530px;
+}
+/* 
+.card_photo {
+  max-width: 400px;
+  width: 400px;
+  max-height: 550px;
+  height: 550px;
+} */
+
+.slider_bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: relative;
+  z-index: 10;
+  top: -6px;
+  width: 100%;
+}
+
+.bar_item {
+  width: 80px;
+  height: 1px;
+  background: #323232;
+  transition-duration: 0.3s;
+}
+
+.card_description_wrapper {
+  border: solid 1px #585858;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 101%;
+  align-items: center;
+  height: 100%;
+  margin: 0 -2px;
+}
+
+.card_photo_description_container {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  align-items: center;
+  color: transparent;
+  padding: 5px;
+  row-gap: 10px;
+}
+
+.card_photo_price,
+.card_photo_name {
+  text-align: center;
+  color: #958977;
+  display: flex;
+  margin: 0;
+}
+
+.card_zakaz_button {
+  text-decoration: none;
+  background-color: transparent;
+  border: solid 2px #958977;
+  padding: 10px 50px;
+  cursor: pointer;
+  color: #958977;
+  font-size: 0.8em;
+  transition-duration: 0.5ms;
+}
+
+.card_zakaz_button:hover {
+  color: #b17d00;
+  border: solid 2px #b17d00;
+}
+
+.swiper_buttons{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 60%;
+  width: 100%;
+}
+
+.swiper_button_back {
+  transition-duration: 0.4ms;
+  width: 10px;
+  margin-left: 10px;
+  filter: brightness(0.3);
+}
+
+.swiper_button_next{
+  transition-duration: 0.4ms;
+  width: 10px;
+  rotate: 180deg;
+  margin-right: 10px;
+  filter: brightness(0.3);
+}
+
+.swiper_button_back:hover{
+  filter: hue-rotate(180deg) brightness(1.7);
+}
+
+.swiper_button_next:hover{
+  filter: hue-rotate(180deg) brightness(1.7);
+}
+
+.card_color_item {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+  border-radius: 100px;
+}
+
+.card_color_item:hover,
+.card_color_item:focus {
+  border: 3px solid #958977;
+}
+
+
+@media (max-width: 999px) { 
+  .card_photo{
+    width: 300px;
+    height: 400px;
+  }
+  .catalog_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    margin: 0 20px;
+  }
+}
+
+@media (max-width: 900px) { 
+  .contacty_img {
+    bottom: 260px;
+    left: 100px;
+  }
+
+  .contacty_img img {
+    width: 160%;
+ }
+}
+
+@media (max-width: 820px) { 
+  .catalog_container {
+    padding: 0 30px;
+  }
+  .card_zakaz_button {
+    padding: 5px 25px;
+  }
+  .main_brend_logo {
+    left: 42%;
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 650px) { 
+  .card_photo{
+    width: 300px;
+    height: 400px;
+  } 
+  .catalog_container {
+    grid-template-columns: repeat(auto-fill, 300px);
+    margin: 0 10px;
+    padding: 0 0;
+  }
+}
+
+@media (max-width: 440px) { 
+
+  .card_photo{
+    width: 350px;
+    height: 500px;
+  } 
+  .catalog_container {
+    grid-template-columns: repeat(auto-fill, 350px);
+    margin: 0 10px;
+    padding: 0 0;
+  }
+
+  .catalog_section {
+    display: flex;
+    justify-content: center;
+  }
+
+  .catalog_container {
+    margin: 0 10px;
+    row-gap: 20px;
+  }
+
+  .card_zakaz_button {
+    padding: 5px 30px;
+  }
+
+  .contacty_img {
+    width: 30%;
+}
+}
