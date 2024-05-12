@@ -13,6 +13,16 @@ export const cardItems = [
           './catalog-page/catalog-photo-base/cape-skirt/leopard/IMG_5158.JPG'
         ],
       },
+      {
+        color: 'blue-leopard',
+        price: '150 BYN',
+        path: './catalog-page/assets/samples/blue-leopard.png',
+        photos: [
+          './catalog-page/catalog-photo-base/cape-skirt/blue-leopard/IMG_5958.jpg',
+          './catalog-page/catalog-photo-base/cape-skirt/blue-leopard/IMG_5958.jpg',
+          './catalog-page/catalog-photo-base/cape-skirt/blue-leopard/IMG_5958.jpg',
+        ],
+      },
     ],
   },
   {
@@ -125,12 +135,22 @@ export const cardItems = [
         ], 
       },
     ],
-  }
+  },
+  {
+    id: 7,
+    itemName: 'Юбка VEGA',
+    color: [
+      {
+        color: 'zebra',
+        price: '180 BYN',
+        path: './catalog-page/assets/samples/zebra.png',
+        photos: [
+          './catalog-page/catalog-photo-base/scirt-vega/zebra/IMG_1325.JPG',
+          './catalog-page/catalog-photo-base/scirt-vega/zebra/IMG_2567.jpg',
+          './catalog-page/catalog-photo-base/scirt-vega/zebra/IMG_2375.JPG',
+          './catalog-page/catalog-photo-base/scirt-vega/zebra/IMG_1261.JPG',
+        ],
+      },
+    ],
+  },
 ]
-
-
-// "shorts - 90" 
-
-// "top-actual - 120"
-// "top-elegant - 140"
-// "top-basic - 130"
