@@ -4,7 +4,7 @@
 }
 
 .policy_header {
-  height: 80px;
+  height: 50px;
 }
 
 .policy_title {
@@ -20,4 +20,24 @@
 .policy_list {
   color: #b4a58d;
   line-height: 1.6em;
+}
+
+@media (max-width: 800px) {
+  .policy_content {
+    margin: 0px 80px;
+  }
+
+  .policy_title {
+    font-size: 2em;
+  }
+}
+@media (max-width: 600px) {
+  .policy_content {
+    margin: 0px 50px;
+  }
+}
+@media (max-width: 450px) {
+  .policy_content {
+    margin: 0px 20px;
+  }
 }

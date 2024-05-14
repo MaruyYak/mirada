@@ -29,8 +29,13 @@ html {
 }
 
 a {
-  text-decoration: underline;
+  text-decoration: none;
   color: #bfbfbfc0;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #bfbfbfde;
 }
 
 .touch-auto {
