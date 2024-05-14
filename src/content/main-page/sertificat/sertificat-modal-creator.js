@@ -218,7 +218,7 @@ inputRContainer.appendChild(recieverContactInput);
   //Recipient message input information
   const messageLabel = document.createElement('label');
   messageLabel.setAttribute('for', 'message');
-  messageLabel.textContent = 'Сообщение';
+  messageLabel.textContent = 'Сообщение получателю';
   form.appendChild(messageLabel);
 
   const messageTextarea = document.createElement('textarea');

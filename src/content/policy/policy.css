@@ -14,14 +14,10 @@
 }
 
 .policy_content {
-  margin: 50px 100px;
+  margin: 0px 100px;
 }
 
 .policy_list {
   color: #b4a58d;
   line-height: 1.6em;
-}
-.policy_list a {
-  text-decoration:none;
-  color: bisque;
 }

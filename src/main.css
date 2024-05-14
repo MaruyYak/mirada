@@ -28,6 +28,11 @@ html {
   font-family: Bitter;
 }
 
+a {
+  text-decoration: underline;
+  color: #bfbfbfc0;
+}
+
 .touch-auto {
   touch-action: auto;
 }
