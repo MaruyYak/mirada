@@ -11,7 +11,7 @@
   align-items: center;
   margin-top: 100px;
   width: 100%;
-  background: #b7b1aa;
+  background: #ededed;
   column-gap: 30px;
 }
 
@@ -88,8 +88,8 @@
 }
 
 .highlight {
-  color: #5f2f00;
-  font-weight: 800;
+  color: #312e2b;
+  font-weight: 600;
 }
 
 .poshiv_button_wrapper {
@@ -137,7 +137,7 @@
 @media (max-width: 900px) {
   .poshiv_title_wrapper {
     margin: 0;
-    padding: 0 50px;
+    padding: 0 40px;
     width: auto;
   }
   .poshiv_title {
@@ -178,7 +178,7 @@
   }
   .poshiv_area p {
     font-size: 1em;
-    padding: 10px 40px;
+    padding: 10px 45px;
   }
 
   .zakaz_img_set {
@@ -259,7 +259,7 @@
 
 
   .poshiv_title {
-    font-size: 1.3em;
+    font-size: 1.5em;
   }
   .poshiv_topdash, 
   .poshiv_bottomdash {

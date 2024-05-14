@@ -170,7 +170,6 @@ export const cardItems = [
           './catalog-page/catalog-photo-base/scirt-vega/zebra/IMG_1325.JPG',
           './catalog-page/catalog-photo-base/scirt-vega/zebra/IMG_2567.jpg',
           './catalog-page/catalog-photo-base/scirt-vega/zebra/IMG_2375.JPG',
-          './catalog-page/catalog-photo-base/scirt-vega/zebra/IMG_1261.JPG',
         ],
       },
     ],

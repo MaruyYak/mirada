@@ -78,7 +78,6 @@
   align-items: center;
   border-top: none;
   border-radius: 3px;
-  padding: 5px;
   z-index: 10;
   overflow: hidden;
 }
@@ -93,6 +92,7 @@
   text-align: center;
   font-weight: 300;
   margin: 0;
+  padding: 5px;
 }
 
 
