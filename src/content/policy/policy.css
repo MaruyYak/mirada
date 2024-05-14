@@ -35,9 +35,23 @@
   .policy_content {
     margin: 0px 50px;
   }
+  .policy_logo svg {
+    width: 200px;
+  }
 }
-@media (max-width: 450px) {
+@media (max-width: 500px) {
+
+  .policy_title {
+    font-size: 1.5em;
+  }
   .policy_content {
     margin: 0px 20px;
+  }
+  .policy_content h3{
+    font-size: 1.1em;
+    line-height: 1.5em;
+  }
+  .policy_logo svg {
+    width: 100px;
   }
 }
