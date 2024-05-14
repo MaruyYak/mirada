@@ -1,5 +1,5 @@
-import { burgermenuOnload, addTooltip } from './components/mobile/mobile-menu.js';
-import { openModalSerf, loadFormPage } from './components/main-page/sertificat/sertificat-modal-controller.js';
+import { burgermenuOnload, addTooltip } from './content/mobile/mobile-menu.js';
+import { openModalSerf, loadFormPage } from './content/main-page/sertificat/sertificat-modal-controller.js';
 
 window.onload = function () { 
   window.location.hash = '';

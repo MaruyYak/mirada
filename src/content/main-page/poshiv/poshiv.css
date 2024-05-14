@@ -1,0 +1,269 @@
+/* .poshiv_otstup {
+  margin-bottom: 100px;
+} */
+
+.poshiv_section{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  width: 100%;
+  background: #b7b1aa;
+  column-gap: 30px;
+}
+
+.poshiv_title_wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 50px;
+  width: 40%;
+}
+
+.poshiv_title {
+  color: #231201;
+  text-align: right;
+  line-height: 1.6em;
+  font-size: 2.4em;
+  font-weight: 300;
+  margin: 0;
+}
+
+.poshiv_area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+}
+
+.zakaz_img_set {
+  position: relative;
+  justify-content: center;
+  display: grid;
+  /* grid-template-columns: repeat(auto-fill, 200px); */
+  grid-template-columns: 180px 180px;
+  gap: 5px;
+  margin-top: 30px;
+}
+
+.zakaz_img_set img {
+  width: 180px;
+  filter: grayscale(1) brightness(1.3);
+  transition: 0.5s;
+  border-radius: 3px;
+}
+
+.zakaz_img_set img:hover{
+  filter: grayscale(0) brightness(1);
+}
+
+.poshiv_topdash, 
+.poshiv_bottomdash {
+  display: flex;
+  width: 600px;
+  border: 1px solid #231201;
+}
+
+.poshiv_topdash {
+  margin-bottom: 30px;
+}
+.poshiv_bottomdash {
+  margin-top: 30px;
+}
+
+.poshiv_area p {
+  margin: 0;
+  color: #231201;
+  font-size: 1em;
+  text-align: justify;
+  text-indent: 30px;
+  padding: 0 80px;
+  line-height: 1.6em;
+  font-family: Bitter;
+}
+
+.highlight {
+  color: #5f2f00;
+  font-weight: 800;
+}
+
+.poshiv_button_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+}
+
+.poshiv_zakazat_button {
+  background-color: #19141282;
+  border: solid 2px #958977;
+  padding: 15px 17px;
+  cursor: pointer;
+  text-align: center;
+  margin: 0;
+  font-weight: 400;
+  transition-duration: 0.3s;
+  z-index: 5;
+  max-width: 400px;
+}
+
+.poshiv_zakazat_button:hover {
+  /* background: #191412; */
+  color: #b17d00;
+  border: solid 2px #b17d00;
+}
+
+
+.catalog_button {
+  display: none;
+}
+
+
+@media (max-width: 950px) {
+  .poshiv_section{
+    padding: 100px 20px;
+  }
+  .poshiv_title {
+    font-size: 2.6em;
+  }
+}
+
+@media (max-width: 900px) {
+  .poshiv_title_wrapper {
+    margin: 0;
+    padding: 0 50px;
+    width: auto;
+  }
+  .poshiv_title {
+    text-align: justify;
+  }
+  
+  .poshiv_section{
+    flex-direction: column;
+    padding: 100px 0;
+  }
+
+  .poshiv_area {
+    margin-top: 30px;
+    padding-right: 0;
+    width: auto;
+
+  }
+}
+
+@media (max-width: 700px) {
+  .poshiv_title {
+    font-size: 2em;
+  }
+  
+  .poshiv_area p {
+    font-size: 1em;
+  }
+
+  .poshiv_topdash, 
+  .poshiv_bottomdash {
+    width: 400px;
+  }
+}
+
+@media (max-width: 500px) {
+  .poshiv_title {
+    font-size: 1.9em;
+  }
+  .poshiv_area p {
+    font-size: 1em;
+    padding: 10px 40px;
+  }
+
+  .zakaz_img_set {
+    grid-template-columns: 150px 150px;
+    gap: 10px;
+  }
+  
+  .poshiv_topdash, 
+  .poshiv_bottomdash {
+    width: 350px;
+    display: none;
+  }
+
+  .zakaz_img_set img {
+    filter: grayscale(0) brightness(0.9);
+    width: 150px;
+  }
+
+  .catalog_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .catalog_btn {
+    cursor: pointer;
+    padding: 10px 50px;
+    background: transparent;
+    border: solid 1px #121212;
+    text-align: center;
+    font-weight: 400;
+    transition-duration: 0.3s;
+    z-index: 5;
+    max-width: 400px;
+    z-index: 0;
+    animation-name: btn_move;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    transform: scale(1);
+  }
+
+  @keyframes btn_move {
+    0% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+
+  .catalog_btn a {
+    text-decoration: none;
+    color: #121212;
+  }
+
+}
+
+@media (max-width: 450px) {
+
+  @keyframes text_anim {
+    from {
+      font-size: 1em;
+      margin-bottom: 0px;
+    }
+    to {
+      font-size: 2em;
+      margin-bottom: 380px;
+      padding: 0 10px;
+    }
+  }
+
+
+  .poshiv_title {
+    font-size: 1.3em;
+  }
+  .poshiv_topdash, 
+  .poshiv_bottomdash {
+    width: 300px;
+  }
+}
+

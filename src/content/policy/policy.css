@@ -1,0 +1,27 @@
+.policy_logo {
+  display: flex;
+  justify-content: center;
+}
+
+.policy_header {
+  height: 80px;
+}
+
+.policy_title {
+  text-align: center;
+  font-size: 3em;
+  margin-top: 50px;
+}
+
+.policy_content {
+  margin: 50px 100px;
+}
+
+.policy_list {
+  color: #b4a58d;
+  line-height: 1.6em;
+}
+.policy_list a {
+  text-decoration:none;
+  color: bisque;
+}

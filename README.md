@@ -1,6 +1,6 @@
 # Website
 
-![MIRADA Logo](https://github.com/MaruyYak/mirada/blob/main/src/components/main-page/assets/full_logo.svg)
+![MIRADA Logo](https://github.com/MaruyYak/mirada/blob/main/src/content/main-page/assets/full_logo.svg)
 
 Welcome to the MIRADA website! This repository contains the source code for the brand website, where we showcase our products.
 
