@@ -13,6 +13,8 @@
   width: 100%;
   background: #ededed;
   column-gap: 30px;
+  z-index: 1;
+  overflow: hidden;
 }
 
 .poshiv_title_wrapper {

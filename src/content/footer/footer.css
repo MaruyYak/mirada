@@ -34,11 +34,10 @@
 
 .link a {
   text-decoration: none;
-  color: #958977;
 }
 
 .link a:hover {
-  color: #E2A74D;;
+  color: #887964;
 }
 
 .footer_inst a{
@@ -55,7 +54,6 @@
 .footer_inst p,
 .footer_telega p {
   margin-left: 10px;
-  color: #958977;
   text-decoration: none;
   font-size: 0.8em;
   margin-bottom: 0;
@@ -67,7 +65,7 @@
 
 .footer_inst p:hover,
 .footer_telega p:hover {
-  color: #E2A74D;;
+  color: #887964;
 }
 
 /* Footer styles*/
@@ -101,12 +99,20 @@ footer {
 
 .copyright span:hover,
 .secure:hover {
-  color: #d3d3d3b6;
+  color: #887964;
 }
 .copyright:before {
   content: '©';
 }
 
+
+@media (max-width: 600px) {
+  .copyright, 
+  .secure {
+    padding: 0 80px;
+    line-height: 1.5em;
+  }
+}
 
 @media (max-width: 480px) {
   .footer_links_container {

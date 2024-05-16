@@ -46,7 +46,8 @@ a:hover {
   margin: 0;
   padding: 0;
   background-color: #121212;
-  color: #a99c89;
+  /* color: #a99c89; */
+  color: #ccc9c5;
   font-style: normal;
   overflow-x: hidden;
 }
@@ -144,24 +145,6 @@ a:hover {
   margin: 70px 0;
   border-radius: 3px;
 }
-
-
-/* .main_img_container {
-  padding: 80px 100px;
-}
-.main_img {
-  background-image: url("./content/main-page/assets/o_brende2.JPG");
-  background-size: cover;
-  background-position: center;
-  filter: brightness(0.5);
-  height: 100vh;
-  z-index: 1;
-  background-position-y: 30%;
-}
-
-.main_img img {
-  width: 100%;
-} */
 
 .main_brend_wrapper {
   z-index: 10;
@@ -293,6 +276,15 @@ a:hover {
   .main_brend_wrapper svg {
     width: 350px;
   }
+
+  /* .main_img {
+    background-image: url("./content/main-page/assets/moon.png");
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.6) contrast(1.1);
+    height: 100vh;
+    z-index: 1;
+  } */
 }
 
 @media (max-width: 500px) { 
