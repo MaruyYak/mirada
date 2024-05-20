@@ -148,7 +148,22 @@
     margin: 0;
   }
 
-  .value_item.value_animated p {
+  .value_animate_right {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  .value_animate_left {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  .value_item.value_anim_show {
+    opacity: 1;
+    transition: all 1s;
+    transform: translateX(0%);
+  }
+
+  /* .value_item.value_animated p {
     animation-name: text_anim;
     color: #d7cebfba;
     animation-duration: 1s;
@@ -158,5 +173,5 @@
   .value_item.value_animated img {
     transform: scale(1.5);
     filter: brightness(0.3);
-  }
+  } */
 }

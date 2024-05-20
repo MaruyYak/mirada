@@ -27,9 +27,9 @@ export function initializeValueAnimation() {
   function onEntry(entries, observer) {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('value_animated');
+        entry.target.classList.add('value_anim_show');
       } else {
-        entry.target.classList.remove('value_animated');
+        entry.target.classList.remove('value_anim_show');
       }
     });
   }
