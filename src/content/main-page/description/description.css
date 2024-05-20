@@ -171,10 +171,10 @@
   }
 
   .description_info_dop_1 p {
-    text-align: left;
+    text-align: right ;
   }
   .description_info_dop_2 p {
-    text-align: right;
+    text-align: left;
   }
 
 }
@@ -214,7 +214,7 @@
 
   .description_info_dop_1 p,
   .description_info_dop_2 p {
-    font-size: 0.8em;
+    font-size: 0.9em;
   }
 }
 
