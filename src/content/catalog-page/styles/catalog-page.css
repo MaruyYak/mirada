@@ -176,9 +176,13 @@
   border-radius: 100px;
 }
 
+.color_selected {
+  border: 2px solid #bfbfbfc0;
+}
+
 .card_color_item:hover,
 .card_color_item:focus {
-  border: 3px solid #958977;
+  border: 3px solid #bfbfbfc0;
 }
 
 

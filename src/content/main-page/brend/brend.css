@@ -3,11 +3,11 @@
 }
 
 .brend_section {
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
   /* margin-top: 150px; */
   background: #ededed;
   padding-top: 50px;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 
 .brend_info_container{
@@ -34,7 +34,7 @@
   z-index: 5;
   transition-duration: 0.4s;
   padding: 0 400px;
-  row-gap: 20px;
+  row-gap: 30px;
 }
 
 .brend_title {
@@ -144,7 +144,7 @@
   }
 
   .brend_info {
-    font-size: 1.7em;
+    font-size: 1.5em;
   }
 
   .brend_info_dop p {

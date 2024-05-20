@@ -60,17 +60,6 @@ export class Card {
     photoDesContainer.appendChild(colorContainer);
 
     this.generateSampleColors(colorContainer)
-
-    // const cardButtonContainer = document.createElement('div');
-    // cardButtonContainer.className = 'button_container';
-    // cardDescriptionWrapper.appendChild(cardButtonContainer);
-
-    // const cardButton = document.createElement('a');
-    // cardButton.className = 'card_zakaz_button';
-    // cardButton.innerText = 'ЗАКАЗАТЬ';
-    // cardButton.href = 'https://www.instagram.com/direct/t/17845085046113727';
-    // cardButton.target = '_blank';
-    // cardButtonContainer.appendChild(cardButton);
     
     const swipperButtons = document.createElement('div');
     swipperButtons.className = 'swiper_buttons';
@@ -113,6 +102,7 @@ export class Card {
   
       colorItem.addEventListener('click', () => {
         this.selectColor(i);
+        colorItem.classList.toggle('color_selected')
       })
     }
   }
