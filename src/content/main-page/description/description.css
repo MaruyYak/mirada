@@ -54,12 +54,14 @@
   flex-direction: row-reverse;
   column-gap: 50px;
   height: 350px;
+  align-items: center;
 }
 
 .description_info_dop_2 {
   display: flex;
   column-gap: 50px;
   height: 350px;
+  align-items: center;
 }
 
 .description_info_img_container {
@@ -172,9 +174,11 @@
 
   .description_info_dop_1 p {
     text-align: right ;
+    text-indent: 0px;
   }
   .description_info_dop_2 p {
     text-align: left;
+    text-indent: 0px;
   }
 
 }
@@ -185,6 +189,7 @@
   .description_info_dop_2 {
     column-gap: 20px;
     align-items: center;
+    height: 50vh;
   }
 
   .description_info_dop_1 p,
@@ -219,9 +224,6 @@
 }
 
 @media (max-width: 470px) {
-  .description_info_img_container {
-    height: 300px;
-  }
   .description_info_img_1,
   .description_info_img_2 {
     width: 40vw;
@@ -235,14 +237,11 @@
 
 @media  (max-width: 415px) {
   .description_section {
-    padding-top: 120px;
+    padding-top: 50px;
   }
 }
 
 @media (max-width: 400px) {
-  .description_info_img_container {
-    height: 300px;
-  }
   .description_info_img_1,
   .description_info_img_2 {
     width: 40vw;

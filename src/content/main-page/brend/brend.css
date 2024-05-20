@@ -191,11 +191,12 @@
 
   .brend_info_dop {
     column-gap: 65px;
+    height: 50vh;
   }
 
   .brend_info_img_container {
     width: 30vw;
-    height: 40vh;
+    height: 50vh;
   }
 
   .brend_info_img {
