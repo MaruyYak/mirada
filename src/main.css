@@ -166,6 +166,10 @@ a:hover {
   z-index: 5;
 }
 
+.burger_media_icons {
+  display: none;
+}
+
 @media (min-width: 1550px) {
 
   html {
@@ -202,7 +206,6 @@ a:hover {
     transition: all 0.4s ease;
     font-size: 1.8em;
     list-style: none;
-    color: #958977;
     row-gap: 60px;
     margin: 0;
     align-items: center;
@@ -260,6 +263,35 @@ a:hover {
   .burger_menu.active {
     transition: all 0.5s ease-in-out;
     right: 10%;
+  }
+
+  .burger_media_icons {
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    top: 70%;
+    left: -100vw;
+    right: 0;
+    bottom: 0;
+    z-index: 5;
+    align-items: center;
+    row-gap: 15px;
+  }
+  
+  .icons_container {
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+  }
+
+  .follow_us {
+    color: #a19f9c;
+  }
+
+  .icons_container svg{
+    width: 35px;
+    height: 35px;
   }
 }
 

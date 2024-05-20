@@ -184,8 +184,8 @@
   }
 
   .zakaz_img_set {
-    grid-template-columns: 150px 150px;
-    gap: 10px;
+    grid-template-columns: 200px 200px;
+    gap: 0px;
   }
   
   .poshiv_topdash, 
@@ -195,8 +195,8 @@
   }
 
   .zakaz_img_set img {
-    filter: grayscale(0) brightness(0.9);
-    width: 150px;
+    filter: grayscale(1) brightness(0.9);
+    width: 200px;
   }
 
   .catalog_button {

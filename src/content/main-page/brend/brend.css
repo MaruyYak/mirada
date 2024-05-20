@@ -169,20 +169,25 @@
 @media (max-width: 590px) { 
   .brend_info_wrapper {
     margin: 0 25px;
-    row-gap: 50px;
+    row-gap: 40px;
   }
 
-  .brend_info_dop img {
+  .brend_info_img {
     width: 200px;
   }
 
   .brend_info_dop p {
+    text-indent: 0px;
     text-align: left;
     font-size: 1em;
   }
 }
 
 @media (max-width: 450px) {
+
+  .brend_section {
+    padding-bottom: 0px;
+  } 
 
   .brend_info_dop {
     column-gap: 65px;
@@ -194,7 +199,15 @@
   }
 
   .brend_info_img {
-    width: 41vw;
-    height: 40vh;
+    width: 40vw;
+    height: 50vh;
+  }
 }
+
+@media (max-width: 400px) {
+
+  .brend_info_dop p {
+    font-size: 0.83em;
+  }
+
 }
