@@ -56,7 +56,10 @@
     margin: 0px 50px;
   }
   .policy_logo svg {
-    width: 200px;
+    padding-top: 10px;
+  }
+  .policy_logo {
+    left: 40%;
   }
 }
 @media (max-width: 500px) {
@@ -70,8 +73,5 @@
   .policy_content h3{
     font-size: 1.1em;
     line-height: 1.5em;
-  }
-  .policy_logo svg {
-    width: 200px;
   }
 }
