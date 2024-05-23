@@ -1,32 +1,6 @@
 export const cardItems = [
   {
     id: 1,
-    itemName: 'Юбка накидка MIRADA',
-    color: [
-      {
-        color: 'leopard',
-        price: '150 BYN',
-        path: './catalog-page/assets/samples/leopard.png',
-        photos: [
-          './catalog-page/catalog-photo-base/cape-skirt/leopard/IMG_5152.JPG',
-          './catalog-page/catalog-photo-base/cape-skirt/leopard/IMG_5157.JPG',
-          './catalog-page/catalog-photo-base/cape-skirt/leopard/IMG_5158.JPG'
-        ],
-      },
-      {
-        color: 'blue-leopard',
-        price: '150 BYN',
-        path: './catalog-page/assets/samples/blue-leopard.png',
-        photos: [
-          './catalog-page/catalog-photo-base/cape-skirt/blue-leopard/IMG_5958.jpg',
-          './catalog-page/catalog-photo-base/cape-skirt/blue-leopard/IMG_5958.jpg',
-          './catalog-page/catalog-photo-base/cape-skirt/blue-leopard/IMG_5958.jpg',
-        ],
-      },
-    ],
-  },
-  {
-    id: 2,
     itemName: 'Юбка ARABIC',
     color: [
       {
@@ -36,7 +10,7 @@ export const cardItems = [
         photos: [
           './catalog-page/catalog-photo-base/skirt-arabic/green/IMG_3145.JPG',
           './catalog-page/catalog-photo-base/skirt-arabic/green/IMG_3139.JPG',
-          './catalog-page/catalog-photo-base/skirt-arabic/green/IMG_3157.JPG'
+          './catalog-page/catalog-photo-base/skirt-arabic/green/IMG_3157.JPG',
         ], 
       },
       {
@@ -56,13 +30,13 @@ export const cardItems = [
         photos: [
           './catalog-page/catalog-photo-base/skirt-arabic/pink/IMG_511.JPG',
           './catalog-page/catalog-photo-base/skirt-arabic/pink/IMG_3588.JPG',
-          './catalog-page/catalog-photo-base/skirt-arabic/pink/IMG_3585.JPG'
+          './catalog-page/catalog-photo-base/skirt-arabic/pink/IMG_3585.JPG',
           ], 
       }
     ],
   },
   {
-    id: 3,
+    id: 2,
     itemName: 'Топ ACTUAL',
     color: [
       {
@@ -72,7 +46,7 @@ export const cardItems = [
         photos: [
           './catalog-page/catalog-photo-base/top-actual/black/IMG_2926.JPG',
           './catalog-page/catalog-photo-base/top-actual/black/IMG_2934.JPG',
-          './catalog-page/catalog-photo-base/top-actual/black/IMG_2899.JPG'
+          './catalog-page/catalog-photo-base/top-actual/black/IMG_2899.JPG',
         ], 
       },
       {
@@ -88,7 +62,7 @@ export const cardItems = [
     ],
   },
   {
-    id: 4,
+    id: 3,
     itemName: 'Топ ELEGANT',
     color: [
       {
@@ -116,7 +90,7 @@ export const cardItems = [
     ],
   },
   {
-    id: 5,
+    id: 4,
     itemName: 'Топ BASIC',
     color: [
       {
@@ -143,7 +117,7 @@ export const cardItems = [
     ],
   },
   {
-    id: 6,
+    id: 5,
     itemName: 'Шорты',
     color: [
       {
@@ -159,7 +133,7 @@ export const cardItems = [
     ],
   },
   {
-    id: 7,
+    id: 6,
     itemName: 'Юбка VEGA',
     color: [
       {
@@ -170,6 +144,32 @@ export const cardItems = [
           './catalog-page/catalog-photo-base/scirt-vega/zebra/IMG_1325.JPG',
           './catalog-page/catalog-photo-base/scirt-vega/zebra/IMG_2567.jpg',
           './catalog-page/catalog-photo-base/scirt-vega/zebra/IMG_2375.JPG',
+        ],
+      },
+    ],
+  },
+  {
+    id: 7,
+    itemName: 'Юбка накидка MIRADA',
+    color: [
+      {
+        color: 'leopard',
+        price: '150 BYN',
+        path: './catalog-page/assets/samples/leopard.png',
+        photos: [
+          './catalog-page/catalog-photo-base/cape-skirt/leopard/IMG_5152.JPG',
+          './catalog-page/catalog-photo-base/cape-skirt/leopard/IMG_5157.JPG',
+          './catalog-page/catalog-photo-base/cape-skirt/leopard/IMG_5158.JPG'
+        ],
+      },
+      {
+        color: 'blue-leopard',
+        price: '150 BYN',
+        path: './catalog-page/assets/samples/blue-leopard.png',
+        photos: [
+          './catalog-page/catalog-photo-base/cape-skirt/blue-leopard/IMG_5958.jpg',
+          './catalog-page/catalog-photo-base/cape-skirt/blue-leopard/IMG_5958.jpg',
+          './catalog-page/catalog-photo-base/cape-skirt/blue-leopard/IMG_5958.jpg',
         ],
       },
     ],
