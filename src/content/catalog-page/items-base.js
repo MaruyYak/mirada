@@ -174,4 +174,20 @@ export const cardItems = [
       },
     ],
   },
+  {
+    id: 8,
+    itemName: 'Топ EVA',
+    color: [
+      {
+        color: 'gold',
+        price: '150 BYN',
+        path: './catalog-page/assets/samples/gold.png',
+        photos: [
+          './catalog-page/catalog-photo-base/top-eva/gold/img_9382.jpg',
+          './catalog-page/catalog-photo-base/top-eva/gold/img_5836.jpg',
+          './catalog-page/catalog-photo-base/top-eva/gold/img_9725.jpg',
+        ],
+      },
+    ],
+  },
 ]

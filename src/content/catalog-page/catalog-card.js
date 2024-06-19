@@ -15,6 +15,14 @@ export class Card {
     this.catalogCard.innerHTML = '';
     this.catalogCard.className = 'catalog_card';
 
+    const loaderContainer = document.createElement('div');
+    loaderContainer.className = 'loader_container';
+    this.catalogCard.appendChild(loaderContainer);
+
+    const loader = document.createElement('div');
+    loader.className = 'loader';
+    loaderContainer.appendChild(loader);
+
     const sliderContainer = document.createElement('div');
     sliderContainer.className = 'slider_container';
     this.catalogCard.appendChild(sliderContainer);
@@ -78,6 +86,8 @@ export class Card {
     this.setSlider(swipeNext, swipeBack, sliderContainer);
 
     addTachSwiper(sliderContainer, swipeBack, swipeNext);
+
+    addPhotoClickHandler(sliderContainer);
   }
 
   getHtmlElement() {
@@ -181,5 +191,17 @@ function addTachSwiper(sliderContainer, swipeBack, swipeNext) {
       }
       startX = null;
     }
+  });
+}
+
+function addPhotoClickHandler(sliderContainer) {
+  sliderContainer.querySelectorAll('.card_photo').forEach(img => {
+    img.addEventListener('click', () => {
+      const imgSrc = img.src;
+      const card = img.closest('.catalog_card');
+      const photos = Array.from(card.querySelectorAll('.card_photo')).map(photo => photo.src);
+      const index = photos.indexOf(imgSrc);
+      openModal(photos, index);
+    });
   });
 }

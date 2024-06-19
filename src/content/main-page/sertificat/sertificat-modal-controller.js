@@ -17,9 +17,10 @@ export function loadFormPage() {
 
 export function openModalSerf() {
   const zakazSerfButton = document.querySelector('.serf_zakazat_button');
-  zakazSerfButton.addEventListener('click', function() {
-    loadFormPage()
-  });
+  const mobileSerfMenu = document.querySelector('.sertificat');
+  [mobileSerfMenu, zakazSerfButton].forEach(button => button.addEventListener('click', function() {
+      loadFormPage()
+  }));
 }
 
 export function closeModal() {
@@ -29,7 +30,7 @@ export function closeModal() {
     formContainer.remove();
     siteHeader.style.display = 'flex'
     siteMain.style.display  = 'flex'
-    window.location.hash = ''
+    window.location.hash = '#information'
 }
 
 export function addListenerToCloseModal() {

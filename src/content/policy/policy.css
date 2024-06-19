@@ -5,8 +5,8 @@
 
 .policy_logo {
   position: absolute;
-  left: 3%;
-  z-index: 50;
+  left: 46%;
+  z-index: 105;
   transition-duration: 0.3s;
 }
 
@@ -15,7 +15,12 @@
 }
 
 .policy_header {
+  display: flex;
+  justify-content: space-between;
+  animation: page-appearance 0.3s ease;
+  position: relative;
   height: 50px;
+  margin: 12px 0;
 }
 
 .policy_title {

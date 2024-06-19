@@ -25,7 +25,7 @@ html {
   height: 100vh;
   margin: 0;
   color: #958977;
-  background-color: #121212;
+  background-color: #ebebeb;
   overflow-x: hidden;
   font-size: 15px;
   scroll-behavior:smooth;
@@ -49,8 +49,7 @@ a:hover {
 .site_body {
   margin: 0;
   padding: 0;
-  background-color: #121212;
-  /* color: #a99c89; */
+  background-color: #ede6e6ed;
   color: #ccc9c5;
   font-style: normal;
   overflow-x: hidden;
@@ -72,11 +71,10 @@ a:hover {
   z-index: 100;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-end;
   width: 100%;
-  margin: 20px 0px;
+  padding: 20px 50px;
   position: absolute;
-  color: #958977;
 }
 
 .nav_options {
@@ -84,11 +82,21 @@ a:hover {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  column-gap: 70px;
+  column-gap: 15px;
   font-size: 1em;
   list-style: none;
-  color: #958977;
   transition: all 0.4s ease;
+}
+
+.follow_us, .dostavka, .sertificat{
+  display: none;
+  color: #bfbfbfc0;
+}
+
+.socials_container {
+  display: flex;
+  flex-direction: row;
+  column-gap: 15px
 }
 
 .option {
@@ -97,11 +105,20 @@ a:hover {
 
 .option a {
   text-decoration: none;
-  color: #958977;
 }
 
 .option a:hover {
-  color: #E2A74D;;
+  color: #a57020;
+}
+
+.menu_inst path,
+.menu_telega path {
+  fill: #ccc9c5;
+}
+
+.menu_inst:hover path,
+.menu_telega:hover path {
+  fill: #a57020;
 }
 
 .open {
@@ -124,12 +141,13 @@ a:hover {
   cursor: pointer;
 }
 .nav_media_icons a:hover svg path {
-  fill: #E2A74D;
+  fill: #a57020;
 }
 
 .main_section {
   position: relative;
   max-width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   /* padding-bottom: 100px; */
@@ -158,7 +176,7 @@ a:hover {
   justify-content: left;
   flex-direction: column;
   position: absolute;
-  top: 50%;
+  top: 60%;
 }
 
 .brend_wrapper path {
@@ -191,6 +209,10 @@ a:hover {
 
 @media (max-width: 800px) {
 
+  .menu {
+    z-index: 200;
+  }
+
   .nav_options {
     flex-direction: column;
     position: fixed;
@@ -200,15 +222,44 @@ a:hover {
     bottom: 0;
     left: -100vw;
     right: 0;
-    z-index: 5;
+    z-index: 205;
     overflow-y: auto;
     background-color: #040303f5;
     transition: all 0.4s ease;
-    font-size: 1.8em;
+    font-size: 1.5em;
     list-style: none;
-    row-gap: 60px;
+    row-gap: 40px;
     margin: 0;
     align-items: center;
+  }
+
+  .nav_options.open .option:last-child {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    padding-top: 80px;
+  }
+
+  .dostavka, .sertificat{
+    display: flex;
+  }
+
+  .follow_us {
+    display: flex;
+    font-size: 0.8em;
+    color: #a19f9c;
+  }
+
+  .socials_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 15px;
+  }
+
+  .socials_container svg{
+    width: 35px;
+    height: 35px;
   }
 
   .menu {
@@ -264,35 +315,6 @@ a:hover {
     transition: all 0.5s ease-in-out;
     right: 10%;
   }
-
-  .burger_media_icons {
-    position: fixed;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    top: 70%;
-    left: -100vw;
-    right: 0;
-    bottom: 0;
-    z-index: 5;
-    align-items: center;
-    row-gap: 15px;
-  }
-  
-  .icons_container {
-    display: flex;
-    flex-direction: row;
-    column-gap: 15px;
-  }
-
-  .follow_us {
-    color: #a19f9c;
-  }
-
-  .icons_container svg{
-    width: 35px;
-    height: 35px;
-  }
 }
 
 @media (max-width: 700px) {
@@ -312,15 +334,6 @@ a:hover {
   .main_brend_wrapper svg {
     width: 350px;
   }
-
-  /* .main_img {
-    background-image: url("./content/main-page/assets/moon.png");
-    background-size: cover;
-    background-position: center;
-    filter: brightness(0.6) contrast(1.1);
-    height: 100vh;
-    z-index: 1;
-  } */
 }
 
 @media (max-width: 500px) { 

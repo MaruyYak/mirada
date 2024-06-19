@@ -123,6 +123,17 @@
 }
 
 @media (max-width: 700px) {
+  .value_item:hover p {
+    animation-name: none;
+    pointer-events: none;
+  }
+  .value_item:hover img {
+   pointer-events: none;
+   transform: none;
+   filter: none;
+  }
+  
+
   .values_wrapper {
     margin: 0 20px;
     grid-template-columns: repeat(auto-fill, minmax(31vw, 1fr));

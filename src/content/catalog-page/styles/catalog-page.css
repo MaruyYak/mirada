@@ -1,16 +1,16 @@
+
 .site_header {
   display: flex;
   justify-content: space-between;
   animation: page-appearance 0.3s ease;
   position: relative;
   height: 50px;
-  margin: 12px 0;
 }
 
 .main_brend_logo {
   position: absolute;
-  left: 3%;
-  z-index: 50;
+  left: 46%;
+  z-index: 105;
   transition-duration: 0.3s;
 }
 
@@ -23,7 +23,7 @@
 }
 
 .selected a{
-  color: #E2A74D;
+  color: #a57020;
   cursor: default;
 }
 
@@ -36,19 +36,45 @@
   margin-top: 50px;
 }
 
+.disclaimer {
+  background-color: rgb(21, 20, 20);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 10px 0;
+  height: 30px;
+  position: relative;
+}
+
+.disclaimer p {
+  animation: notifMove 25s linear infinite;
+  white-space: nowrap;
+  font-size: 0.9em;
+}
+
+@keyframes notifMove {
+  from {
+    transform: translateX(170%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
 .catalog_container {
   display: grid;
   grid-template-columns: repeat(auto-fill, 390px);
   column-gap: 15px;
   row-gap: 15px;
   justify-content: space-between;
-  padding: 0 80px;
+  padding: 0 50px;
 }
 
 .catalog_card {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  position: relative;
   padding: 1.6px;
 }
 
@@ -74,6 +100,7 @@
   width: 390px;
   max-height: 550px;
   height: 530px;
+  cursor: pointer;
 }
 
 .slider_bar {
@@ -185,6 +212,30 @@
   border: 3px solid #bfbfbfc0;
 }
 
+.loader_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loader {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 3px solid rgb(255 255 255 / 30%);
+  border-radius: 50%;
+  border-top: 3px solid #fff;
+  animation: spin 1s ease-in-out infinite;
+  position: absolute;
+  top: 36%;
+}
+  
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 
 @media (max-width: 999px) { 
   .card_photo{
@@ -237,9 +288,27 @@
     margin: 0 10px;
     padding: 0 0;
   }
+
+  @keyframes notifMove {
+    from {
+      transform: translateX(50%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
 }
 
 @media (max-width: 440px) { 
+
+  @keyframes notifMove {
+    from {
+      transform: translateX(30%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
 
   .card_photo{
     width: 350px;

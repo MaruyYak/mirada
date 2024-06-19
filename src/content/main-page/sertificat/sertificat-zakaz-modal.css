@@ -72,10 +72,12 @@
 
 .modal_title {
   color:var(--h1-color);
+  text-align: center;
   text-transform: uppercase;
   font-size: 2.5rem;
   letter-spacing: 0.5rem;
   font-weight: 300;
+  padding: 0 50px;
 }
 
 .input_s_container, .input_r_container {
@@ -144,11 +146,6 @@ input, textarea {
   background: transparent;
   opacity: 0.5; 
   width: 100%;
-}
-
-
-input:focus-within, textarea:focus-within {
-  transform: scale(1.1);
 }
 
 textarea {
@@ -346,6 +343,7 @@ input:checked + .slider:before {
 
   .modal_title {
     font-size: 1.5rem;
+    padding: 0;
   }
 
   .details_info {
