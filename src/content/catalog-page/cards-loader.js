@@ -9,5 +9,6 @@ export function generateCardHtml() {
     catalogContainer.appendChild(card.getHtmlElement())
     return card;
   });
+  
   return catalogContainer;
 }

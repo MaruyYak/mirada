@@ -1,3 +1,4 @@
+import { photoModal } from './photo-modal.js'
 export class Card {
   catalogCard;
 
@@ -86,8 +87,7 @@ export class Card {
     this.setSlider(swipeNext, swipeBack, sliderContainer);
 
     addTachSwiper(sliderContainer, swipeBack, swipeNext);
-
-    addPhotoClickHandler(sliderContainer);
+    photoModal();
   }
 
   getHtmlElement() {
@@ -191,17 +191,5 @@ function addTachSwiper(sliderContainer, swipeBack, swipeNext) {
       }
       startX = null;
     }
-  });
-}
-
-function addPhotoClickHandler(sliderContainer) {
-  sliderContainer.querySelectorAll('.card_photo').forEach(img => {
-    img.addEventListener('click', () => {
-      const imgSrc = img.src;
-      const card = img.closest('.catalog_card');
-      const photos = Array.from(card.querySelectorAll('.card_photo')).map(photo => photo.src);
-      const index = photos.indexOf(imgSrc);
-      openModal(photos, index);
-    });
   });
 }

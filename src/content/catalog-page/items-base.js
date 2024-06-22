@@ -20,7 +20,7 @@ export const cardItems = [
         photos: [
           './catalog-page/catalog-photo-base/skirt-arabic/black/IMG_2938.JPG',
           './catalog-page/catalog-photo-base/skirt-arabic/black/IMG_2943.JPG',
-          './catalog-page/catalog-photo-base/skirt-arabic/black/IMG_2616.JPEG'
+          './catalog-page/catalog-photo-base/skirt-arabic/black/IMG_2616.JPEG',
           ], 
       },
       {
@@ -186,6 +186,16 @@ export const cardItems = [
           './catalog-page/catalog-photo-base/top-eva/gold/img_9382.jpg',
           './catalog-page/catalog-photo-base/top-eva/gold/img_5836.jpg',
           './catalog-page/catalog-photo-base/top-eva/gold/img_9725.jpg',
+        ],
+      },
+      {
+        color: 'white',
+        price: '150 BYN',
+        path: './catalog-page/assets/samples/white.png',
+        photos: [
+          './catalog-page/catalog-photo-base/top-eva/white/IMG_9441.JPG',
+          './catalog-page/catalog-photo-base/top-eva/white/IMG_9742.JPG',
+          './catalog-page/catalog-photo-base/top-eva/white/IMG_20240613_115300_249.jpg',
         ],
       },
     ],

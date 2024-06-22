@@ -48,7 +48,7 @@ export function photoModal() {
   }
 
   document.addEventListener('keydown', function(event) {
-    if (modal.style.display === 'block') {
+    if (modal.style.display === 'flex') {
       if (event.key === 'ArrowLeft') {
         currentModalIndex = (currentModalIndex - 1 + modalImages.length) % modalImages.length;
         updateModalImage();
@@ -81,6 +81,5 @@ export function photoModal() {
     }
   });
 }
-
 
 
