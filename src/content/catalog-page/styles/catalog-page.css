@@ -19,11 +19,11 @@
 }
 
 .current {
-  background-color: #E2A74D !important;
+  background-color: #958977bd !important;
 }
 
 .selected a{
-  color: #a57020;
+  color: #11100fcb;
   cursor: default;
 }
 
@@ -37,7 +37,7 @@
 }
 
 .disclaimer {
-  background-color: rgb(21, 20, 20);
+  background-color: rgba(21, 20, 20, 0.729);
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -47,9 +47,10 @@
 }
 
 .disclaimer p {
-  animation: notifMove 25s linear infinite;
+  animation: notifMove 28s linear infinite;
   white-space: nowrap;
   font-size: 0.9em;
+  color: #ebe6e6e2;
 }
 
 @keyframes notifMove {
@@ -141,7 +142,7 @@
 .card_photo_price,
 .card_photo_name {
   text-align: center;
-  color: #958977;
+  color: #121212;
   display: flex;
   margin: 0;
   font-size: 0.8em;
@@ -153,7 +154,7 @@
   border: solid 2px #958977;
   padding: 10px 50px;
   cursor: pointer;
-  color: #958977;
+  color: #121212;
   font-size: 0.8em;
   transition-duration: 0.5ms;
 }
@@ -190,10 +191,12 @@
 
 .swiper_button_back:hover{
   filter: hue-rotate(180deg) brightness(1.7);
+  cursor: pointer;
 }
 
 .swiper_button_next:hover{
   filter: hue-rotate(180deg) brightness(1.7);
+  cursor: pointer;
 }
 
 .card_color_item {
@@ -222,9 +225,9 @@
   display: inline-block;
   width: 50px;
   height: 50px;
-  border: 3px solid rgb(255 255 255 / 30%);
+  border: 3px solid rgba(178, 175, 175, 0.8);
   border-radius: 50%;
-  border-top: 3px solid #fff;
+  border-top: 3px solid #403f3f;
   animation: spin 1s ease-in-out infinite;
   position: absolute;
   top: 36%;
@@ -272,6 +275,13 @@
     padding-top: 10px;
   }
 }
+
+@media (max-width: 800px) { 
+  .selected a {
+    color: #ffffffcb;
+  }
+}
+
 @media (max-width: 715px) { 
   .catalog_container {
     justify-content: center

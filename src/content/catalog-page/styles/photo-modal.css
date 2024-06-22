@@ -62,13 +62,17 @@
   color: #bbb;
 }
 
-@media (max-width: 700px) { 
+@media screen and (max-width: 700px) {
   .modal-prev, .modal-next {
-  display: none;
+    display: none;
+  }
+
+  .modal-content {
+    width: 100%;
   }
 }
 
-@media (max-width: 520px) { 
+@media screen and (max-width: 520px) {
   .modal-content {
     max-width: 380px;
   }

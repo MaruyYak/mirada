@@ -24,7 +24,7 @@ html {
   width: 100%;
   height: 100vh;
   margin: 0;
-  color: #958977;
+  color: #121212;
   background-color: #ebebeb;
   overflow-x: hidden;
   font-size: 15px;
@@ -39,7 +39,7 @@ a {
 }
 
 a:hover {
-  color: #bfbfbfde;
+  color: #5f5b5bdc;
 }
 
 .touch-auto {
@@ -50,7 +50,7 @@ a:hover {
   margin: 0;
   padding: 0;
   background-color: #ede6e6ed;
-  color: #ccc9c5;
+  color: #121212;
   font-style: normal;
   overflow-x: hidden;
 }
@@ -105,20 +105,23 @@ a:hover {
 
 .option a {
   text-decoration: none;
+  color: #121212;
 }
 
 .option a:hover {
-  color: #a57020;
+  color: #5f5b5bdc;
 }
 
 .menu_inst path,
 .menu_telega path {
-  fill: #ccc9c5;
+  /* fill: #bfbfbfc0; */
+  fill: #121212;
 }
 
 .menu_inst:hover path,
 .menu_telega:hover path {
-  fill: #a57020;
+  /* fill: #b0aeaedc; */
+  fill: #121212;
 }
 
 .open {
@@ -233,6 +236,20 @@ a:hover {
     align-items: center;
   }
 
+  .option a {
+    color: #bfbfbfc0;
+  }
+  
+  .menu_inst path,
+  .menu_telega path {
+    fill: #bfbfbfc0;
+  }
+  
+  .menu_inst:hover path,
+  .menu_telega:hover path {
+    fill: #b0aeaedc;
+  }
+
   .nav_options.open .option:last-child {
     display: flex;
     flex-direction: column;
@@ -247,7 +264,7 @@ a:hover {
   .follow_us {
     display: flex;
     font-size: 0.8em;
-    color: #a19f9c;
+    /* color: #a19f9c; */
   }
 
   .socials_container {
