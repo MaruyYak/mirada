@@ -17,7 +17,7 @@
   display: grid;
   font-size: 0.8em;
   list-style: none;
-  color: #958977;
+  color: #fff;
   cursor: pointer;
   padding: 0;
   justify-content: center;
@@ -52,15 +52,15 @@
 }
 .footer_inst p,
 .footer_telega p {
-  color: #bfbfbfc0;
+  color: #ffff;
   margin-left: 10px;
   text-decoration: none;
   font-size: 0.8em;
   margin-bottom: 0;
 }
-.footer_inst a,
-.footer_telega a {
-  text-decoration: none;
+.footer_inst path,
+.footer_telega path {
+  color: #ffff;
 }
 
 .footer_inst p:hover,
@@ -82,23 +82,23 @@ footer {
 }
 
 .copyright {
-  color: #bfbfbfc0;
+  color: #ffff;
   font-size: 0.8em;
   text-align: center;
   margin: 0;
 }
 
 .copyright a {
-  color: #bfbfbfc0;
+  color: #ffff;
 }
 
 .copyright span {
-  color: #bfbfbfc0;
+  color: #ffff;
 }
 
 .secure {
   cursor: pointer;
-  color: #bfbfbfc0;
+  color: #ffff;
 }
 
 .copyright span:hover,

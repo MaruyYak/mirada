@@ -25,7 +25,7 @@ html {
   height: 100vh;
   margin: 0;
   color: #121212;
-  background-color: #ebebeb;
+  /* background-color: #ebebeb; */
   overflow-x: hidden;
   font-size: 15px;
   scroll-behavior:smooth;
@@ -34,8 +34,8 @@ html {
 
 a {
   text-decoration: none;
-  color: #bfbfbfc0;
   cursor: pointer;
+  color: #121212;
 }
 
 a:hover {
@@ -49,7 +49,8 @@ a:hover {
 .site_body {
   margin: 0;
   padding: 0;
-  background-color: #ede6e6ed;
+  /* background-color: #ede6e6ed; */
+  background-color: #ffffff;
   color: #121212;
   font-style: normal;
   overflow-x: hidden;
@@ -83,14 +84,14 @@ a:hover {
   justify-content: center;
   flex-wrap: wrap;
   column-gap: 15px;
-  font-size: 1em;
+  font-size: 1.5em;
   list-style: none;
   transition: all 0.4s ease;
 }
 
 .follow_us, .dostavka, .sertificat{
   display: none;
-  color: #bfbfbfc0;
+  color:#c6c6c6;
 }
 
 .socials_container {
@@ -105,7 +106,7 @@ a:hover {
 
 .option a {
   text-decoration: none;
-  color: #121212;
+  color: #c6c6c6;
 }
 
 .option a:hover {
@@ -114,8 +115,8 @@ a:hover {
 
 .menu_inst path,
 .menu_telega path {
-  /* fill: #bfbfbfc0; */
-  fill: #121212;
+  fill: #c6c6c6;
+  /* fill: #121212; */
 }
 
 .menu_inst:hover path,
@@ -166,7 +167,7 @@ a:hover {
   height: 100vh;
   z-index: 1;
   filter: brightness(0.7) contrast(1.2);
-  transform: rotate(90deg) scale(2.2);
+  transform: rotate(90deg) scale(2.26);
   margin: 70px 0;
   border-radius: 3px;
 }
@@ -179,7 +180,21 @@ a:hover {
   justify-content: left;
   flex-direction: column;
   position: absolute;
-  top: 60%;
+  top: 20%;
+  row-gap: 10px;
+}
+
+.main_brend_wrapper path {
+  fill: #c6c6c6;
+}
+
+.clothes {
+  font-size: 1.5em;
+  color: #ffffff;
+  z-index: 10;
+  position: relative;
+  left: 0%;
+  font-weight: 200;
 }
 
 .brend_wrapper path {
@@ -190,6 +205,8 @@ a:hover {
 .burger_media_icons {
   display: none;
 }
+
+
 
 @media (min-width: 1550px) {
 
@@ -332,6 +349,11 @@ a:hover {
     transition: all 0.5s ease-in-out;
     right: 10%;
   }
+
+  .main_brend_wrapper svg {
+    width: 600px;
+    height: 200px;
+  }
 }
 
 @media (max-width: 700px) {
@@ -339,17 +361,19 @@ a:hover {
   .main_video {
     width: 100vw;
     height: 100vh;
-    transform: rotate(0deg) scale(2);
+    transform: rotate(180deg) scale(2);
   }
 
   .main_brend_wrapper svg {
     width: 400px;
+    height: 200px;
   }
 }
 
 @media (max-width: 600px) { 
   .main_brend_wrapper svg {
     width: 350px;
+    height: 150px;
   }
 }
 
