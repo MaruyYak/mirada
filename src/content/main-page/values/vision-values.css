@@ -15,7 +15,7 @@
 
 .policy_logo {
   position: absolute;
-  left: 46%;
+  left: 47%;
   z-index: 105;
   transition-duration: 0.3s;
 }
@@ -30,7 +30,7 @@
   animation: page-appearance 0.3s ease;
   position: relative;
   height: 50px;
-  margin: 12px 0;
+  /* margin: 12px 0; */
 }
 
 .vv_section {
@@ -45,5 +45,19 @@
 .values_title {
   font-size: 4em;
   font-weight: 300;
-  color: #000000;
+  color: #121212;
+}
+
+
+@media (max-width: 470px) {
+  .values_title {
+    font-size: 3em;
+    font-weight: 300;
+    color: #121212;
+  }
+
+  .policy_logo {
+    left: 39%;
+    margin-top: 9px;
+  }
 }
