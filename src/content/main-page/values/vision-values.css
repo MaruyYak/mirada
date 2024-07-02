@@ -1,0 +1,49 @@
+.nav_options .option a {
+  text-decoration: none;
+  color: #121212;
+}
+
+.nav_options .menu_inst path,
+.nav_options .menu_telega path {
+  fill: #121212;
+}
+
+.nav_options .menu_inst:hover path,
+.nav_options.menu_telega:hover path {
+  fill: #5f5b5bdc;
+}
+
+.policy_logo {
+  position: absolute;
+  left: 46%;
+  z-index: 105;
+  transition-duration: 0.3s;
+}
+
+.policy_logo svg {
+  width: 100px;
+}
+
+.policy_header {
+  display: flex;
+  justify-content: space-between;
+  animation: page-appearance 0.3s ease;
+  position: relative;
+  height: 50px;
+  margin: 12px 0;
+}
+
+.vv_section {
+  width: 100%;
+  /* max-width: 72.6rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.values_title {
+  font-size: 4em;
+  font-weight: 300;
+  color: #000000;
+}

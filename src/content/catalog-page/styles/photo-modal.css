@@ -19,13 +19,15 @@
 .modal-content {
   margin: auto;
   display: flex;
-  width: 100%;
-  max-width: 500px;
+  /* width: 100%; */
+  /* max-width: 500px; */
+  max-height: 100vh;
 }
 
 /* Кнопка закрытия */
 .close {
   position: absolute;
+  z-index: 5;
   top: 15px;
   right: 35px;
   color: #f1f1f1;
@@ -48,6 +50,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   transform: translateY(-50%);
 }
 
@@ -56,6 +59,7 @@
   color: white;
   font-size: 2em;
   padding: 0 50px;
+  z-index: 1;
 }
 
 .modal-prev:hover, .modal-next:hover {

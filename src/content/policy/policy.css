@@ -3,6 +3,21 @@
   justify-content: center;
 } */
 
+.option a {
+  text-decoration: none;
+  color: #121212;
+}
+
+.menu_inst path,
+.menu_telega path {
+  fill: #121212;
+}
+
+.menu_inst:hover path,
+.menu_telega:hover path {
+  fill: #5f5b5bdc;
+}
+
 .policy_logo {
   position: absolute;
   left: 46%;

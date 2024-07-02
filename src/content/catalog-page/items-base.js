@@ -4,6 +4,16 @@ export const cardItems = [
     itemName: 'Юбка ARABIC',
     color: [
       {
+        color: 'white',
+        price: '180 BYN',
+        path: './catalog-page/assets/samples/white.png',
+        photos: [
+          './catalog-page/catalog-photo-base/skirt-arabic/white/IMG_20240609_142407_785.jpg',
+          './catalog-page/catalog-photo-base/skirt-arabic/white/IMG_20241000007250.jpg',
+          './catalog-page/catalog-photo-base/skirt-arabic/white/IMG_20241000007253.jpg',
+        ], 
+      },
+      {
         color: 'green',
         price: '180 BYN',
         path: './catalog-page/assets/samples/green.png',
@@ -25,7 +35,7 @@ export const cardItems = [
       },
       {
         color: 'pink',
-        price: '220 BYN',
+        price: '180 BYN',
         path: './catalog-page/assets/samples/pink.png',
         photos: [
           './catalog-page/catalog-photo-base/skirt-arabic/pink/IMG_511.JPG',
@@ -179,16 +189,6 @@ export const cardItems = [
     itemName: 'Топ EVA',
     color: [
       {
-        color: 'gold',
-        price: '150 BYN',
-        path: './catalog-page/assets/samples/gold.png',
-        photos: [
-          './catalog-page/catalog-photo-base/top-eva/gold/img_9382.jpg',
-          './catalog-page/catalog-photo-base/top-eva/gold/img_5836.jpg',
-          './catalog-page/catalog-photo-base/top-eva/gold/img_9725.jpg',
-        ],
-      },
-      {
         color: 'white',
         price: '150 BYN',
         path: './catalog-page/assets/samples/white.png',
@@ -196,6 +196,42 @@ export const cardItems = [
           './catalog-page/catalog-photo-base/top-eva/white/IMG_9441.JPG',
           './catalog-page/catalog-photo-base/top-eva/white/IMG_9742.JPG',
           './catalog-page/catalog-photo-base/top-eva/white/IMG_20240613_115300_249.jpg',
+        ],
+      },
+      {
+        color: 'black',
+        price: '150 BYN',
+        path: './catalog-page/assets/samples/black.png',
+        photos: [
+          './catalog-page/catalog-photo-base/top-eva/black/IMG_20240630_224403_993.jpg',
+          './catalog-page/catalog-photo-base/top-eva/black/IMG_21000005902.jpg',
+          './catalog-page/catalog-photo-base/top-eva/black/IMG_21000006716.jpg',
+        ],
+      },
+      {
+        color: 'gold',
+        price: '150 BYN',
+        path: './catalog-page/assets/samples/gold.png',
+        photos: [
+          './catalog-page/catalog-photo-base/top-eva/gold/IMG_9755.JPG',
+          './catalog-page/catalog-photo-base/top-eva/gold/IMG_9755.JPG',
+          './catalog-page/catalog-photo-base/top-eva/gold/IMG_9755.JPG',
+        ],
+      },
+    ],
+  },
+  {
+    id: 9,
+    itemName: 'Купальник NOVA',
+    color: [
+      {
+        color: 'black',
+        price: '120 BYN',
+        path: './catalog-page/assets/samples/black.png',
+        photos: [
+          './catalog-page/catalog-photo-base/swimsuit-nova/black/1000031459.jpg',
+          './catalog-page/catalog-photo-base/swimsuit-nova/black/1000031457.jpg',
+          './catalog-page/catalog-photo-base/swimsuit-nova/black/1000031458.jpg',
         ],
       },
     ],

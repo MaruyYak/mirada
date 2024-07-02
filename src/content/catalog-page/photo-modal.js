@@ -2,6 +2,8 @@ export function photoModal() {
   const modal = document.getElementById('imageModal');
   const modalImg = document.getElementById('modalImage');
   const span = document.getElementsByClassName('close')[0];
+  const prev = document.querySelector('.modal-prev');
+  const next = document.querySelector('.modal-next');
 
   let currentModalIndex = 0;
   let modalImages = [];
@@ -21,12 +23,12 @@ export function photoModal() {
     modal.style.display = 'none';
   }
 
-  window.onclick = function(event) {
-    if (event.target === modal) {
+  modal.addEventListener('click', function(event) {
+    if (event.target !== modalImg && event.target !== prev && event.target !== next) {
       modal.style.display = 'none';
     }
-  }
-
+  });
+  
   document.querySelectorAll('.card_photo').forEach(img => {
     img.addEventListener('click', function() {
       const imgSrc = this.src;
@@ -37,12 +39,12 @@ export function photoModal() {
     });
   });
 
-  document.querySelector('.modal-prev').onclick = function() {
+  prev.onclick = function() {
     currentModalIndex = (currentModalIndex - 1 + modalImages.length) % modalImages.length;
     updateModalImage();
   }
 
-  document.querySelector('.modal-next').onclick = function() {
+  next.onclick = function() {
     currentModalIndex = (currentModalIndex + 1) % modalImages.length;
     updateModalImage();
   }

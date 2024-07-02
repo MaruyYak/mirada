@@ -22,9 +22,27 @@
   background-color: #958977bd !important;
 }
 
-.selected a{
-  color: #11100fcb;
+.option a {
+  text-decoration: none;
+  color: #121212;
+}
+
+.menu_inst path,
+.menu_telega path {
+  /* fill: #bfbfbfc0; */
+  fill: #121212;
+}
+
+.menu_inst:hover path,
+.menu_telega:hover path {
+  fill: #5f5b5bdc;
+  /* fill: #121212; */
+}
+
+.selected a {
+  color: #958977bd;
   cursor: default;
+  pointer-events: none;
 }
 
 .open {
@@ -278,7 +296,21 @@
 
 @media (max-width: 800px) { 
   .selected a {
-    color: #ffffffcb;
+    color: #ffffffcb !important;
+  }
+
+  .option a {
+    color: #bfbfbfc0;
+  }
+  
+  .menu_inst path,
+  .menu_telega path {
+    fill: #bfbfbfc0;
+  }
+  
+  .menu_inst:hover path,
+  .menu_telega:hover path {
+    fill: #b0aeaedc;
   }
 }
 

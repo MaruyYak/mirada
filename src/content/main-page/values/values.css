@@ -4,8 +4,8 @@
 } */
 
 .values_section{
-  padding: 120px 0;
-  background-color: rgb(22, 19, 17);
+  /* padding: 100px 0; */
+  /* background-color: rgb(22, 19, 17); */
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -41,6 +41,8 @@
   filter: contrast(1.1) brightness(0.7);
   border-radius: 3px;
   transition: transform 0.6s, filter 0.6s;
+  transform: scale(1.5);
+  filter: brightness(0.33);
 }
 
 .value_item_border {
@@ -55,10 +57,9 @@
 }
 
 .value_item p {
-  font-family: 'Bitter';
   position: absolute;
   width: 100%;
-  font-size: 1.3em;
+  font-size: 1.4em;
   position: absolute;
   z-index: 2;
   text-align: center;
@@ -69,9 +70,12 @@
   top: 0px;
   left: 0;
   transition: top 1s, padding 1s;
+  top: -180px;
+  padding: 0 20px;
+  color: #bfbfbff2;
 }
 
-.value_item:hover p {
+/* .value_item:hover p {
   top: -180px;
   padding: 0 20px;
   color: #bfbfbff2;
@@ -80,7 +84,7 @@
 .value_item:hover img {
   transform: scale(1.5);
   filter: brightness(0.33);
-}
+} */
 
 
 
@@ -93,13 +97,14 @@
 
 @media (max-width: 700px) {
   .value_item:hover p {
+    top: 7px;
     animation-name: none;
     pointer-events: none;
   }
   .value_item:hover img {
     pointer-events: none;
     transform: none;
-    filter: none;
+    filter: brightness(0.7);
   }
   
   .values_wrapper {
@@ -127,7 +132,7 @@
     margin: 0;
   }
 
-  .value_animate_right {
+  /* .value_animate_right {
     opacity: 0;
     transform: translateX(100px);
   }
@@ -140,6 +145,6 @@
     opacity: 1;
     transition: all 1s;
     transform: translateX(0%);
-  }
+  } */
 
 }
