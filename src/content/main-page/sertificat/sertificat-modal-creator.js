@@ -13,10 +13,6 @@ export function generateFormHtml() {
   leftAreaImg.src = "./content/main-page/assets/sertificat.png";
   leftArea.appendChild(leftAreaImg);
 
-  const leftAreaLogo = document.createElement('div');
-  leftAreaLogo.className = 'logo';
-  leftArea.appendChild(leftAreaLogo);
-
   const rightArea = document.createElement('div');
   rightArea.className = 'right-col';
   formContainer.appendChild(rightArea);
@@ -57,6 +53,19 @@ export function generateFormHtml() {
   separator1.textContent = 'О ВАС';
   form.appendChild(separator1);
 
+  // Sender input information
+  const nameLabel = document.createElement('label');
+  nameLabel.setAttribute('for', 'name');
+  nameLabel.textContent = 'Ваше имя';
+  form.appendChild(nameLabel);
+
+  const nameInput = document.createElement('input');
+  nameInput.type = 'text';
+  nameInput.id = 'name';
+  nameInput.name = 'sender-name';
+  nameInput.placeholder = 'Имя';
+  form.appendChild(nameInput);
+
   // Sender nominal dropdown information
   const senderNominalDpdw = document.createElement('div');
   senderNominalDpdw.classList.add('dropdown');
@@ -94,19 +103,6 @@ export function generateFormHtml() {
     
     ulElement.appendChild(liElement);
   });
-
-   // Sender input information
-  const nameLabel = document.createElement('label');
-  nameLabel.setAttribute('for', 'name');
-  nameLabel.textContent = 'Ваше имя';
-  form.appendChild(nameLabel);
-
-  const nameInput = document.createElement('input');
-  nameInput.type = 'text';
-  nameInput.id = 'name';
-  nameInput.name = 'sender-name';
-  nameInput.placeholder = 'Имя';
-  form.appendChild(nameInput);
   
   // Dropdown with sender contacts information
   const contactSenderDrpdw = document.createElement('div');

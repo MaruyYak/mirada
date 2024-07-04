@@ -87,6 +87,13 @@
   flex: 1;
 }
 
+.breand_descrp a {
+  font-size: smaller;
+  text-decoration: underline;
+  text-underline-position: under;
+  text-decoration-thickness: 1px;
+}
+
 .description_info_dop_1 p, 
 .description_info_dop_2 p {
   font-family: Bitter;

@@ -49,6 +49,18 @@
 }
 
 
+@media (max-width: 800px) {
+  .nav_options .option a {
+    text-decoration: none;
+    color: #bfbfbfc0;
+  }
+  
+  .nav_options .menu_inst path,
+  .nav_options .menu_telega path {
+    fill: #bfbfbfc0;
+  }
+}
+
 @media (max-width: 470px) {
   .values_title {
     font-size: 3em;

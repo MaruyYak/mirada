@@ -151,8 +151,8 @@ export const cardItems = [
         price: '180 BYN',
         path: './catalog-page/assets/samples/gold.png',
         photos: [
-          './catalog-page/catalog-photo-base/scirt-vega/gold/IMG_20240612_222028_155.jpg',
           './catalog-page/catalog-photo-base/scirt-vega/gold/IMG_20240701_003213_549.jpg',
+          './catalog-page/catalog-photo-base/scirt-vega/gold/IMG_20240612_222028_155.jpg',
           './catalog-page/catalog-photo-base/scirt-vega/gold/IMG_0136.jpg',
         ],
       },

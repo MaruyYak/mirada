@@ -70,6 +70,16 @@
   .policy_title {
     font-size: 2em;
   }
+
+  .option a {
+    text-decoration: none;
+    color: #bfbfbfc0;
+  }
+  
+  .menu_inst path,
+  .menu_telega path {
+    fill: #bfbfbfc0;
+  }
 }
 @media (max-width: 600px) {
   .policy_content {
