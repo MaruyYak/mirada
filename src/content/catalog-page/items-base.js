@@ -147,10 +147,21 @@ export const cardItems = [
     itemName: 'Юбка VEGA',
     color: [
       {
+        color: 'gold',
+        price: '180 BYN',
+        path: './catalog-page/assets/samples/gold.png',
+        photos: [
+          './catalog-page/catalog-photo-base/scirt-vega/gold/IMG_20240612_222028_155.jpg',
+          './catalog-page/catalog-photo-base/scirt-vega/gold/IMG_20240701_003213_549.jpg',
+          './catalog-page/catalog-photo-base/scirt-vega/gold/IMG_0136.jpg',
+        ],
+      },
+      {
         color: 'zebra',
         price: '180 BYN',
         path: './catalog-page/assets/samples/zebra.png',
         photos: [
+          './catalog-page/catalog-photo-base/scirt-vega/zebra/IMG_2853.jpg',
           './catalog-page/catalog-photo-base/scirt-vega/zebra/IMG_1325.JPG',
           './catalog-page/catalog-photo-base/scirt-vega/zebra/IMG_2567.jpg',
           './catalog-page/catalog-photo-base/scirt-vega/zebra/IMG_2375.JPG',
