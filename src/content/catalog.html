@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./main-page/brend/brend.css">
     <link rel="stylesheet" href="./catalog-page/styles/catalog-page.css">
     <link rel="stylesheet" href="./catalog-page/styles/photo-modal.css">
+    <link rel="stylesheet" href="./catalog-page/styles/filter.css">
     <link rel="stylesheet" href="./footer/footer.css">
     <link rel="icon"type="image/x-icon">
       <!-- Meta Pixel Code -->
@@ -101,21 +102,51 @@
           <span></span>
         </div>
       </header>
-      
-      <section class="catalog_section" id="catalog">
-        <div class="catalog_container"></div>
-      </section>
 
-      <div id="imageModal" class="modal">
-        <span class="close">&times;</span>
-        <div class="modal-nav">
-          <span class="modal-prev">&lt;</span>
-          <img class="modal-content" id="modalImage">
-          <span class="modal-next">&gt;</span>
+      <main class="catalog_section">    
+        <div class="filters">
+          <div class="filter-toggle" id="filterToggle">
+            <svg class="icon icon-filter" aria-hidden="true" focusable="false" role="presentation" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path fill-rule="evenodd" d="M4.833 6.5a1.667 1.667 0 1 1 3.334 0 1.667 1.667 0 0 1-3.334 0ZM4.05 7H2.5a.5.5 0 0 1 0-1h1.55a2.5 2.5 0 0 1 4.9 0h8.55a.5.5 0 0 1 0 1H8.95a2.5 2.5 0 0 1-4.9 0Zm11.117 6.5a1.667 1.667 0 1 0-3.334 0 1.667 1.667 0 0 0 3.334 0ZM13.5 11a2.5 2.5 0 0 1 2.45 2h1.55a.5.5 0 0 1 0 1h-1.55a2.5 2.5 0 0 1-4.9 0H2.5a.5.5 0 0 1 0-1h8.55a2.5 2.5 0 0 1 2.45-2Z" fill="currentColor"></path>
+            </svg>
+            <span>Фильтр</span>
+          </div>
+          <div class="filter-content" id="filterContent">
+            <div class="filter-options">
+              <div class="filter-category">
+                <label>Категория:</label>
+                <div id="categoryFilters"></div>
+              </div>
+              <div class="filter-color">
+                <label>Цвет:</label>
+                <div id="colorFilters"></div>
+              </div>
+              <div class="filter-price">
+                <label>Цена до:</label>
+                <input type="range" id="priceRange" min="0" max="0" value="0" oninput="updatePriceValue(this.value)">
+                <span id="priceValue">0 BYN</span>
+              </div>
+            </div>
+            <div class="filter-buttons_container">
+              <button id="applyFiltersButton">Применить</button>
+              <button id="resetFiltersButton">Очистить</button>
+            </div>
+          </div>
         </div>
-      </div>
-      
-      <div class="contacty_otstup" id="contacty"></div>
+                
+        <section id="catalog">
+          <div class="catalog_container"></div>
+        </section>
+        <div id="imageModal" class="modal">
+          <span class="close">&times;</span>
+          <div class="modal-nav">
+            <span class="modal-prev">&lt;</span>
+            <img class="modal-content" id="modalImage">
+            <span class="modal-next">&gt;</span>
+          </div>
+        </div>   
+        <div class="contacty_otstup" id="contacty"></div>
+      </main>
       <footer>
         <div class="footer_links_container">
           <div class="footer_media_icons">

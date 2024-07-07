@@ -2,9 +2,10 @@ export const cardItems = [
   {
     id: 1,
     itemName: 'Юбка ARABIC',
+    category: 'Юбка',
     color: [
       {
-        color: 'white',
+        color: 'Белый',
         price: '180 BYN',
         path: './catalog-page/assets/samples/white.png',
         photos: [
@@ -14,7 +15,7 @@ export const cardItems = [
         ], 
       },
       {
-        color: 'green',
+        color: 'Изумрудный',
         price: '180 BYN',
         path: './catalog-page/assets/samples/green.png',
         photos: [
@@ -24,7 +25,7 @@ export const cardItems = [
         ], 
       },
       {
-        color: 'black',
+        color: 'Черный',
         price: '180 BYN',
         path: './catalog-page/assets/samples/black.png',
         photos: [
@@ -34,7 +35,7 @@ export const cardItems = [
           ], 
       },
       {
-        color: 'pink',
+        color: 'Розовый',
         price: '180 BYN',
         path: './catalog-page/assets/samples/pink.png',
         photos: [
@@ -48,9 +49,10 @@ export const cardItems = [
   {
     id: 2,
     itemName: 'Топ ACTUAL',
+    category: 'Топ',
     color: [
       {
-        color: 'black',
+        color: 'Чёрный',
         price: '120 BYN',
         path: './catalog-page/assets/samples/black.png',
         photos: [
@@ -60,7 +62,7 @@ export const cardItems = [
         ], 
       },
       {
-        color: 'pink',
+        color: 'Розовый',
         price: '120 BYN',
         path: './catalog-page/assets/samples/pink.png',
         photos: [
@@ -74,9 +76,10 @@ export const cardItems = [
   {
     id: 3,
     itemName: 'Топ ELEGANT',
+    category: 'Топ',
     color: [
       {
-        color: 'green',
+        color: 'Изумрудный',
         price: '140 BYN',
         path: './catalog-page/assets/samples/green.png',
         photos: [
@@ -87,7 +90,7 @@ export const cardItems = [
         ], 
       },
       {
-        color: 'black',
+        color: 'Чёрный',
         price: '140 BYN',
         path: './catalog-page/assets/samples/black.png',
         photos: [
@@ -102,9 +105,10 @@ export const cardItems = [
   {
     id: 4,
     itemName: 'Топ BASIC',
+    category: 'Топ',
     color: [
       {
-        color: 'pink',
+        color: 'Розовый',
         price: '130 BYN',
         path: './catalog-page/assets/samples/pink.png',
         photos: [
@@ -114,7 +118,7 @@ export const cardItems = [
         ], 
       },
       {
-        color: 'black',
+        color: 'Черный',
         price: '130 BYN',
         path: './catalog-page/assets/samples/black.png',
         photos: [
@@ -129,9 +133,10 @@ export const cardItems = [
   {
     id: 5,
     itemName: 'Шорты',
+    category: 'Шорты',
     color: [
       {
-        color: 'black',
+        color: 'Черный',
         price: '90 BYN',
         path: './catalog-page/assets/samples/black.png',
         photos: [
@@ -145,9 +150,11 @@ export const cardItems = [
   {
     id: 6,
     itemName: 'Юбка VEGA',
+    category: 'Юбка',
     color: [
       {
-        color: 'gold',
+        color: 'Золото',
+        
         price: '180 BYN',
         path: './catalog-page/assets/samples/gold.png',
         photos: [
@@ -157,7 +164,7 @@ export const cardItems = [
         ],
       },
       {
-        color: 'zebra',
+        color: 'Принт',
         price: '180 BYN',
         path: './catalog-page/assets/samples/zebra.png',
         photos: [
@@ -172,9 +179,10 @@ export const cardItems = [
   {
     id: 7,
     itemName: 'Юбка накидка MIRADA',
+    category: 'Юбка',
     color: [
       {
-        color: 'leopard',
+        color: 'Принт',
         price: '150 BYN',
         path: './catalog-page/assets/samples/leopard.png',
         photos: [
@@ -184,7 +192,7 @@ export const cardItems = [
         ],
       },
       {
-        color: 'blue-leopard',
+        color: 'Принт',
         price: '150 BYN',
         path: './catalog-page/assets/samples/blue-leopard.png',
         photos: [
@@ -198,9 +206,10 @@ export const cardItems = [
   {
     id: 8,
     itemName: 'Топ EVA',
+    category: 'Топ',
     color: [
       {
-        color: 'white',
+        color: 'Белый',
         price: '150 BYN',
         path: './catalog-page/assets/samples/white.png',
         photos: [
@@ -210,7 +219,7 @@ export const cardItems = [
         ],
       },
       {
-        color: 'black',
+        color: 'Черный',
         price: '150 BYN',
         path: './catalog-page/assets/samples/black.png',
         photos: [
@@ -220,7 +229,7 @@ export const cardItems = [
         ],
       },
       {
-        color: 'gold',
+        color: 'Золото',
         price: '150 BYN',
         path: './catalog-page/assets/samples/gold.png',
         photos: [
@@ -234,9 +243,10 @@ export const cardItems = [
   {
     id: 9,
     itemName: 'Купальник NOVA',
+    category: 'Купальник',
     color: [
       {
-        color: 'black',
+        color: 'Чёрный',
         price: '120 BYN',
         path: './catalog-page/assets/samples/black.png',
         photos: [

@@ -1,0 +1,144 @@
+.filters {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 20px 50px;
+  row-gap: 10px;
+}
+
+.filter-toggle {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  cursor: pointer;
+}
+
+.filter-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.filter-container > div {
+  margin-bottom: 10px;
+}
+
+.filter-content {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  row-gap: 20px;
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+  background: #ffffffbd;
+  backdrop-filter: blur(2px);
+  top: 80%;
+}
+
+.filter-options {
+  display: flex;
+  justify-content: flex-start;
+  gap: 100px;
+}
+
+.filter-category,
+.filter-color,
+.filter-price {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.filter-price {
+  width: 200px;
+}
+
+#priceRange {
+  width: 100%;
+}
+
+#colorFilters,
+#categoryFilters {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  width: fit-content;
+  padding-right: 10px;
+  overflow: overlay;
+  font-size: 0.8em;
+}
+
+.filter-buttons_container {
+  display: flex;
+  gap: 10px;
+}
+
+#applyFiltersButton,
+#resetFiltersButton {
+  background: transparent;
+  border: solid 1px #1a1a1ac0;
+  padding: 3px 15px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 400;
+  transition-duration: 0.3s;
+  z-index: 5;
+  font-size: 0.8em;
+  max-width: 150px;
+}
+
+#applyFiltersButton:hover,
+#resetFiltersButton:hover {
+  color: #121212;
+  border: solid 1px #999898c0;
+}
+
+input[type="range"] {
+  width: 100%;
+  height: 2px;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: black;
+  border-radius: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+
+  .filters {
+    padding: 20px;
+  }
+
+  .filter-content {
+    flex-direction: column;
+    justify-content: flex-start;
+    background: #ffffffbd;
+    backdrop-filter: blur(3px);
+    width: 90%;
+    z-index: 12;
+  }
+
+  .filter-options {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  #colorFilters,
+  #categoryFilters,
+  .filter-price {
+    width: 100%;
+    height: 100%;
+  }
+}

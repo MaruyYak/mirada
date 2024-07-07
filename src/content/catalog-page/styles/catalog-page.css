@@ -1,3 +1,9 @@
+.catalog_section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  position: relative;
+}
 
 .site_header {
   display: flex;
@@ -48,10 +54,6 @@
 .open {
   display: flex !important;
   left: 0 !important;
-}
-
-.catalog_section {
-  margin-top: 50px;
 }
 
 .disclaimer {
