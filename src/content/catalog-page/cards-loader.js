@@ -14,7 +14,6 @@ export function generateCardHtml(filteredItems = cardItems) {
 
   addListenerToButtonsFilters();
   addListenerToPriceRange();
-  // showFilterContent();
   return catalogContainer;
 }
 
@@ -26,6 +25,7 @@ export function updatePriceValue(value) {
 function addListenerToButtonsFilters() {
   document.getElementById('applyFiltersButton').addEventListener('click', applyFilters);
   document.getElementById('resetFiltersButton').addEventListener('click', resetFilters);
+  document.getElementById('resetFilters').addEventListener('click', resetFilters);
 }
 
 function addListenerToPriceRange() {
@@ -53,6 +53,7 @@ export function applyFilters() {
   const selectedCategories = Array.from(document.querySelectorAll('.category-checkbox:checked')).map(checkbox => checkbox.value);
   const selectedColors = Array.from(document.querySelectorAll('.color-checkbox:checked')).map(checkbox => checkbox.value);
   const filterContent = document.getElementById('filterContent');
+  const emptyCatalog = document.getElementById('emptyCatalog');
 
   const filteredItems = cardItems.filter(item => {
     const itemColors = item.color.map(c => c.color);
@@ -63,15 +64,21 @@ export function applyFilters() {
     const matchesColor = selectedColors.length === 0 || selectedColors.some(color => itemColors.includes(color));
 
     if (selectedCategories.length > 0 && selectedColors.length > 0) {
-      return matchesCategory && matchesColor;
+      return matchesCategory && matchesColor && matchesPrice;
     } else if (selectedCategories.length > 0) {
-      return matchesCategory;
+      return matchesCategory && matchesPrice;
     } else if (selectedColors.length > 0) {
-      return matchesColor;
+      return matchesColor && matchesPrice;
     } else {
       return matchesPrice;
     }
   });
+
+  if (filteredItems.length === 0) {
+    emptyCatalog.style.display = 'flex';
+  } else {
+    emptyCatalog.style.display = 'none';
+  }
 
   filterContent.style.display = 'none';
   generateCardHtml(filteredItems);
@@ -79,6 +86,7 @@ export function applyFilters() {
 
 function resetFilters() {
   const filterContent = document.getElementById('filterContent');
+  const emptyCatalog = document.getElementById('emptyCatalog');
 
   document.querySelectorAll('.category-checkbox').forEach(checkbox => {
     checkbox.checked = false;
@@ -90,7 +98,9 @@ function resetFilters() {
 
   const priceRange = document.getElementById('priceRange');
   priceRange.value = priceRange.max;
+  updatePriceValue(priceRange.max);
 
+  emptyCatalog.style.display = 'none';
   filterContent.style.display = 'none';
-  generateCardHtml(); 
+  generateCardHtml();
 }

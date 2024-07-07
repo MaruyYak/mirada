@@ -123,8 +123,11 @@
               </div>
               <div class="filter-price">
                 <label>Цена до:</label>
-                <input type="range" id="priceRange" min="0" max="0" value="0" oninput="updatePriceValue(this.value)">
-                <span id="priceValue">0 BYN</span>
+                <input type="range" id="priceRange" min="0" max="0" value="0">
+                <div class="prices-container">
+                  <span id="minPriceValue">0 BYN</span>
+                  <span id="priceValue">0 BYN</span>
+                </div>
               </div>
             </div>
             <div class="filter-buttons_container">
@@ -132,6 +135,9 @@
               <button id="resetFiltersButton">Очистить</button>
             </div>
           </div>
+        </div>
+        <div id="emptyCatalog">
+          Товаров не найдено. Используйте другие фильтры или <span id="resetFilters">очистить фильтры</span>
         </div>
                 
         <section id="catalog">

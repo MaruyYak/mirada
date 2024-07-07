@@ -36,10 +36,14 @@ export function generateColorFilters() {
 // Ползунок цены
 export function updatePriceRange() {
   const maxPrice = Math.max(...cardItems.flatMap(item => item.color.map(color => parseFloat(color.price))));
+  const minPrice = Math.min(...cardItems.flatMap(item => item.color.map(color => parseFloat(color.price))));
   const priceRange = document.getElementById('priceRange');
   const priceValue = document.getElementById('priceValue');
+  const minPriceValue = document.getElementById('minPriceValue');
   
   priceRange.max = maxPrice;
+  priceRange.min = minPrice;
   priceRange.value = maxPrice;
   priceValue.textContent = `${maxPrice} BYN`;
+  minPriceValue.textContent = `${minPrice} BYN`;
 }
