@@ -125,9 +125,10 @@ input[type="range"]::-webkit-slider-thumb {
     flex-direction: column;
     justify-content: flex-start;
     background: #ffffffbd;
-    backdrop-filter: blur(3px);
-    width: 90%;
+    backdrop-filter: blur(4px);
+    width: 100%;
     z-index: 12;
+    left: 0px;
   }
 
   .filter-options {
