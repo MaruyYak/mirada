@@ -25,7 +25,7 @@ export const cardItems = [
         ], 
       },
       {
-        color: 'Черный',
+        color: 'Чёрный',
         price: '180 BYN',
         path: './catalog-page/assets/samples/black.png',
         photos: [
@@ -118,7 +118,7 @@ export const cardItems = [
         ], 
       },
       {
-        color: 'Черный',
+        color: 'Чёрный',
         price: '130 BYN',
         path: './catalog-page/assets/samples/black.png',
         photos: [
@@ -136,7 +136,7 @@ export const cardItems = [
     category: 'Шорты',
     color: [
       {
-        color: 'Черный',
+        color: 'Чёрный',
         price: '90 BYN',
         path: './catalog-page/assets/samples/black.png',
         photos: [
@@ -219,7 +219,7 @@ export const cardItems = [
         ],
       },
       {
-        color: 'Черный',
+        color: 'Чёрный',
         price: '150 BYN',
         path: './catalog-page/assets/samples/black.png',
         photos: [
